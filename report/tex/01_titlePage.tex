@@ -1,0 +1,86 @@
+\newcommand{\setSupervisor}[1]{
+    \newcommand{\supervisor}{#1}
+}
+\newcommand{\setFaculty}[1]{
+    \newcommand{\faculty}{#1}
+}
+
+\newcommand{\setDepartment}[1]{
+    \newcommand{\department}{#1}
+}
+
+\newcommand{\setReviewer}[1]{
+    \newcommand{\reviewer}{#1}
+}
+
+\newcommand{\setTitleang}[1]{
+    \newcommand{\Titleang}{#1}
+}
+
+\newcommand{\setMajor}[1]{
+    \newcommand{\major}{#1}
+}
+
+
+\makeatletter
+\renewcommand{\maketitle}{\begin{titlepage}
+        % \begin{center}
+        % \includegraphics[height=60.85mm]{img/agh_nzw_s_pl_1w_wbr_rgb_150ppi.jpg}\\
+        % \end{center}
+        %\rule{30mm}{0pt}
+
+        \begin{center}
+        {\normalsize \bf \textsf{\textsc{\faculty}}}\\
+        \vspace{1ex}
+        {\normalsize \bf \textsf{\textsc{\department}}}\\
+        \end{center}
+        \vspace{7.5ex}
+
+        \begin{center}
+            {\large \textsf{\textsc{\@author}}}\\
+            {\textsf{\textsc{Nr albumu: 123456}}}
+            \vspace{23ex}
+        \end{center}
+
+        \begin{center}
+            %% ------------------------ TYTUL PRACY --------------------------------------
+            {\bf \Huge \textsf{\@title}}\\
+            \vspace{3ex}
+            {\large \textsf{\Titleang}}\\
+            \vspace{8ex}
+        \end{center}
+
+        \begin{center}
+            {\textsf{Praca licencjacka \\ na kierunku studiów fizyka}}\\
+            \vspace{15ex}
+        \end{center}
+
+        \vfill
+
+        \begin{flushright}
+            \noindent
+            {\textsf{Praca wykonana pod kierunkiem\\ Supervisor 123}} \\\
+        \end{flushright}
+
+        % %\begin{left}
+        %     % --------------------------- IMIE I~NAZWISKO -------------------------------
+        %     \noindent
+        %     {\normalsize \bf \textsf{Author:}} {\normalsize \textsf{\@author}}\\\
+        %     %\vspace{2ex}
+        %     % --------------------------- KIERUNEK STUDIÓW -------------------------------
+        %     \noindent
+        %     {\normalsize \bf \textsf{Major:}} {\normalsize \textsf{\major}}\\\
+        %     %\vspace{1ex}
+        %     %% ------------------------ OPIEKUN PRACY ------------------------------------
+        %     \noindent
+        %     {\normalsize \bf \textsf{Opiekun:}} {\normalsize \textsf{\supervisor}}\\\
+        % %\end{left}
+
+        \begin{center}
+            \vspace{7ex}
+            {\normalsize \textsf{Warszawa, Maj 2023}}
+         \end{center}
+         
+    \end{titlepage}%
+}
+\makeatother
