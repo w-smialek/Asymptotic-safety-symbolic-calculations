@@ -22,6 +22,7 @@
 \usepackage[labelfont=bf]{caption}
 \usepackage{caption}
 \usepackage{subcaption}
+\usepackage{pbox}
 
 \setlength{\parindent}{15pt} 
 
@@ -64,24 +65,85 @@
 
 % \tableofcontents
 
-\begin{center}
-    \subsection*{The beta functional}
-\end{center}
+\subsection*{\centering Effective action}
 
 In the traditional Wilsonian approach to renormalization, a single step of renormalization procedure consists of
 a functional integration of high-momentum fluctuations, followed by a rescaling of physical lengths and momenta, and
 renormalization of fields. All of this leaves the non-perturbed theory unchanged, affecting only the couplings.
-Before the rescaling and renormalization operations we are dealing with the so-called Wilsonian effective action ($S_{\text{eff}}$).
-It describes the behaviour of fields for the processes below certain energy scale $b\Lambda$, lower than original cutoff $\Lambda$.
-$S_{\text{eff}}$ will generally contain the operators of all the higer dimensions in fields and derivatives.
+Before the rescaling and renormalization operations [we are dealing with] the so-called Wilsonian effective action ($S_{\text{eff}}$).
+It describes the behaviour of fields for the processes below certain energy scale $b\Lambda$, lower than the original cutoff $\Lambda$.
+$S_{\text{eff}}$ generally contains all operators with higer dimensions in fields and derivatives.
 These corrections (...) but they allow us to neglect field modes larger than $\mu = b\Lambda$ and deal only with non-divergent diagrams.
+The argument of $S_{\text{eff}}$ is still a quantum field, in the sense that the functional integral is performed over it. %It also,
+% in some sense, loses information about the high-energy physics.
 
-However, $S_{\text{eff}}$ is still a quantum action, in the sense that the functional integral is performed over it. It also
-in some sense lose some information about the high-energy physics.
-There is another object (...) quantum effective action
+The object, that we will call an effective action $\Gamma$ is different and should not be confused with $S_{\text{eff}}$.
+Let us start from the euclidean partition function for scalar field theory. The definition for other theories
+come as a straight-forward generalization.
+\begin{equation}
+    Z[j] = \int \mathcal{D}\phi \ e^{-S[\phi] + \int dx j \phi}
+\end{equation}
+The generating functional of connected Green's functions is defined as
+\begin{equation}
+    W[j] = \log{Z[j]}
+\end{equation}
+The effective action functional is defined using the Legendre transformation of $W[j]$.
+\begin{equation}
+    \Gamma[\phi_c] = W[j_\phi] - \int d^4 x j_\phi(x) \phi(x)
+\end{equation}
+The two fields $\phi_c$ and $j_\phi$, which are inverses of each other, are defined as the solution to
+\begin{equation}
+    \phi_c(x) = \langle \hat\phi (x) \rangle_j = \frac{\delta W[j]}{\delta j(x)}
+\end{equation}
+The argument of the effective action is a classical field and there is no functional integral to be performed over it.
+Rather, in $\Gamma$ all of the fluctuations are integrated out, but only one-particle irreducible diagrams
+are included. $\Gamma$ acts as a generating functional of 1PI Green's functions. Extremizing effective, rather than
+the clasical action, yields the equations of motion for vacuum expectation values of the quantum fields.
 
-% \section{Intro}
+In its bare form, effective action is ill-defined, as was expected. One option is to introduce a UV cutoff $\Lambda$
+and study the rg flow through divergences proportional to $\Lambda$. The modification we will employ, however, involves
+an IR cutoff inserted through adding a regulator term $\Delta S_k[\phi]$ to the bare action $S[\phi]$ in the definition of partition function
+and subtracted from the final form of effective action. Explicitly, this new object, called the effective average action (EAA) is defined as
+\begin{eqnarray}
+    W_k[j] = \log{\int \mathcal{D}\phi \ e^{-S[\phi] - \Delta S_k[\phi] + \int dx j \phi}}\\
+    \Gamma_k[\phi_c] = W_k[j_\phi] - \int d^4 x j_\phi(x) \phi(x) - \Delta S_k[\phi]
+\end{eqnarray}
+Motivation for introducing EAA will become clear when we study the functional renormalization group
 
-% aa
+\subsection*{\centering Infrared regulator and the scheme dependence}
+
+\subsection*{\centering Beta functional and the functional renormalization group}
+
+The $\Gamma_k$ is IR-regulated, but still it is ill-defined, because of the UV divergences. 
+However, in studying the scale dependence of couplings we will not use full EAA, 
+but its derivative with respect to $t = \log{k}$.
+We assume the theory space in which $\Gamma_k$ takes the form
+\begin{equation}
+    \Gamma_k = \sum_i g_i(k) \ \mathcal{O}_i [\phi]
+\end{equation}
+Where $\mathcal{O}_i (\phi)$ are integrals of monomials of fields or positive powers of field derivatives 
+and $g_i(k)$ are scale-dependent couplings.
+The coefficients in EAA derivative with respect to $t$ are therefore simply the beta functions of corresponding operators
+\begin{equation}
+    \frac{d \Gamma_k}{dt} = \sum_i \frac{d g_i}{dt} \ \mathcal{O}_i [\phi] = \beta_i(g,k) \ \mathcal{O}_i [\phi]
+\end{equation}
+The beta functions may depend on all the couplings, as well as the renormalization scale $k$.
+They can be extracted from $\frac{d \Gamma_k}{dt}$ via a suitable projection operator. 
+The $\frac{d \Gamma_k}{dt}$ is called the beta functional. This functional, as can be shown, is finite.
+This is because the beta functional can be viewed as a difference between effective actions with infinitesimal
+difference in cutoff. The UV divergences in the difference will cancel, and what remains is the finite rest
+dependent on the degrees of freedom with momenta close to the renormalization scale.
+
+Ordinary effective action can be split into the tree-level, one loop and higher order parts
+\begin{equation}
+    \Gamma = S + \frac{1}{2} \operatorname{Tr} \log{\frac{\delta^2 S}{\delta \phi \delta \phi}} + \left( \pbox{40mm}{\ \ \ \ \ \ Remaining \\ Feynman diagrams} \right)
+\end{equation}
+The same can be done for the EAA, as the only difference between the two is replacement of the action by its regulated version and
+the subtraction of the regulator at the end. The one-loop approximation reads
+\begin{equation}
+    \Gamma_k^{(1)} = S + \frac{1}{2} \operatorname{Tr} \log{\frac{\delta^2 (S+\Delta S_k)}{\delta \phi \delta \phi}} = S + \frac{1}{2} \operatorname{Tr} \log{\left(\frac{\delta^2 S}{\delta \phi \delta \phi} + R_k\right)}
+\end{equation}
+%% Inaczej - to nie podręcznik. Od razu wyprowadzać ścisłe równanie
+
 
 \end{document}
