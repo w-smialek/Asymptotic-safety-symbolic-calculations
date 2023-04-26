@@ -1,5 +1,5 @@
 \documentclass[11pt, a4paper]{article} 
-\usepackage[MeX]{polski} %polskie znaki
+% \usepackage[MeX]{polski} %polskie znaki
 \usepackage{booktabs}
 \usepackage{comment} 
 \usepackage[utf8]{inputenc} % odpowiednie kodowanie znaków
@@ -55,15 +55,61 @@
 \newtheorem{defn}[thm]{Definition}
 \newtheorem{rmk}{Remark}
 
-\title{\vspace{-2cm}The Functional Renormalization Group Equation}
-% \author{Rafał Bistroń}
+\title{\vspace{-2cm}On the Landau pole in quantum electrodynamics and the possible quantum gravity corrections}
+\author{{Wojciech Śmiałek}\\
+\\
+{\textit{Supervisor}} \\
+{Jan Kwapisz phd.}}
 \date{}
 
 \begin{document}
-
 \maketitle
 
-% \tableofcontents
+\section*{Introduction}
+
+\part{Gravitational corrections in the Landau pole problem - preliminaries and the review of existing results}
+
+\section{Renormalization and the running of couplings}
+
+\section{Quantized gravity}
+% Płomienny wstęp
+
+To incorporate gravity into the framework of quantum field theory, %which appears as the correct fundamental description of all other phenomena in nature, 
+we wish to define an action for the field responsible for gravitational interaction.
+By simply analyzing possible form of Lorentz-covariant linear field equations for a carrier of long-distance, 
+universally attracting interactions, it is possible to deduct, that the corresponding field $\xi$ would have to be that of a massless boson with even integer spin [ref].
+The simplest case of $s=0$, an analogue of Newtonian field, cannot account for the gravitational deflection of light.
+The interaction of $\xi$ with matter would be via term in action of the form $\xi T^\mu_\mu$, where $T$ is a stress-energy tensor.
+Stress-energy tensor of electromagnetic field is traceless and it would not interact with scalar $\xi$, contradicting known observations.
+The next simplest possibility is that of $s=2$. Then the field would be a symmetric two-tensor $\xi_{\mu\nu}$. This meets our expectations as a
+candidate for the quantization of the metric field $g_{\mu\nu}$, a fundamental object in Einstein's theory of gravity.
+
+Continuing ... one arrives at the Fierz-Pauli equations and the action
+\begin{equation}
+    S_{FP} = \int d^4 x \left( -\frac{1}{2} \partial_\sigma \xi_{\mu\nu} \partial^\sigma \xi^{\mu\nu} +  \partial_\sigma \xi_\mu^\sigma \partial_\rho \xi^{\mu\rho} - \partial_\sigma \xi_\mu^\sigma \partial^\mu \xi_\rho^\rho +\frac{1}{2} \partial_\sigma \xi_\rho^\rho \partial^\sigma \xi_\rho^\rho \right)
+    \label{SFP}
+\end{equation}
+This line of reasoning may even be an alternative way of deriving the Einstein's Field Equations. The method for recovering full, non-linear
+field equations from the free massless spin-2 field equations have been shown by Deser [ref]. 
+We can write the action yielding full Einstein's Field Equations and split metric field into flat background plus a fluctuation field.
+\begin{gather}
+    S_{EH} = \frac{1}{2 \kappa} \int d^4 x \sqrt{-\det{g}} \ R \\
+    g_{\mu\nu} = \eta_{\mu\nu} + h_{\mu\nu}
+    \label{SEH}
+\end{gather}
+Where $R$ is the scalar curvature and $\kappa = \sqrt{8 \pi G}$ is the Einstein's gravitational constant. Expanding metric determinant and curvature to the second order in $h$ field, we arrive at the action proportional to $S_{FP}$.
+At this point, we can identify $2\kappa\xi_{\mu\nu}$ with metric fluctuation field $h_{\mu\nu}$, so that two actions agree exactly.
+
+
+
+
+\section{Beta function of the $U(1)$ gauge coupling}
+
+\section{Existing results and the (consensus / conclusions)}
+
+\part{Functional renormalization group approach and the presentation of results}
+
+\section{The Functional Renormalization Group Equation}
 
 \subsection*{\centering Effective action}
 
@@ -104,10 +150,10 @@ In its bare form, effective action is ill-defined, as was expected. One option i
 and study the rg flow through divergences proportional to $\Lambda$. The modification we will employ, however, involves
 an IR cutoff inserted through adding a regulator term $\Delta S_k[\phi]$ to the bare action $S[\phi]$ in the definition of partition function
 and subtracted from the final form of effective action. Explicitly, this new object, called the effective average action (EAA) is defined as
-\begin{eqnarray}
+\begin{gather}
     W_k[j] = \log{\int \mathcal{D}\phi \ e^{-S[\phi] - \Delta S_k[\phi] + \int dx j \phi}}\\
     \Gamma_k[\phi_c] = W_k[j_\phi] - \int d^4 x j_\phi(x) \phi(x) - \Delta S_k[\phi]
-\end{eqnarray}
+\end{gather}
 Motivation for introducing EAA will become clear when we study the functional renormalization group
 
 \subsection*{\centering Infrared regulator and the scheme dependence}
@@ -134,16 +180,51 @@ This is because the beta functional can be viewed as a difference between effect
 difference in cutoff. The UV divergences in the difference will cancel, and what remains is the finite rest
 dependent on the degrees of freedom with momenta close to the renormalization scale.
 
-Ordinary effective action can be split into the tree-level, one loop and higher order parts
+Let us calculate the derivatives of $W_k$ and $\Delta S_k$ with respect to $t$
+\begin{gather}
+    \frac{d W_k}{dt} = \frac{d}{dt}\log{Z_k} = - \frac{1}{Z_k} \int \mathcal{D}\phi \ e^{-S[\phi] - \Delta S_k[\phi] + \int dx j \phi}  \cdot \frac{d \Delta S_k}{dt} \\
+    \frac{d \Delta S_k}{dt} = \frac{1}{2} \int d^4 x \ \phi \ \frac{d R_k}{dt} \ \phi
+\end{gather}
+This lets us write
 \begin{equation}
-    \Gamma = S + \frac{1}{2} \operatorname{Tr} \log{\frac{\delta^2 S}{\delta \phi \delta \phi}} + \left( \pbox{40mm}{\ \ \ \ \ \ Remaining \\ Feynman diagrams} \right)
+    \frac{d \Gamma_k}{dt} = \frac{d \langle \Delta S_k \rangle}{dt} - \frac{d \Delta S_k }{dt} = \frac{1}{2} \operatorname{Tr} \left[ (\langle\phi\phi\rangle - \langle\phi\rangle^2) \cdot \frac{d R_k}{dt} \right]
 \end{equation}
-The same can be done for the EAA, as the only difference between the two is replacement of the action by its regulated version and
-the subtraction of the regulator at the end. The one-loop approximation reads
+Where $\operatorname{Tr}$ denotes ... and the $\langle\cdots\rangle$ - ...
+The expression $(\langle\phi\phi\rangle - \langle\phi\rangle^2)$ can be shown to be equal to $\frac{\delta^2 W_k}{\delta j \delta j}$ [cite]
+From there, if we would express $\frac{\delta^2 W_k}{\delta j \delta j}$ in terms of $\Gamma_k$, we could
+write an exact, first order differential equation for the effective average action.
+In fact, the relationship between (them) is very simple. Recall, that $\Gamma_k + \Delta S_k$ is a Legendre transform of $W_k$. For any
+two functions $f$ and $g$, one being the Legendre transform of the other, we have $f'' = (g'')^{-1}$. This remains true for the functional derivation.
+Using this information and immediatly performing field derivative over $\Delta S_k$, we can write the equation for $\Gamma_k$:
 \begin{equation}
-    \Gamma_k^{(1)} = S + \frac{1}{2} \operatorname{Tr} \log{\frac{\delta^2 (S+\Delta S_k)}{\delta \phi \delta \phi}} = S + \frac{1}{2} \operatorname{Tr} \log{\left(\frac{\delta^2 S}{\delta \phi \delta \phi} + R_k\right)}
+    \frac{d \Gamma_k}{dt} = \frac{1}{2} \operatorname{Tr} \left[ \left(\frac{\delta^2 \Gamma_k}{\delta \phi \delta \phi} + R_k\right)^{-1} \cdot \frac{d R_k}{dt} \right]
+    \label{FRGE}
 \end{equation}
-%% Inaczej - to nie podręcznik. Od razu wyprowadzać ścisłe równanie
+This is the functional renormalization group equation (FRGE) or the Wetterich equation. (...)
+In its original form, FRGE is not well suited for performing specific calculations. One very intuitive method, which
+we will use is the $\mathcal{PF}$-expansion, that allows us to use the Feynman diagrams for calculating the RHS of equation (\ref{FRGE})
+up to the desired order in couplings. The term inside the trace including Second derivative of EAA
+will in general be, for spinor or tensor fields, a functional hessian matrix. We can decompose this term into a
+regulated inverse propagator matrix $\mathcal{P}$ and a rest, which will include the derivatives of terms non quadratic in fields.
+\begin{equation}
+    \frac{\delta^2 \Gamma_k}{\delta \phi \delta \phi} + R_k = \mathcal{P} + \mathcal{F}
+\end{equation}
+First, let us notice that the entire expression inside trace can be expressed as a $\log{(\mathcal{P}+\mathcal{F})}$, upon which acts
+a $t$-derivative sensitive only on the $t$ dependence in $R_k$. Explicitly, we can write:
+\begin{equation}
+    \left(\mathcal{P} + \mathcal{F}\right)^{-1} \cdot \partial_t R_k = \left(\mathcal{P} + \mathcal{F}\right)^{-1} \cdot \widetilde{\partial_t} \left(\mathcal{P}+\mathcal{F}\right) = \widetilde{\partial_t} \log{\left(\mathcal{P}+\mathcal{F}\right)}; \quad \widetilde{\partial_t} = \int \partial_t R_k \frac{\delta}{\delta R_k}
+\end{equation}
+Now, we can recall the series expansion of $\log{(1+x)}$ around $x=0$ and after some simple manipulations, obtain an expansion of functional trace in (\ref{FRGE}) in
+the number of $\mathcal{F}$-terms
+\begin{gather}
+    \frac{d \Gamma_k}{dt} = \frac{1}{2} \operatorname{Tr} \left[ \widetilde{\partial_t} \log{\left(\mathcal{P}+\mathcal{F}\right)} \right] = \frac{1}{2} \operatorname{Tr} \left[ \widetilde{\partial_t} \left(\log{\mathcal{P}} + \log{(1+\mathcal{P}^{-1}\mathcal{F})}\right) \right] \\ =  \frac{1}{2} \operatorname{Tr} \left[ \widetilde{\partial_t} \log{\mathcal{P}} \right] + \frac{1}{2} \sum_{n=1}^{\infty} \frac{(-1)^{n-1}}{n} \operatorname{Tr}\left[\widetilde{\partial_t}\left(\mathcal{P}^{-1}\mathcal{F}\right)^n\right]
+\end{gather}
 
+
+\section{Framework - quantum einstein gravity coupled to the $U(1)$ gauge theory}
+
+\section{Results (...)}
+
+\section*{Summary}
 
 \end{document}
