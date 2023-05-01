@@ -98,12 +98,24 @@ We can write the action yielding full Einstein's Field Equations and split metri
     \label{SEH}
 \end{gather}
 Where $R$ is the scalar curvature and $\kappa = \sqrt{8 \pi G}$ is the Einstein's gravitational constant. Expanding metric determinant and curvature to the second order in $h$ field, we arrive at the action proportional to $S_{FP}$.
-At this point, we can identify $2\kappa\xi_{\mu\nu}$ with metric fluctuation field $h_{\mu\nu}$, so that two actions agree exactly.
-
-
+At this point, we can identify $2\kappa\xi_{\mu\nu}$ with metric fluctuation field $h_{\mu\nu}$ and the two actions agree exactly.
 
 
 \section{Beta function of the $U(1)$ gauge coupling}
+Quantum Electrodynamics is famously one of the most stringently tested theories in physics. Given only two input
+parameters - lepton mass and charge, it is able to describe a range of experimental data and predict otherwise
+unexpected phenomena, such as Casimir effect. Pure QFT is a theory of Dirac spinor field interacting with a vector field with local $U(1)$ symmetry.
+Action of the pure QED reads
+\begin{equation}
+    S_{QED} = \int d^4 x \left( -\frac{1}{4}F_{\mu\nu}F^{\mu\nu} + \bar{\psi}(i \gamma^\mu \partial_\mu - m)\psi - e \bar{\psi} \gamma^\mu \psi A_\mu \right)
+\end{equation}
+Our ability to calculate probability amplitudes for physical processes involving these fields up to an arbitrary order in coupling $e$,
+rely on the procedure of renormalization. 
+%% One loop beta function of qed
+%% Discussion of landau pole
+%% General form in the presence of quantum gravity
+% Wilczek paper
+%% Qualitative difference
 
 \section{Existing results and the (consensus / conclusions)}
 
@@ -137,7 +149,7 @@ The effective action functional is defined using the Legendre transformation of 
 \begin{equation}
     \Gamma[\phi_c] = W[j_\phi] - \int d^4 x j_\phi(x) \phi(x)
 \end{equation}
-The two fields $\phi_c$ and $j_\phi$, which are inverses of each other, are defined as the solution to
+The two fields $\phi_c$ and $j_\phi$ are inverses of each other, defined as the solution to
 \begin{equation}
     \phi_c(x) = \langle \hat\phi (x) \rangle_j = \frac{\delta W[j]}{\delta j(x)}
 \end{equation}
@@ -176,8 +188,8 @@ The coefficients in EAA derivative with respect to $t$ are therefore simply the 
 The beta functions may depend on all the couplings, as well as the renormalization scale $k$.
 They can be extracted from $\frac{d \Gamma_k}{dt}$ via a suitable projection operator. 
 The $\frac{d \Gamma_k}{dt}$ is called the beta functional. This functional, as can be shown, is finite.
-This is because the beta functional can be viewed as a difference between effective actions with infinitesimal
-difference in cutoff. The UV divergences in the difference will cancel, and what remains is the finite rest
+This is because the beta functional can be viewed as a difference between effective actions with infinitesimally
+different cutoffs. The UV divergences in the difference will cancel, and what remains is the finite rest
 dependent on the degrees of freedom with momenta close to the renormalization scale.
 
 Let us calculate the derivatives of $W_k$ and $\Delta S_k$ with respect to $t$

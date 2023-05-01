@@ -1,8 +1,8 @@
 # Fdb version 3
-["pdflatex"] 1682501406 "c:/Users/Wojtek/Desktop/Asymptotic-safety/notes/erge.tex" "c:/Users/Wojtek/Desktop/Asymptotic-safety/notes/erge.pdf" "erge" 1682501411
+["pdflatex"] 1682514160 "c:/Users/Wojtek/Desktop/Asymptotic-safety/notes/erge.tex" "c:/Users/Wojtek/Desktop/Asymptotic-safety/notes/erge.pdf" "erge" 1682514164
   "c:/Users/Wojtek/.texlive2020/texmf-var/fonts/tfm/lh/lh-t2a/larm1095.tfm" 1666094881 3264 ead613d557baebcc53cf028c9c92d927 ""
-  "c:/Users/Wojtek/Desktop/Asymptotic-safety/notes/erge.aux" 1682501410 2233 9bdc5cbd26c15a46a712e0a23d652b8f ""
-  "c:/Users/Wojtek/Desktop/Asymptotic-safety/notes/erge.tex" 1682501405 13505 2fef04332b4ef7d611d4f43b570d4ae3 ""
+  "c:/Users/Wojtek/Desktop/Asymptotic-safety/notes/erge.aux" 1682514163 2233 5c0ad86f6495ea87db858e3825a8f108 ""
+  "c:/Users/Wojtek/Desktop/Asymptotic-safety/notes/erge.tex" 1682514158 14428 bc045d0d2a6dced8f130aa43e846acad ""
   "c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/enc/dvips/xcharter/xch_uy5hgr.enc" 1604344752 3153 b6b7f71b32ec26a5df9edec5b0f3a9ae ""
   "c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/map/fontname/texfonts.map" 1604339957 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/tfm/jknappen/ec/ecrm1095.tfm" 1604339404 3584 929cdff2b7a8c11bd4d49fd68cb0ae70 ""
@@ -210,13 +210,13 @@
   "c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1604345014 5062927 11c9141957db35bec4f46bb9420162ed ""
   "c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-var/web2c/pdftex/pdflatex.fmt" 1604345149 2549750 e8673d4d4a627ffe221f29be22deb6f6 ""
   "c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf.cnf" 1604344989 673 4ae7b2f49cee444c5343a45b5d0f169c ""
-  "erge.aux" 1682501410 2233 9bdc5cbd26c15a46a712e0a23d652b8f "pdflatex"
-  "erge.out" 1682501410 818 4e301b57490fac867f9c05346a11a802 "pdflatex"
-  "erge.tex" 1682501405 13505 2fef04332b4ef7d611d4f43b570d4ae3 ""
+  "erge.aux" 1682514163 2233 5c0ad86f6495ea87db858e3825a8f108 "pdflatex"
+  "erge.out" 1682514163 818 4e301b57490fac867f9c05346a11a802 "pdflatex"
+  "erge.tex" 1682514158 14428 bc045d0d2a6dced8f130aa43e846acad ""
   (generated)
-  "c:/Users/Wojtek/Desktop/Asymptotic-safety/notes/erge.log"
-  "erge.aux"
-  "erge.out"
   "c:/Users/Wojtek/Desktop/Asymptotic-safety/notes/erge.pdf"
-  "erge.log"
   "erge.pdf"
+  "erge.out"
+  "erge.aux"
+  "erge.log"
+  "c:/Users/Wojtek/Desktop/Asymptotic-safety/notes/erge.log"
