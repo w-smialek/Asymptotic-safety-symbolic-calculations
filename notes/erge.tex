@@ -77,12 +77,12 @@
 To incorporate gravity into the framework of quantum field theory, %which appears as the correct fundamental description of all other phenomena in nature, 
 we wish to define an action for the field responsible for gravitational interaction.
 By simply analyzing possible form of Lorentz-covariant linear field equations for a carrier of long-distance, 
-universally attracting interactions, it is possible to deduct, that the corresponding field $\xi$ would have to be that of a massless boson with even integer spin [ref].
+universally attractive interactions, it is possible to deduct, that the corresponding field $\xi$ would have to be that of a massless boson with even integer spin [ref].
 The simplest case of $s=0$, an analogue of Newtonian field, cannot account for the gravitational deflection of light.
 The interaction of $\xi$ with matter would be via term in action of the form $\xi T^\mu_\mu$, where $T$ is a stress-energy tensor.
 Stress-energy tensor of electromagnetic field is traceless and it would not interact with scalar $\xi$, contradicting known observations.
 The next simplest possibility is that of $s=2$. Then the field would be a symmetric two-tensor $\xi_{\mu\nu}$. This meets our expectations as a
-candidate for the quantization of the metric field $g_{\mu\nu}$, a fundamental object in Einstein's theory of gravity.
+candidate for the quantized metric field $g_{\mu\nu}$, a fundamental object in Einstein's theory of gravity.
 
 Continuing ... one arrives at the Fierz-Pauli equations and the action
 \begin{equation}
@@ -90,27 +90,33 @@ Continuing ... one arrives at the Fierz-Pauli equations and the action
     \label{SFP}
 \end{equation}
 This line of reasoning may even be an alternative way of deriving the Einstein's Field Equations. The method for recovering full, non-linear
-field equations from the free massless spin-2 field equations have been shown by Deser [ref]. 
-We can write the action yielding full Einstein's Field Equations and split metric field into flat background plus a fluctuation field.
+field equations from the free massless spin-2 field equations, after accounting for the graviton self-interaction, have been shown by Deser [ref]. 
+We can split metric field into flat background plus a fluctuation field and write the action yielding full Einstein's Field Equations.
 \begin{gather}
-    S_{EH} = \frac{1}{2 \kappa} \int d^4 x \sqrt{-\det{g}} \ R \\
+    S_{EH} = \frac{1}{2 \kappa} \int d^4 x \sqrt{-\det{g}} \ R 
+    \label{SEH} \\
     g_{\mu\nu} = \eta_{\mu\nu} + h_{\mu\nu}
-    \label{SEH}
 \end{gather}
 Where $R$ is the scalar curvature and $\kappa = \sqrt{8 \pi G}$ is the Einstein's gravitational constant. Expanding metric determinant and curvature to the second order in $h$ field, we arrive at the action proportional to $S_{FP}$.
 At this point, we can identify $2\kappa\xi_{\mu\nu}$ with metric fluctuation field $h_{\mu\nu}$ and the two actions agree exactly.
+The Einstein - Hilbert action (\ref{SEH}) should be taken as the action of the full interacting theory.
 
+% Gravitons (?) - plane wave solutions, polarizations, gravitational waves
+\subsection*{\centering Perturbative nonrenormalizability of the genereric quantum gravity}
+
+\section{The renormalization group}
 
 \section{Beta function of the $U(1)$ gauge coupling}
+
 Quantum Electrodynamics is famously one of the most stringently tested theories in physics. Given only two input
 parameters - lepton mass and charge, it is able to describe a range of experimental data and predict otherwise
-unexpected phenomena, such as Casimir effect. Pure QFT is a theory of Dirac spinor field interacting with a vector field with local $U(1)$ symmetry.
+unexpected phenomena, such as Casimir effect. Pure QED is a theory of Dirac spinor field interacting with a locally $U(1)$-symmetric vector field.
 Action of the pure QED reads
 \begin{equation}
     S_{QED} = \int d^4 x \left( -\frac{1}{4}F_{\mu\nu}F^{\mu\nu} + \bar{\psi}(i \gamma^\mu \partial_\mu - m)\psi - e \bar{\psi} \gamma^\mu \psi A_\mu \right)
 \end{equation}
-Our ability to calculate probability amplitudes for physical processes involving these fields up to an arbitrary order in coupling $e$,
-rely on the procedure of renormalization. 
+QED is a perturbatively renormalizable theory, i.e. it allows to calculate probability amplitudes for physical processes
+up to an arbitrary order in couplings.
 %% One loop beta function of qed
 %% Discussion of landau pole
 %% General form in the presence of quantum gravity
