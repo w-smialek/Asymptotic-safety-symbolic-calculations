@@ -23,6 +23,7 @@
 \usepackage{caption}
 \usepackage{subcaption}
 \usepackage{pbox}
+\usepackage{tikz-feynman}
 
 \setlength{\parindent}{15pt} 
 
@@ -71,6 +72,56 @@
 
 \section{Renormalization and the running of couplings}
 
+\section{Running of the gauge coupling in QED}
+
+% Quantum Electrodynamics is famously one of the most stringently tested theories in physics. 
+% Given only two input
+% parameters - lepton mass and charge, it is able to describe a range of experimental data and predict otherwise
+% unexpected phenomena, such as Casimir effect. 
+Pure Quantum Electrodynamics is a theory of Dirac spinor field interacting with a locally $U(1)$-symmetric vector field.
+Bare action of the QED reads
+\begin{equation}
+    S_{QED} = \int d^4 x \left( -\frac{1}{4}F_{\mu\nu}F^{\mu\nu} + \bar{\psi}(i \gamma^\mu \partial_\mu - m)\psi - e j^\mu \psi A_\mu \right)
+\end{equation}
+Where $j^\mu = \bar \psi \gamma^\mu \psi$ is the $U(1)$ Noether's conserved current.
+\textcolor{red}{(Maybe write bare vs renormalized lagrangain and discuss how symmetry reduces number of divergent quantities to 3)}
+In the perturbative QED, only three subdiagrams are responsible for any divergences encountered in the non-renormalized
+theory. In the standard on-shell renormalization, one imposes in the rest frame the requirement of electron mass and charge
+equal to the measured one and of normalization of kinetic terms equal to one. This suffices to render all
+physical amplitudes finite and lends QED its predictive power, that has been experimentally tested
+to the remarkable degree of precision.
+We will focus here on the renormalization and consequent momentum dependece of the photon propagator.
+At the tree level, the expression for the photon propagator is
+\begin{equation*}
+\begin{aligned}
+\feynmandiagram [horizontal=a to b] {
+a -- [photon] b,
+i -- [fermion] a -- [fermion] j,
+k -- [fermion] b -- [fermion] l,
+};
+\end{aligned}
+\end{equation*}
+
+% QED is a perturbatively renormalizable theory, i.e. it allows to calculate probability amplitudes for physical processes
+% up to an arbitrary order in couplings.
+%% One loop beta function of qed
+%% Discussion of landau pole
+%% General form in the presence of quantum gravity
+% Wilczek paper
+%% Qualitative difference
+
+\section{The renormalization group}
+[To be corrected and expanded]\\
+Through the contributions of Feynman diagrams beyond the leading order, a nontrivial dependence on the energy scale
+of the process can enter the Green's functions in certain interacting quantum field theories. As a simple example
+(photon propagator...)(eq). Physically, this phenomenon can be interpreted as quantum field fluctuations causing
+the observed physical constants, like the electron mass and charge, to change with the scale of momenta involved
+in the process.\\% from which observations have been extracted.\\
+
+(O tym ze nakladamy warunki ren. przy skali mu rownej skali procesu i ze wtedy
+zaleznosc od pedu przesuwamy z loop integrals do tree level (czyli effective coupling) i jak wtedy powstaja funkcje beta. Potem Wilsonian RG cale)
+
+
 \section{Quantized gravity}
 % Płomienny wstęp
 
@@ -104,26 +155,7 @@ The Einstein - Hilbert action (\ref{SEH}) should be taken as the action of the f
 % Gravitons (?) - plane wave solutions, polarizations, gravitational waves
 \subsection*{\centering Perturbative nonrenormalizability of the genereric quantum gravity}
 
-\section{The renormalization group}
-
-\section{Beta function of the $U(1)$ gauge coupling}
-
-Quantum Electrodynamics is famously one of the most stringently tested theories in physics. Given only two input
-parameters - lepton mass and charge, it is able to describe a range of experimental data and predict otherwise
-unexpected phenomena, such as Casimir effect. Pure QED is a theory of Dirac spinor field interacting with a locally $U(1)$-symmetric vector field.
-Action of the pure QED reads
-\begin{equation}
-    S_{QED} = \int d^4 x \left( -\frac{1}{4}F_{\mu\nu}F^{\mu\nu} + \bar{\psi}(i \gamma^\mu \partial_\mu - m)\psi - e \bar{\psi} \gamma^\mu \psi A_\mu \right)
-\end{equation}
-QED is a perturbatively renormalizable theory, i.e. it allows to calculate probability amplitudes for physical processes
-up to an arbitrary order in couplings.
-%% One loop beta function of qed
-%% Discussion of landau pole
-%% General form in the presence of quantum gravity
-% Wilczek paper
-%% Qualitative difference
-
-\section{Existing results and the (consensus / conclusions)}
+\section{Gravitational corrections as solution to the Landau Pole / triviality problem - discussion of the existing results}
 
 \part{Functional renormalization group approach and the presentation of results}
 
