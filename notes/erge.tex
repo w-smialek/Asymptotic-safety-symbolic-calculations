@@ -23,6 +23,7 @@
 \usepackage{caption}
 \usepackage{subcaption}
 \usepackage{pbox}
+\usepackage{tikz}
 \usepackage{tikz-feynman}
 
 \setlength{\parindent}{15pt} 
@@ -70,7 +71,7 @@
 
 \part{Gravitational corrections in the Landau pole problem - preliminaries and the review of existing results}
 
-\section{Renormalization and the running of couplings}
+% \section{Renormalization and the running of couplings}
 
 \section{Running of the gauge coupling in QED}
 
@@ -90,17 +91,51 @@ theory. In the standard on-shell renormalization, one imposes in the rest frame 
 equal to the measured one and of normalization of kinetic terms equal to one. This suffices to render all
 physical amplitudes finite and lends QED its predictive power, that has been experimentally tested
 to the remarkable degree of precision.
-We will focus here on the renormalization and consequent momentum dependece of the photon propagator.
+We will focus here on the renormalization and momentum dependece of the photon propagator.
 At the tree level, the expression for the photon propagator is
 \begin{equation*}
 \begin{aligned}
 \feynmandiagram [horizontal=a to b] {
-a -- [photon] b,
-i -- [fermion] a -- [fermion] j,
-k -- [fermion] b -- [fermion] l,
-};
+a -- [photon] b
+}; \quad = D_0^{\mu\nu}(k) = \quad \frac{1}{Z_A} \frac{-i \left( g^{\mu\nu} - \frac{k^\mu k^\nu}{k^2} \right)}{k^2+i\epsilon} + \frac{-i \xi \frac{k^\mu k^\nu}{k^2}}{k^2+i\epsilon}
 \end{aligned}
 \end{equation*}
+Where $\xi$ is a gauge fixing parameter. The $\xi$-dependent part of the propagator is not affected by loop corrections
+and we will work in the Landau gauge, setting it to zero. 
+Correction to the propagator in given order is computed by summing all relevant one-particle irreducible diagrams
+and then summing the series of strings of such diagram sums. In the one loop approximation we can represent this diagramatically as
+
+\begin{equation*}
+    \feynmandiagram [layered layout, horizontal=a to c, node distance=0.25cm] {
+    a -- [photon] b [blob] -- [photon] c
+    };
+    = 
+    \feynmandiagram [layered layout, horizontal=a to c, node distance=0.5cm] {
+    a -- [photon] c
+    };
+    +
+    \feynmandiagram [layered layout, horizontal=a to c, node distance=0.25cm] {
+        a -- [photon] b [blob] -- [photon] c
+        };
+    + \ldots
+\end{equation*}
+Let us denote the sum of all relevant 1PI diagrams as $i \Pi^{\mu\nu}(k)$ and the exact propagator as $D^{\mu\nu}(k)$. 
+We can write:
+\begin{eqnarray}
+    D = D_0 + D_0 i \Pi D_0 + D_0 i \Pi D_0 \Pi D_0 + \ldots\\
+    =  D_0 \left( 1 + i \Pi ( D_0 + D_0 i \Pi D_0 + \ldots) \right) = D_0 (1 + i\Pi D)\\
+    \implies i(D^{-1})^{\mu\nu}(k) = i(D_0^{-1})^{\mu\nu}(k) + \Pi^{\mu\nu}(k)
+\end{eqnarray}
+So the correction of the propagator is determined only by the sum of 1PI diagrams.
+Via the analysis of the possible tensor structures and Ward identity \textcolor{red}{(elaborate)}
+the only possible form of $\Pi$ is
+\begin{equation}
+    \Pi^{\mu\nu}(k) = k^2 \varPi(k^2) \left(k^2 g^{\mu\nu} - k^\mu k^\nu \right)
+\end{equation}
+Now the exact propagator reads \textcolor{red}{(write about inverses and stuff)}
+\begin{equation}
+    D^{\mu\nu}(k) = \frac{1}{Z_A - \varPi(k^2)} \frac{-i \left( g^{\mu\nu} - \frac{k^\mu k^\nu}{k^2} \right)}{k^2+i\epsilon}
+\end{equation}
 
 % QED is a perturbatively renormalizable theory, i.e. it allows to calculate probability amplitudes for physical processes
 % up to an arbitrary order in couplings.
