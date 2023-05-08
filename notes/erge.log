@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (TeX Live 2020/W32TeX)  (format=lualatex 2020.11.2)  5 MAY 2023 20:31
+This is LuaHBTeX, Version 1.12.0 (TeX Live 2020/W32TeX)  (format=lualatex 2020.11.2)  5 MAY 2023 20:33
  restricted system commands enabled.
  file:line:error style messages enabled.
 **c:/Users/Wojtek/Desktop/Asymptotic-safety/notes/erge.tex
@@ -68,7 +68,10 @@ luaotfload | db : Font names database loaded from C:/Users/Wojtek/Documents/LaTe
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen138
-) (c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/tex/latex/booktabs/booktabs.sty
+) (c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/tex/latex/polski/polski.sty
+Package: polski 2017/05/04 v1.3.4 Polish language package
+\l@polish=\language2
+ (c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/tex/generic/hyph-utf8/patterns/tex/hyph-pl.tex)) (c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \heavyrulewidth=\dimen139
 \lightrulewidth=\dimen140
@@ -869,32 +872,27 @@ LaTeX Font Info:    Font shape `T1/XCharter-TLF/b/n' will be
 {c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 Missing character: There is no Ś (U+015A) in font XCharter-Roman-tlf-t1!
 Missing character: There is no ł (U+0142) in font XCharter-Roman-tlf-t1!
-]
-Underfull \hbox (badness 10000) in paragraph at lines 149--155
-
- []
-
-[2]
+] [2]
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/b/n' will be
-(Font)              scaled to size 12.0pt on input line 191.
+(Font)              scaled to size 12.0pt on input line 190.
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 204.
+(Font)              scaled to size 8.0pt on input line 203.
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 6.0pt on input line 204.
+(Font)              scaled to size 6.0pt on input line 203.
  [3] [4] [5]
-Overfull \hbox (0.48666pt too wide) in paragraph at lines 296--299
-\T1/XCharter-TLF/m/n/10.95 First, let us no-tice that the en-tire ex-pres-sion in-side trace can be ex-pressed as a $[] []$,
+Overfull \hbox (0.28365pt too wide) in paragraph at lines 295--298
+\T1/XCharter-TLF/m/n/10.95 First, let us no-ti-ce that the en-ti-re expres-sion in-si-de tra-ce can be expres-sed as a $[] []$,
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 309.
+(hyperref)                removing `math shift' on input line 308.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 309.
+(hyperref)                removing `math shift' on input line 308.
 
-[6] [7] (c:/Users/Wojtek/Desktop/Asymptotic-safety/notes/erge.aux)
+[6] (c:/Users/Wojtek/Desktop/Asymptotic-safety/notes/erge.aux)
 Package rerunfilecheck Info: File `erge.out' has not changed.
 (rerunfilecheck)             Checksum: 4DACB6C53E86F16213EE867EAB03FC2D;3127.
 
@@ -904,19 +902,19 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 )
 
 Here is how much of LuaTeX's memory you used:
- 30295 strings out of 479005
+ 30401 strings out of 479005
  125016,953878 words of node,token memory allocated
- 682 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 2 glue, 9 kern, 1 glyph, 41 attribute, 58 glue_spec, 41 attribute_list, 2 write nodes
-   avail lists: 1:8,2:1934,3:1150,4:28,5:984,6:23,7:6491,8:75,9:1010,10:10,11:403
- 48420 multiletter control sequences out of 65536+600000
+ 668 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 2 glue, 7 kern, 1 glyph, 40 attribute, 58 glue_spec, 40 attribute_list, 2 write nodes
+   avail lists: 1:8,2:1940,3:1147,4:32,5:1034,6:21,7:6628,8:71,9:737,10:12,11:624
+ 48513 multiletter control sequences out of 65536+600000
  89 fonts using 6021391 bytes
  98i,14n,113p,741b,1585s stack positions out of 5000i,500n,10000p,200000b,200000s
 {c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/enc/dvips/xcharter/xch_uy5hgr.enc}<c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/xcharter/XCharter-Bold.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/xcharter/XCharter-Italic.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/xcharter/XCharter-Roman.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on erge.pdf (7 pages, 298427 bytes).
+Output written on erge.pdf (6 pages, 299214 bytes).
 
-PDF statistics: 176 PDF objects out of 1000 (max. 8388607)
- 149 compressed objects within 2 object streams
- 46 named destinations out of 1000 (max. 131072)
+PDF statistics: 172 PDF objects out of 1000 (max. 8388607)
+ 146 compressed objects within 2 object streams
+ 45 named destinations out of 1000 (max. 131072)
  93 words of extra memory for PDF output out of 10000 (max. 100000000)
 
