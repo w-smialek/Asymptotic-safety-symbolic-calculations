@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.11.2)  14 MAY 2023 14:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.11.2)  14 MAY 2023 14:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1129,28 +1129,28 @@ LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
 (Font)              scaled to size 6.0pt on input line 52.
 
-Overfull \hbox (14.4346pt too wide) in paragraph at lines 45--60
+Overfull \hbox (14.4346pt too wide) in paragraph at lines 45--61
 \T1/XCharter-TLF/m/n/10.95 gravity should be for it to resolve the problems that arise in SM due to absence of gravitational
  []
 
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/b/n' will be
-(Font)              scaled to size 12.0pt on input line 77.
+(Font)              scaled to size 12.0pt on input line 78.
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/b/n' will be
-(Font)              scaled to size 10.95pt on input line 79.
+(Font)              scaled to size 10.95pt on input line 80.
 [1
 
 {c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (28.16058pt too wide) in paragraph at lines 121--123
+Overfull \hbox (28.16058pt too wide) in paragraph at lines 122--124
 \T1/XCharter-TLF/m/n/10.95 Motivation for introducing EAA will become clear when we study the functional renormalization
  []
 
 [2]
-Overfull \hbox (21.06165pt too wide) in paragraph at lines 140--147
+Overfull \hbox (21.06165pt too wide) in paragraph at lines 141--148
 \T1/XCharter-TLF/m/n/10.95 the finite rest dependent on the degrees of freedom with momenta close to the renormalization
  []
 
 [3]
-Overfull \hbox (0.48666pt too wide) in paragraph at lines 176--179
+Overfull \hbox (0.48666pt too wide) in paragraph at lines 177--180
 \T1/XCharter-TLF/m/n/10.95 First, let us notice that the entire expression inside trace can be expressed as a $[] []$,
  []
 
