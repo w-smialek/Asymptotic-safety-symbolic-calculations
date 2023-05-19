@@ -12,6 +12,7 @@
 \usepackage{mathtools}
 \usepackage{blindtext} 
 \usepackage{geometry}
+\usepackage{graphicx}
 \usepackage{amssymb}
 \usepackage{tikz-cd}
 \usepackage{lscape}
@@ -55,6 +56,35 @@ One should not be surprised, if at scales above $E_p$ Standard Model exhibits in
 Given the requirements of compatibility with SM and predictivity (above the Planck scale), a good criterion/test
 for any theory of quantum gravity should be for it to resolve the problems that arise in SM due to absence of
 gravitational interaction. 
+One of the big issues of the SM is the quantum triviality problem for the electroweak $U(1)$ gauge coupling and
+the scalar higgs boson quartic coupling.
+In the pure electroweak theory, one loop $\beta$-function of the abelian gauge \cite{betaf scalar} \cite{betaf chiral lagrangian} is:% Ref higgs paper instead
+\begin{equation}
+    \beta_{g_Y} = \beta_{g_Y}^{(3)} g_Y^3 = \frac{41}{6} \frac{g_Y^3}{16 \pi^2}
+\end{equation}
+This predicts a running of gauge coupling that would diverge at a momentum scale $\mu = \left(2 g_{Y\text{obs}}^2 \ \beta_{g_Y}^{(3)} \right)^{-1} $.
+Conversely, taking any arbitrarily high value of the bare coupling, the only possible value of $g_{Y\text{obs}}$ should be 0, making
+the theory trivial, i.e. non-interacting.
+% In analogy to the QED fine structure constant, we define a dimensionless abelian gauge paramter as $\alpha_Y = g_Y^2 / 4 \pi$.
+% It is related to the ordinary $\alpha_\text{QED}$ by a Weinberg angle and its value is known very precisely
+% \begin{equation}
+%     \alpha_Y = \frac{\alpha_\text{QED}}{\cos^2 \theta_W} = 0.0093905(30) % Two references to alpha and th_w, ogarnąć propagację niepewności
+% \end{equation}
+\begin{figure}[H]
+    \includegraphics[width=1\textwidth]{../plotr.jpg}
+    \caption{Running of the abelian gauge parameter $\alpha_Y = \frac{g_Y^2}{4\pi}$. Observed value $\alpha_{Y\text{obs}}$ is taken from [refs]. 
+    Landau Pole marked at $\mu \approx 10^{42.5}$}
+    \label{boxes}
+\end{figure} 
+Taking an electron mass as a reference scale, the location of abelian coupling landau pole will be of order $\Lambda \sim 10^{48} \ \text{eV}$, well above the Planck scale.
+
+Similarly, quartic self-interaction of higgs field ...
+(I tutaj napisać jak AS to rozwiązało i przewidziało masę higgsa więc dobry trop i wogle)
+% I dopisać że do przewidzenia masy higgsa potrzeba żeby wkład od grawitacji do U(1) był ujemny, co my tutaj pokazujemy
+
+% For the abelian gauge coupling $g$ with vanishing
+% canonical dimension, the Ward-Takahashi identities imply a relation between the $\beta$-function of the coupling and the anomalous
+% dimension $\eta_A$ of the gauge field. In the pure electroweak theory 
 % Landau Pole
 % Landau Pole for abelian hypercharge - figure
 % + AS resolution of higgs triviality
@@ -65,6 +95,12 @@ gravitational interaction.
 
 \section{Discussion of literature etc.}
 
+As the Landau Pole of abelian coupling is situated well above the Planck scale, one can conjecture that
+its existence is due to the abence of quantum gravitational effects in the theory.
+Even without postulating a UV-complete gravitational theory, it is beneficial to investigate
+the impact of graviton on the running of abelian coupling [Wilczek ... czy coś]
+
+
 % QED is a perturbatively renormalizable theory, i.e. it allows to calculate probability amplitudes for physical processes
 % up to an arbitrary order in couplings.
 %% One loop beta function of qed
@@ -73,7 +109,8 @@ gravitational interaction.
 % Wilczek paper
 %% Qualitative difference
 
-\section*{Obtained results etc.}
+\section{Obtained results etc.}
+
 
 \subsection{The Functional Renormalization Group Equation}
 
@@ -141,7 +178,7 @@ The coefficients in EAA derivative with respect to $t$ are therefore simply the 
 \end{equation}
 The beta functions may depend on all the couplings, as well as the renormalization scale $k$.
 They can be extracted from $\frac{d \Gamma_k}{dt}$ via a suitable projection operator. 
-The $\frac{d \Gamma_k}{dt}$ is called the beta functional. This functional, as can be shown, is finite.
+The $\frac{d \Gamma_k}{dt}$ is called the beta functional. This functional, as can be shown, is finite[refs].
 This is because the beta functional can be viewed as a difference between effective actions with infinitesimally
 different cutoffs. The UV divergences in the difference will cancel, and what remains is the finite rest
 dependent on the degrees of freedom with momenta close to the renormalization scale.
@@ -186,6 +223,46 @@ the number of $\mathcal{F}$-terms
     \frac{d \Gamma_k}{dt} = \frac{1}{2} \operatorname{Tr} \left[ \widetilde{\partial_t} \log{\left(\mathcal{P}+\mathcal{F}\right)} \right] = \frac{1}{2} \operatorname{Tr} \left[ \widetilde{\partial_t} \left(\log{\mathcal{P}} + \log{(1+\mathcal{P}^{-1}\mathcal{F})}\right) \right] \\ =  \frac{1}{2} \operatorname{Tr} \left[ \widetilde{\partial_t} \log{\mathcal{P}} \right] + \frac{1}{2} \sum_{n=1}^{\infty} \frac{(-1)^{n-1}}{n} \operatorname{Tr}\left[\widetilde{\partial_t}\left(\mathcal{P}^{-1}\mathcal{F}\right)^n\right]
 \end{gather}
 
+\subsection{xx}
+
+A great advantage of functional renormalization group is that in principle, if all terms
+allowed by the symmetries are included in the effective action, one obtains a set of first order
+differential equations that contain full information about the RG flow in the theory, without referring to the perturbative methods.
+In practice, that would mean dealing with infinitely many differential equations. The only way
+to extract actual predictions from the FRGE is to truncate effective action to a finite number
+of terms. If beta functions computed in given truncation changes little after adding higher terms to the EA,
+it is a good argument for considering the truncation a good approximation of the full theory. (...)
+\begin{gather}
+    \mathcal{L} = \mathcal{L}_{EH} + \mathcal{L}_A + \mathcal{L}_{GGF} + \mathcal{L}_{AGF} \\
+    \mathcal{L}_{EH} = \sqrt{\mathbf{g}} \ \frac{k^2}{\kappa} \left( k^2 \Lambda - R\right) \\
+    \mathcal{L}_A = \sqrt{\mathbf{g}} \ Z_A \frac{1}{4} F^{\mu\nu} F_{\mu\nu} \\
+    \mathcal{L}_{AGF} = \sqrt{\mathbf{g}} \ Z_A \frac{1}{2 \alpha_A} \left( \partial_\mu A^\mu \ \partial_\nu A^\nu \right) \\
+    \mathcal{L}_{GGF} = \sqrt{\mathbf{g}} \ Z_h \frac{1}{32 \pi \alpha_h} \left(\partial_\mu h^{\mu\nu} - \frac{1+\beta_h}{4} \partial^\nu h^\rho_{\; \rho} \right)^2\\
+\end{gather}
+\begin{equation}
+    \Gamma[\mathbf{\Phi}] = \int d^4 x \ \mathcal{L} + w_2 (F^{\mu\nu} F_{\mu\nu})^2
+\end{equation}
+%% Describe action and truncation
+Beta functions extracted from the full EA cannot depend on the choice of gauge parameters.
+Introducing truncations, however, means that gauge dependence may not cancel entirely (...).
+%% ?? Że będziemy sprawdzać zależność od gauge parameter ??
+Another in principle redundant choice is a form of the regulator. For two different regulators,
+$\Gamma_k$ will include field modes weighted in a different manner, so this choice simply
+sets the definition of the object $\Gamma_k$. 
+This means, that beta functions computed with different regulators will differ, but
+if the regulator is picked in such way that it executes a proper IR cutoff,
+it will always give the same results in the physical limit $k \rightarrow 0$. There should also be no
+qualitative differences in the behaviour of RG flow depending on the regulators.
+%% Coś o tym że to będziemy tu sprawdzać
+
+
 \section*{Summary}
+
+\begin{thebibliography}{9}
+    \bibitem{betaf scalar}
+    Brod, J., Polonsky, Z. Two-loop beta function for complex scalar electroweak multiplets. J. High Energ. Phys. 2020, 158 (2020). https://doi.org/10.1007/JHEP09(2020)158
+    \bibitem{betaf chiral lagrangian}
+    Buchalla, G., Catà, O., Celis, A., Knecht, M., Krause, C., Complete one-loop renormalization of the Higgs-electroweak chiral Lagrangian. Nuclear Phys. B 2018, 928 (93). https://doi.org/10.1016/j.nuclphysb.2018.01.009
+\end{thebibliography}
 
 \end{document}

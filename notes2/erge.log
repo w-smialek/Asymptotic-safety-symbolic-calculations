@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.11.2)  14 MAY 2023 20:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.11.2)  19 MAY 2023 13:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -988,12 +988,12 @@ File: tikzlibraryshapes.geometric.code.tex 2020/10/01 v3.1.6a (3.1.6a)
  (c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.geometric.code.tex
 File: pgflibraryshapes.geometric.code.tex 2020/10/01 v3.1.6a (3.1.6a)
 )) (c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/tex/latex/tikz-feynman/tikzfeynman.keys.code.tex)))
-LaTeX Font Info:    Trying to load font information for T1+XCharter-TLF on input line 39.
+LaTeX Font Info:    Trying to load font information for T1+XCharter-TLF on input line 40.
  (c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/tex/latex/xcharter/T1XCharter-TLF.fd
 File: T1XCharter-TLF.fd 2017/06/25 (autoinst) Font definitions for T1/XCharter-TLF.
 )
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 39.
+(Font)              scaled to size 10.95pt on input line 40.
  (c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
 \l__kernel_color_stack_int=\count336
@@ -1001,30 +1001,30 @@ File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
 ) (c:/Users/Wojtek/Desktop/Asymptotic-safety/notes2/erge.aux)
 \openout1 = `erge.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 39.
-LaTeX Font Info:    Trying to load font information for LY1+ptm on input line 39.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 40.
+LaTeX Font Info:    Trying to load font information for LY1+ptm on input line 40.
  (c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/tex/latex/ly1/ly1ptm.fd
 File: ly1ptm.fd 2001/02/01 font definitions for LY1/ptm using Berry names.
 )
-LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    ... okay on input line 40.
  (c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count337
@@ -1078,7 +1078,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 39.
+Package hyperref Info: Link coloring OFF on input line 40.
 (c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
  (c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/tex/latex/refcount/refcount.sty
@@ -1088,9 +1088,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count343
 )
-LaTeX Info: Redefining \ref on input line 39.
-LaTeX Info: Redefining \pageref on input line 39.
-LaTeX Info: Redefining \nameref on input line 39.
+LaTeX Info: Redefining \ref on input line 40.
+LaTeX Info: Redefining \pageref on input line 40.
+LaTeX Info: Redefining \nameref on input line 40.
  (c:/Users/Wojtek/Desktop/Asymptotic-safety/notes2/erge.out) (c:/Users/Wojtek/Desktop/Asymptotic-safety/notes2/erge.out)
 \@outlinefile=\write5
 \openout5 = `erge.out'.
@@ -1101,76 +1101,92 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 
 
-Package tikz-feynman Warning: LuaTeX is required if you wish to have vertices automatically placed. You can disable this warning by setting /tikzfeynman/warn luatex=false on input line 39.
+Package tikz-feynman Warning: LuaTeX is required if you wish to have vertices automatically placed. You can disable this warning by setting /tikzfeynman/warn luatex=false on input line 40.
 
 
-Package tikz-feynman Warning: Consider loading TikZ-Feynman with \usepackage[compat=1.1.0]{tikz-feynman} so that you can be warned if TikZ-Feynman changes. on input line 39.
+Package tikz-feynman Warning: Consider loading TikZ-Feynman with \usepackage[compat=1.1.0]{tikz-feynman} so that you can be warned if TikZ-Feynman changes. on input line 40.
 
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 17.28pt on input line 41.
+(Font)              scaled to size 17.28pt on input line 42.
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 41.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 41.
+(Font)              scaled to size 12.0pt on input line 42.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 42.
 (c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 41.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 42.
  (c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/it' will be
-(Font)              scaled to size 12.0pt on input line 41.
+(Font)              scaled to size 12.0pt on input line 42.
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 14.4pt on input line 42.
+(Font)              scaled to size 14.4pt on input line 43.
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/b/n' will be
-(Font)              scaled to size 14.4pt on input line 42.
+(Font)              scaled to size 14.4pt on input line 43.
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 52.
+(Font)              scaled to size 8.0pt on input line 53.
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 6.0pt on input line 52.
+(Font)              scaled to size 6.0pt on input line 53.
 
-Overfull \hbox (14.4346pt too wide) in paragraph at lines 45--61
+Overfull \hbox (14.4346pt too wide) in paragraph at lines 46--62
 \T1/XCharter-TLF/m/n/10.95 gravity should be for it to resolve the problems that arise in SM due to absence of gravitational
  []
 
+<../plotr.jpg, id=29, 650.43pt x 433.62pt>
+File: ../plotr.jpg Graphic file (type jpg)
+<use ../plotr.jpg>
+Package pdftex.def Info: ../plotr.jpg  used on input line 74.
+(pdftex.def)             Requested size: 418.25368pt x 278.83916pt.
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/b/n' will be
-(Font)              scaled to size 12.0pt on input line 78.
-LaTeX Font Info:    Font shape `T1/XCharter-TLF/b/n' will be
-(Font)              scaled to size 10.95pt on input line 80.
+(Font)              scaled to size 10.95pt on input line 76.
 [1
 
 {c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (28.16058pt too wide) in paragraph at lines 122--124
+LaTeX Font Info:    Font shape `T1/XCharter-TLF/b/n' will be
+(Font)              scaled to size 12.0pt on input line 115.
+ [2 <c:/Users/Wojtek/Desktop/Asymptotic-safety/notes2/../plotr.jpg>] [3]
+Overfull \hbox (28.16058pt too wide) in paragraph at lines 159--161
 \T1/XCharter-TLF/m/n/10.95 Motivation for introducing EAA will become clear when we study the functional renormalization
  []
 
-[2]
-Overfull \hbox (21.06165pt too wide) in paragraph at lines 141--148
-\T1/XCharter-TLF/m/n/10.95 the finite rest dependent on the degrees of freedom with momenta close to the renormalization
- []
-
-[3]
-Overfull \hbox (0.48666pt too wide) in paragraph at lines 177--180
+[4]
+Overfull \hbox (0.48666pt too wide) in paragraph at lines 214--217
 \T1/XCharter-TLF/m/n/10.95 First, let us notice that the entire expression inside trace can be expressed as a $[] []$,
  []
 
-[4] (c:/Users/Wojtek/Desktop/Asymptotic-safety/notes2/erge.aux)
+[5]
+Overfull \hbox (6.27814pt too wide) in paragraph at lines 244--257
+\T1/XCharter-TLF/m/n/10.95 Beta functions extracted from the full EA cannot depend on the choice of gauge parameters.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 263--264
+[]\T1/XCharter-TLF/m/n/10.95 Brod, J., Polonsky, Z. Two-loop beta function for complex scalar
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 263--264
+\T1/XCharter-TLF/m/n/10.95 electroweak multiplets. J. High Energ. Phys. 2020, 158 (2020).
+ []
+
+[6] (c:/Users/Wojtek/Desktop/Asymptotic-safety/notes2/erge.aux)
 Package rerunfilecheck Info: File `erge.out' has not changed.
-(rerunfilecheck)             Checksum: DABF6B7DA808F84590F3101735276EF1;212.
+(rerunfilecheck)             Checksum: 82663F0E9DDE2425789A45225D58622D;319.
  ) 
 Here is how much of TeX's memory you used:
- 25513 strings out of 479485
- 521370 string characters out of 5861561
- 852895 words of memory out of 5000000
- 41937 multiletter control sequences out of 15000+600000
- 607375 words of font info for 73 fonts, out of 8000000 for 9000
+ 25554 strings out of 479485
+ 521929 string characters out of 5861561
+ 851901 words of memory out of 5000000
+ 41957 multiletter control sequences out of 15000+600000
+ 608304 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 98i,11n,115p,581b,378s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/enc/dvips/xcharter/xch_uy5hgr.enc}<c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/xcharter/XCharter-Bold.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/xcharter/XCharter-Italic.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/xcharter/XCharter-Roman.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on c:/Users/Wojtek/Desktop/Asymptotic-safety/notes2/erge.pdf (4 pages, 259729 bytes).
+ 98i,11n,115p,581b,394s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/enc/dvips/xcharter/xch_uy5hgr.enc}<c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/xcharter/XCharter-Bold.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/xcharter/XCharter-Italic.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/xcharter/XCharter-Roman.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on c:/Users/Wojtek/Desktop/Asymptotic-safety/notes2/erge.pdf (6 pages, 743239 bytes).
 PDF statistics:
- 124 PDF objects out of 1000 (max. 8388607)
- 103 compressed objects within 2 object streams
- 30 named destinations out of 1000 (max. 500000)
- 37 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 163 PDF objects out of 1000 (max. 8388607)
+ 138 compressed objects within 2 object streams
+ 45 named destinations out of 1000 (max. 500000)
+ 58 words of extra memory for PDF output out of 10000 (max. 10000000)
 
