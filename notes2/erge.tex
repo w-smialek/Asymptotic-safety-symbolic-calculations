@@ -53,7 +53,7 @@ as an effective field theory.
 Standard Model, however, certainly is not a complete theory of physical reality. It does not include a description
 of gravity and above the Planck scale $E_p \approx 10^{19} \ \text{GeV}$, due to quantum effects of gravity,
 predictions of both the SM and Einstein's theory of gravity are not expected to apply.
-One should not be surprised, if at scales above $E_p$ Standard Model exhibits internal inconsistencies.
+One should then not be surprised, if at scales above $E_p$ Standard Model exhibits internal inconsistencies.
 Given the requirements of compatibility with SM and predictive power above the Planck scale, a criterion
 for any good theory of quantum gravity should be for it to resolve the problems that arise in SM due to absence of
 gravitational interaction.
@@ -235,7 +235,7 @@ differential equations containing full information about the RG flow in the theo
 For typical theories, that means an infinite set of coupled differential equations.
 What allows calculations to be feasible, is considering only a manageable subset of terms in the effective action, the so-called truncation method.
 For a good choice of truncation, adding subsequent terms beyond this subset will contribute to beta functions in a negligible way
-and the results will be a good approximation of the actual behaviour of the full theory.
+and the results will be a good approximation of the actual behaviour of the theory.
 
 In the present calculations, the following truncation of effective action is assumed:
 \begin{equation}
@@ -323,10 +323,21 @@ Which reduces (\ref*{inverseA}) and (\ref*{inverseG}) to a set of linear equatio
 After solving it, a final form of the regulated photon propagator agrees with the well known result, with the additional insertion of the regulator in field renormalization.
 Expression for the regulated graviton propagator is given in (Apx).
 
-Interaction part of effective action $\Gamma$, due to nonlinear functions of metric perturbation field will in general
-contain n-graviton and n-graviton - two-photon interactions for any $n>2$. Yet, our goal is not to compute the entire functional.
-Extracting information about running of photon wavefunction will require computing only 
-\includegraphics[width=1\textwidth]{figures/drawing.png}
+Interaction part of effective action $\Gamma$, due to nonlinear functions of metric perturbation field, will
+be the infinite series of interactions with two photon fields and any number of graviton fields. Yet, our goal is not to compute the entire functional.
+(Let us note, that the fact which variational derivatives $\delta h$ and $\delta A$ of interaction term are taken, determines what
+elements of $\mathcal{P}^{-1}$ later multiply it). In the diagramatical representation, this is equivalent to the fact that in any effective vertex two of the external legs are opened to form a loop,
+while the rest is left uncontracted. This fact can be easily understood by representing the product $\mathcal{P}^{-1} \mathcal{F}$ diagramatically
+\begin{figure}[H]
+    \includegraphics[width=1\textwidth]{figures/drawing.png}
+    \caption*{}
+\end{figure}
+Where a red line at the end of vertex leg denotes the functional derivative with respect to the corresponding field.
+
+... 
+A projection operator (jak go nazwałem wyżej) will then annihilate all terms not originating from diagrams with two external photon legs.
+As can be seen, the only vertices that may form such diagrams come from terms of the form $\delta_{A}\delta_h \int c \cdot AAh$ and $\delta_h \delta_h \int c \cdot AAhh$
+
 
 % A second functional derivative in the FRGE implies, that it has a one-loop structure.
 
