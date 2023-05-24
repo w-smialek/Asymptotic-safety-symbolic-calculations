@@ -25,6 +25,7 @@
 \usepackage{pbox}
 \usepackage{tikz}
 \usepackage{tikz-feynman}
+\usepackage{svg}
 
 \setlength{\parindent}{15pt} 
 
@@ -42,20 +43,20 @@
 
 \section*{Introduction}
 
-\section{Standard model etc.}
+\section{Standard model ...}
 The Standard Model of particle physics is a unified description of all quantum fields observed in physics. 
 It strives to predict all the phenomena observed at microscopic scales while maintaining theoretical
 self-consistency and certain mathematical aesthetics. The predictive power of Standard Model, with its most
 famous examples like precision tests of electron anomalous magnetic moment or the existence of Higgs' boson,
 makes it ungrounded to postulate a fundamental physical theory that would not reduce to SM in the suitable limit, at least
 as an effective field theory.
-Standard Model, however, certainly is not a complete theory of physical reality, as it does not include a description
-of gravity. Above the Planck scale $E_p \approx 10^{19} \ \text{GeV}$ quantum effects of gravity are expected to dominate
-and predictions of both the SM and Einstein's theory of gravity are not expected to apply.
+Standard Model, however, certainly is not a complete theory of physical reality. It does not include a description
+of gravity and above the Planck scale $E_p \approx 10^{19} \ \text{GeV}$, due to quantum effects of gravity,
+predictions of both the SM and Einstein's theory of gravity are not expected to apply.
 One should not be surprised, if at scales above $E_p$ Standard Model exhibits internal inconsistencies.
-Given the requirements of compatibility with SM and predictivity (above the Planck scale), a good criterion/test
-for any theory of quantum gravity should be for it to resolve the problems that arise in SM due to absence of
-gravitational interaction. 
+Given the requirements of compatibility with SM and predictive power above the Planck scale, a criterion
+for any good theory of quantum gravity should be for it to resolve the problems that arise in SM due to absence of
+gravitational interaction.
 One of the big issues of the SM is the quantum triviality problem for the electroweak $U(1)$ gauge coupling and
 the scalar higgs boson quartic coupling.
 In the pure electroweak theory, one loop $\beta$-function of the abelian gauge \cite{betaf scalar} \cite{betaf chiral lagrangian} is:% Ref higgs paper instead
@@ -78,8 +79,10 @@ the theory trivial, i.e. non-interacting.
 \end{figure} 
 Taking an electron mass as a reference scale, the location of abelian coupling landau pole will be of order $\Lambda \sim 10^{48} \ \text{eV}$, well above the Planck scale.
 
-Similarly, quartic self-interaction of higgs field ...
-(I tutaj napisać jak AS to rozwiązało i przewidziało masę higgsa więc dobry trop i wogle)
+Similarly, quartic self-interaction of higgs field theoretically may exhibit a pole at a finite momentum scale.
+Existence of both poles remains an open question, but a theory containing any such singularity cannot be fundamental.
+
+% (I tutaj napisać jak AS to rozwiązało i przewidziało masę higgsa więc dobry trop i wogle)
 % Wspomnieć że jeżeli biegun landaua zostanie, to nasz model musi być no najwyżej teorią efektywną
 % I dopisać że do przewidzenia masy higgsa potrzeba żeby wkład od grawitacji do U(1) był ujemny, co my tutaj pokazujemy
 
@@ -94,7 +97,7 @@ Similarly, quartic self-interaction of higgs field ...
 % Grand unification vs brak rozpadu protonu i prospects
 % Alternatywa dla potrzeby gut - częścią tego istnienie fixed point of abelian coupling przy dodaniu grawitacji
 
-\section{Asymptotic safety etc.}
+\section{Asymptotic safety ...}
 
 % As the Landau Pole of abelian coupling is situated well above the Planck scale, one can conjecture that
 % its existence is due to the abence of quantum gravitational effects in the theory.
@@ -110,7 +113,7 @@ Similarly, quartic self-interaction of higgs field ...
 % Wilczek paper
 %% Qualitative difference
 
-\section{Obtained results etc.}
+\section{Obtained results ...}
 
 
 \subsection{The Functional Renormalization Group Equation}
@@ -224,29 +227,136 @@ the number of $\mathcal{F}$-terms
     \frac{d \Gamma_k}{dt} = \frac{1}{2} \operatorname{Tr} \left[ \widetilde{\partial_t} \log{\left(\mathcal{P}+\mathcal{F}\right)} \right] = \frac{1}{2} \operatorname{Tr} \left[ \widetilde{\partial_t} \left(\log{\mathcal{P}} + \log{(1+\mathcal{P}^{-1}\mathcal{F})}\right) \right] \\ =  \frac{1}{2} \operatorname{Tr} \left[ \widetilde{\partial_t} \log{\mathcal{P}} \right] + \frac{1}{2} \sum_{n=1}^{\infty} \frac{(-1)^{n-1}}{n} \operatorname{Tr}\left[\widetilde{\partial_t}\left(\mathcal{P}^{-1}\mathcal{F}\right)^n\right]
 \end{gather}
 
-\subsection{xx}
+\subsection{Calculations}
 
-A great advantage of functional renormalization group is that in principle, if all terms
+A great advantage of functional renormalization group is that, if all terms
 allowed by the symmetries are included in the effective action, one obtains a set of first order
-differential equations that contain full information about the RG flow in the theory, without referring to the perturbative methods.
-In practice, that would mean dealing with infinitely many differential equations. The only way
-to extract actual predictions from the FRGE is to truncate effective action to a finite number
-of terms. If beta functions computed in given truncation changes little after adding higher terms to the EA,
-it is a good argument for considering the truncation a good approximation of the full theory. (...)
+differential equations containing full information about the RG flow in the theory, without referring to the perturbative methods.
+For typical theories, that means an infinite set of coupled differential equations.
+What allows calculations to be feasible, is considering only a manageable subset of terms in the effective action, the so-called truncation method.
+For a good choice of truncation, adding subsequent terms beyond this subset will contribute to beta functions in a negligible way
+and the results will be a good approximation of the actual behaviour of the full theory.
+
+In the present calculations, the following truncation of effective action is assumed:
+\begin{equation}
+    \Gamma = \int d^4 x \left( \mathcal{L}_{EH} + \mathcal{L}_A + \mathcal{L}_{GGF} + \mathcal{L}_{AGF} \right) \\
+\end{equation}
+The gravitational sector consists of the Einstein - Hilbert action with a cosmological constant $\Lambda$ and a gravitational gauge fixing term
 \begin{gather}
-    \mathcal{L} = \mathcal{L}_{EH} + \mathcal{L}_A + \mathcal{L}_{GGF} + \mathcal{L}_{AGF} \\
-    \mathcal{L}_{EH} = \sqrt{\mathbf{g}} \ \frac{k^2}{\kappa} \left( k^2 \Lambda - R\right) \\
-    \mathcal{L}_A = \sqrt{\mathbf{g}} \ Z_A \frac{1}{4} F^{\mu\nu} F_{\mu\nu} \\
-    \mathcal{L}_{AGF} = \sqrt{\mathbf{g}} \ Z_A \frac{1}{2 \alpha_A} \left( \partial_\mu A^\mu \ \partial_\nu A^\nu \right) \\
+    \mathcal{L}_{EH} = \sqrt{\mathbf{g}} \ \frac{k^2}{\kappa} \left( k^2 \Lambda - R(\partial)\right) \\
     \mathcal{L}_{GGF} = \sqrt{\mathbf{g}} \ Z_h \frac{1}{32 \pi \alpha_h} \left(\partial_\mu h^{\mu\nu} - \frac{1+\beta_h}{4} \partial^\nu h^\rho_{\; \rho} \right)^2\\
 \end{gather}
-\begin{equation}
-    \Gamma[\mathbf{\Phi}] = \int d^4 x \ \mathcal{L} + w_2 (F^{\mu\nu} F_{\mu\nu})^2
-\end{equation}
-%% Describe action and truncation
-Although FRGE is an exact equation governing the scale dependence of action, introducing truncations
-means that we obtain only a certain approximation. The quality of that approximation can be checked by
+Whereas the gauge sector contains a kinetic term of the photon, effective four-photon interaction and a gravitational gauge fixing term
+\begin{gather}
+    \mathcal{L}_A =  \sqrt{\mathbf{g}} \left( Z_A \frac{1}{4} F^{\mu\nu} F_{\mu\nu} + w_2 (F^{\mu\nu} F_{\mu\nu})^2 \right)\\
+    \mathcal{L}_{AGF} = \sqrt{\mathbf{g}} \ Z_A \frac{1}{2 \alpha_A} \left( \partial_\mu A^\mu \ \partial_\nu A^\nu \right) \\
+\end{gather}
 
+To extract scale dependence of the couplings, we employ the functional renormalization group equation.
+The scheme used for the calculation of beta functions amounts to three steps: finding expressions for effective vertices and
+regulated propagators, calculating relevant feynman diagrams and projecting the result onto the given coupling, thus obtaining the beta function.
+\subsubsection{Projectors and the beta functions}
+\dots
+\subsubsection{Effective vertices and propagators}
+The matrices $\mathcal{P}$ and $\mathcal{F}$ from the expansion in equation () will take form:
+\begin{gather}
+    \mathcal{P} = 
+    \left. \begin{pmatrix}
+    \frac{\delta^2 \Gamma_k}{\delta A_\mu \delta A_\nu}& 0\\
+    0 & \frac{\delta^2 \Gamma_k}{\delta h_{\rho\sigma} \delta h_{\tau\kappa}}
+    \end{pmatrix} \right|_{A,h=0} \\
+    \mathcal{F} = 
+    \begin{pmatrix}
+        \frac{\delta^2 \Gamma_k}{\delta A_\mu \delta A_\nu}& \frac{\delta^2 \Gamma_k}{\delta A_\mu \delta h_{\rho\sigma}}\\
+        \frac{\delta^2 \Gamma_k}{\delta h_{\rho\sigma} \delta A_\mu} & \frac{\delta^2 \Gamma_k}{\delta h_{\rho\sigma} \delta h_{\tau\kappa}}
+    \end{pmatrix} - \mathcal{P}
+\end{gather}
+Diagonal elements of $\mathcal{P}$ are the inverses of the regulated photon and graviton propagators.
+The gauge sector of effective action is bilinear in gauge fields and the nonlinear term $\sqrt{\mathbf{g}}$ is
+a constant with respect to functional derivative. After the straightforward use of derivative and setting
+remaining fields equal to zero, we obtain
+\begin{equation}
+    \left(\mathcal{P}^{1 1}\right)^{\mu\nu} = \left(Z_{A} + \operatorname{RegA}_k(p^2)\right) \left( g^{\mu\nu} p^2 - \left(1 - \frac{1}{\alpha_A}\right) p^\mu p^\nu \right)
+\end{equation}
+% WCZEŚNIEJ O LINEAR SPLIT I ŻE WOKÓŁ FLAT BACKGROUND
+The gravitational sector contains nonlinear functions $\sqrt{\mathbf{g}}$ and $R(\partial)$.
+These can be expanded around the flat minkowskian background as a power series in the metric perturbation field:
+\begin{gather}
+    \sqrt{\mathbf{g}} = 1 +  \frac{1}{2} h + \left( \frac{1}{8} h^2 - \frac{1}{4} h_{\mu\nu} h^{\mu\nu} \right) + \mathcal{O}(h^3) \\
+    R(\partial) = \partial_\mu \partial_\nu h^{\mu\nu} - \partial_\mu \partial^\mu h + \left( h^{\mu\nu} \left(\partial_\mu \partial_\nu h + \partial_\mu \partial^\mu h_{\mu\nu} - 2 \partial_\nu \partial_\rho h_\mu^{\; \rho} \right) \phantom{\frac{1}{2}} \right. \\
+    +  \left. \partial^\mu h \partial_\rho h_\nu^{\; \rho} + \frac{3}{4} \partial_\rho h_{\mu\nu} \partial^\rho h^{\mu\nu} - \partial_\mu h^{\mu\nu} \partial_\rho h_\nu^{\;\rho} - \frac{1}{2} \partial^\rho h^{\mu\nu} \partial_\nu h_{\mu\rho} - \frac{1}{4} \partial_\mu h \partial^\mu h \right) + \mathcal{O}(h^3)
+\end{gather}
+In the calculation of $\mathcal{P}$ matrix, terms that are not quadratic in fields will not contribute, after we set any fields remaining after derivation to zero.
+These higher terms are responsible for the nonlinear interaction of graviton. The perturbed action, from which we extract expression
+for the graviton propagator is given in (Apx). The gauge fixing term is not expanded in $h$ field (wyjaśnienie dlaczego)
+Functional derivative performed on the action (Apx) yields the expression for
+$\mathcal{P}^{2 2}$, given in full form in (Apx).
+Propagators are the tensorial inverses of the expressions on the diagonal of $\mathcal{P}$ matrix. The tensorial inverse
+for the second- and fourth-order tensors is given by
+\begin{gather}
+    \left(\mathcal{P}^{1 1}\right)^{\mu}_{ \; \rho} \ \operatorname{PropA}^{\rho \nu}  = g_{\mu \nu} \label{inverseA}\\
+    \left(\mathcal{P}^{2 2}\right)^{\mu\nu}_{ \; \; \rho \sigma} \ \operatorname{PropG}^{\rho \sigma \tau \kappa} = \frac{1}{2} \left( g^{\mu\nu} g^{\tau\kappa} + g^{\mu\kappa} g^{\nu\tau} \right) \label{inverseG}
+\end{gather}
+The task of finding tensorial inverse can be greatly simplified by noticing, that only certain combinations of tensor
+products of four-momentum and metric, allowed by the symmetry and Lorentz invariance, can enter the propagator.
+This lets us write the ansatz
+\begin{gather}
+    \operatorname{PropA}^{\mu \nu} = b_1 p^{\mu} p^{\nu} + b^2 g^{\mu\nu}\\
+    \operatorname{PropG}^{\mu \nu \rho \sigma} =
+    c_1 \cdot p^{\mu} p^{\nu}
+   p^{\rho} p^{\sigma} + c_2 \cdot
+   (g^{\rho \sigma} p^{\mu}
+   p^{\nu} + g^{\mu,\nu}
+   p^{\rho} p^{\sigma})+c_3 \cdot
+   (g^{\mu \sigma} g^{\nu\rho} + g^{\mu \rho}
+   g^{\nu\sigma})+ \\ c_4 \cdot (g^{\nu\sigma}
+   p^{\mu}
+   p^{\rho}+g^{\mu\sigma}
+   p^{\nu}
+   p^{\rho} +g^{\nu\rho}
+   p^{\mu}
+   p^{\sigma}+g^{\mu\rho}
+   p^{\nu} p^{\sigma})+c_5 \cdot
+   g^{\mu \nu} g^{\rho\sigma}
+\end{gather}
+Which reduces (\ref*{inverseA}) and (\ref*{inverseG}) to a set of linear equations for $\{b_i\}$ and $\{c_i\}$.
+After solving it, a final form of the regulated photon propagator agrees with the well known result, with the additional insertion of the regulator in field renormalization.
+Expression for the regulated graviton propagator is given in (Apx).
+
+Interaction part of effective action $\Gamma$, due to nonlinear functions of metric perturbation field will in general
+contain n-graviton and n-graviton - two-photon interactions for any $n>2$. Yet, our goal is not to compute the entire functional.
+Extracting information about running of photon wavefunction will require computing only 
+\includegraphics[width=1\textwidth]{figures/drawing.png}
+
+% A second functional derivative in the FRGE implies, that it has a one-loop structure.
+
+% Our effective action, expanded to second order in metric perturbation field will 
+
+% As we've argued in the previous section, parts of the $\mathcal{F}$ matrix independent of gauge field $A^\mu$ will
+% not be projected onto its anomalous dimension. 
+
+%% Opisać "reguły feynmana" i że w tym języku interesować nas będą tylko 1PI poprawki do propagatora fotonu
+
+% In their power series expansion, only quadratic terms will be relevant to the propagator, the rest being responsible for the interaction.
+% Przy długich wyrażeniach odsyłać do appendixu
+
+\subsubsection{Calculation of feynman diagrams}
+\begin{figure}[H]
+    \includegraphics[width=1\textwidth]{./figures/diags.jpg}
+    \caption{Feynman diagrams contributing to the anomalous dimension of gauge field. Wavy line denotes a photon propagator
+    and the double straight line denotes the graviton propagator. A crossed circle denotes an insertion of the regulator.}
+    \label{diags}
+\end{figure} 
+
+
+% Using the $\mathcal{PF}$-expansion, right hand side of the equation can be represented as the sum of the
+% one loop diagrams. 
+% %% Projectors
+% We are interested in ones contributing to anomalous dimension of gauge field
+
+% Method is as follows. From the effective average action we calculate effective vertices and regulated two-point functions.
+% Through the analysis of their allowed tensor structures, we calculate inverses of two-point functions, i.e. propagators.
+% Expressions for the 
 
 Beta functions extracted from the full EA cannot depend on the choice of gauge parameters.
 Introducing truncations, however, means that gauge dependence may not cancel entirely (...).
