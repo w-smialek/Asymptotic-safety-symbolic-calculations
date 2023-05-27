@@ -72,7 +72,7 @@ the theory trivial, i.e. non-interacting.
 %     \alpha_Y = \frac{\alpha_\text{QED}}{\cos^2 \theta_W} = 0.0093905(30) % Two references to alpha and th_w, ogarnąć propagację niepewności
 % \end{equation}
 \begin{figure}[H]
-    \includegraphics[width=1\textwidth]{../plotr.jpg}
+    \includegraphics[width=1\textwidth]{./figures/plotr.jpg}
     \caption{Running of the abelian gauge parameter $\alpha_Y = \frac{g_Y^2}{4\pi}$. Observed value $\alpha_{Y\text{obs}}$ is taken from [refs]. 
     Landau Pole marked at $\mu \approx 10^{42.5}$}
     \label{boxes}
@@ -81,6 +81,8 @@ Taking an electron mass as a reference scale, the location of abelian coupling l
 
 Similarly, quartic self-interaction of higgs field theoretically may exhibit a pole at a finite momentum scale.
 Existence of both poles remains an open question, but a theory containing any such singularity cannot be fundamental.
+
+\textcolor{red}{(discussion of results outside asymptotic safety paradigm. Wilczek, pro and contra, etc.)} 
 
 % (I tutaj napisać jak AS to rozwiązało i przewidziało masę higgsa więc dobry trop i wogle)
 % Wspomnieć że jeżeli biegun landaua zostanie, to nasz model musi być no najwyżej teorią efektywną
@@ -99,48 +101,32 @@ Existence of both poles remains an open question, but a theory containing any su
 
 \section{Asymptotic safety ...}
 
-% As the Landau Pole of abelian coupling is situated well above the Planck scale, one can conjecture that
-% its existence is due to the abence of quantum gravitational effects in the theory.
-% Even without postulating a UV-complete gravitational theory, it is beneficial to investigate
-% the impact of graviton on the running of abelian coupling [Wilczek ... czy coś]
-
-
-% QED is a perturbatively renormalizable theory, i.e. it allows to calculate probability amplitudes for physical processes
-% up to an arbitrary order in couplings.
-%% One loop beta function of qed
-%% Discussion of landau pole
-%% General form in the presence of quantum gravity
-% Wilczek paper
-%% Qualitative difference
-
-\section{Obtained results ...}
-
-
 \subsection{The Functional Renormalization Group Equation}
 
-\subsubsection*{\centering Effective action}
+% \subsubsection*{\centering Effective action}
 
-In the traditional Wilsonian approach to renormalization, a single step of renormalization procedure consists of
-a functional integration of high-momentum fluctuations, followed by a rescaling of physical lengths and momenta, and
-renormalization of fields. All of this leaves the non-perturbed theory unchanged, affecting only the couplings.
-Before the rescaling and renormalization operations [we are dealing with] the so-called Wilsonian effective action ($S_{\text{eff}}$).
-It describes the behaviour of fields for the processes below certain energy scale $b\Lambda$, lower than the original cutoff $\Lambda$.
-$S_{\text{eff}}$ generally contains all operators with higer dimensions in fields and derivatives.
-These corrections (...) but they allow us to neglect field modes larger than $\mu = b\Lambda$ and deal only with non-divergent diagrams.
-The argument of $S_{\text{eff}}$ is still a quantum field, in the sense that the functional integral is performed over it. %It also,
+% In the traditional Wilsonian approach to renormalization, a single step of renormalization procedure consists of
+% a functional integration of high-momentum fluctuations, followed by a rescaling of physical lengths and momenta, and
+% renormalization of fields. All of this leaves the non-perturbed theory unchanged, affecting only the couplings.
+% Before the rescaling and renormalization operations [we are dealing with] the so-called Wilsonian effective action ($S_{\text{eff}}$).
+% It describes the behaviour of fields for the processes below certain energy scale $b\Lambda$, lower than the original cutoff $\Lambda$.
+% $S_{\text{eff}}$ generally contains all operators with higer dimensions in fields and derivatives.
+% These corrections (...) but they allow us to neglect field modes larger than $\mu = b\Lambda$ and deal only with non-divergent diagrams.
+% The argument of $S_{\text{eff}}$ is still a quantum field, in the sense that the functional integral is performed over it. %It also,
 % in some sense, loses information about the high-energy physics.
 
-The object, that we will call an effective action $\Gamma$ is different and should not be confused with $S_{\text{eff}}$.
-Let us start from the euclidean partition function for scalar field theory. The definition for other theories
-come as a straight-forward generalization.
-\begin{equation}
-    Z[j] = \int \mathcal{D}\phi \ e^{-S[\phi] + \int dx j \phi}
-\end{equation}
-The generating functional of connected Green's functions is defined as
-\begin{equation}
+The central object of the functional renormalization group is the effective average action.
+% The object, that we will call an effective action $\Gamma$ is different and should not be confused with $S_{\text{eff}}$.
+To introduce it, let us start from the scalar field theory. The definition for other theories come as a straight-forward generalization.
+Its euclidean partition function and the generating functional of connected Green's functions reads
+\begin{gather}
+    Z[j] = \int \mathcal{D}\phi \ e^{-S[\phi] + \int dx j \phi} \\
+% \end{equation}
+% % The generating functional of connected Green's functions is defined as
+% \begin{equation}
     W[j] = \log{Z[j]}
-\end{equation}
-The effective action functional is defined using the Legendre transformation of $W[j]$.
+\end{gather}
+The effective action functional is then defined using the Legendre transform of $W[j]$.
 \begin{equation}
     \Gamma[\phi_c] = W[j_\phi] - \int d^4 x j_\phi(x) \phi(x)
 \end{equation}
@@ -161,56 +147,72 @@ and subtracted from the final form of effective action. Explicitly, this new obj
     W_k[j] = \log{\int \mathcal{D}\phi \ e^{-S[\phi] - \Delta S_k[\phi] + \int dx j \phi}}\\
     \Gamma_k[\phi_c] = W_k[j_\phi] - \int d^4 x j_\phi(x) \phi(x) - \Delta S_k[\phi]
 \end{gather}
-Motivation for introducing EAA will become clear when we study the functional renormalization group
+Motivation for this definition of EAA will become clear when we study the functional renormalization group
 
-\subsubsection*{\centering Infrared regulator and the scheme dependence}
+% \subsubsection*{\centering Infrared regulator and the scheme dependence}
+\textcolor{red}{(Infrared regulator and the scheme dependence)}
+% \subsubsection*{\centering Beta functional and the functional renormalization group}
 
-\subsubsection*{\centering Beta functional and the functional renormalization group}
-
-The $\Gamma_k$ is IR-regulated, but still it is ill-defined, because of the UV divergences. 
+The $\Gamma_k$ is IR-regulated, but the UV divergences still cause it to be ill-defined. 
 However, in studying the scale dependence of couplings we will not use full EAA, 
 but its derivative with respect to $t = \log{k}$.
 We assume the theory space in which $\Gamma_k$ takes the form
 \begin{equation}
     \Gamma_k = \sum_i g_i(k) \ \mathcal{O}_i [\phi]
+    \label{gamma_decomp}
 \end{equation}
 Where $\mathcal{O}_i (\phi)$ are integrals of monomials of fields or positive powers of field derivatives 
 and $g_i(k)$ are scale-dependent couplings.
-The coefficients in EAA derivative with respect to $t$ are therefore simply the beta functions of corresponding operators
+The coefficients in the derivative $\partial_t \Gamma_k$ are therefore simply the beta functions of corresponding operators
 \begin{equation}
     \frac{d \Gamma_k}{dt} = \sum_i \frac{d g_i}{dt} \ \mathcal{O}_i [\phi] = \beta_i(g,k) \ \mathcal{O}_i [\phi]
 \end{equation}
 The beta functions may depend on all the couplings, as well as the renormalization scale $k$.
 They can be extracted from $\frac{d \Gamma_k}{dt}$ via a suitable projection operator. 
-The $\frac{d \Gamma_k}{dt}$ is called the beta functional. This functional, as can be shown, is finite[refs].
+The $\frac{d \Gamma_k}{dt}$ is called the beta functional and it is finite and well-defined [refs].
 This is because the beta functional can be viewed as a difference between effective actions with infinitesimally
-different cutoffs. The UV divergences in the difference will cancel, and what remains is the finite rest
+different cutoffs, where the UV divergences in the difference cancel and what remains is the finite rest
 dependent on the degrees of freedom with momenta close to the renormalization scale.
-
-Let us calculate the derivatives of $W_k$ and $\Delta S_k$ with respect to $t$
-\begin{gather}
-    \frac{d W_k}{dt} = \frac{d}{dt}\log{Z_k} = - \frac{1}{Z_k} \int \mathcal{D}\phi \ e^{-S[\phi] - \Delta S_k[\phi] + \int dx j \phi}  \cdot \frac{d \Delta S_k}{dt} \\
-    \frac{d \Delta S_k}{dt} = \frac{1}{2} \int d^4 x \ \phi \ \frac{d R_k}{dt} \ \phi
-\end{gather}
-This lets us write
+At the one loop level, the derivative of effective average action can be expressed as
 \begin{equation}
-    \frac{d \Gamma_k}{dt} = \frac{d \langle \Delta S_k \rangle}{dt} - \frac{d \Delta S_k }{dt} = \frac{1}{2} \operatorname{Tr} \left[ (\langle\phi\phi\rangle - \langle\phi\rangle^2) \cdot \frac{d R_k}{dt} \right]
+    \frac{d \Gamma_k^{(1)}}{dt} = \frac{1}{2} \operatorname{Tr} \left[ \left(\frac{\delta^2 S}{\delta \phi \delta \phi} + R_k\right)^{-1} \cdot \frac{d R_k}{dt} \right]
 \end{equation}
-Where $\operatorname{Tr}$ denotes ... and the $\langle\cdots\rangle$ - ...
-The expression $(\langle\phi\phi\rangle - \langle\phi\rangle^2)$ can be shown to be equal to $\frac{\delta^2 W_k}{\delta j \delta j}$ [cite]
-From there, if we would express $\frac{\delta^2 W_k}{\delta j \delta j}$ in terms of $\Gamma_k$, we could
-write an exact, first order differential equation for the effective average action.
-In fact, the relationship between (them) is very simple. Recall, that $\Gamma_k + \Delta S_k$ is a Legendre transform of $W_k$. For any
-two functions $f$ and $g$, one being the Legendre transform of the other, we have $f'' = (g'')^{-1}$. This remains true for the functional derivation.
-Using this information and immediatly performing field derivative over $\Delta S_k$, we can write the equation for $\Gamma_k$:
+Which follows from the known expression for the one-loop effective action [ref].
+One may guess, that the "renormalization group improvement" of this equation - the replacement of ordinary action by
+ EAA, will lead to a more accurate description of physics:
 \begin{equation}
     \frac{d \Gamma_k}{dt} = \frac{1}{2} \operatorname{Tr} \left[ \left(\frac{\delta^2 \Gamma_k}{\delta \phi \delta \phi} + R_k\right)^{-1} \cdot \frac{d R_k}{dt} \right]
     \label{FRGE}
 \end{equation}
-This is the functional renormalization group equation (FRGE) or the Wetterich equation. (...)
+As it turns out, this equation is proved to be exact and does not rely on any perturbative expansion [refs].
+It is called the functional renormalization group equation (FRGE) or the Wetterich equation.
+It is a simple, first order differential equation that governs the renormalization group flow of $\Gamma_k$ functional.
+
+% Let us calculate the derivatives of $W_k$ and $\Delta S_k$ with respect to $t$
+% \begin{gather}
+%     \frac{d W_k}{dt} = \frac{d}{dt}\log{Z_k} = - \frac{1}{Z_k} \int \mathcal{D}\phi \ e^{-S[\phi] - \Delta S_k[\phi] + \int dx j \phi}  \cdot \frac{d \Delta S_k}{dt} \\
+%     \frac{d \Delta S_k}{dt} = \frac{1}{2} \int d^4 x \ \phi \ \frac{d R_k}{dt} \ \phi
+% \end{gather}
+% This lets us write
+% \begin{equation}
+%     \frac{d \Gamma_k}{dt} = \frac{d \langle \Delta S_k \rangle}{dt} - \frac{d \Delta S_k }{dt} = \frac{1}{2} \operatorname{Tr} \left[ (\langle\phi\phi\rangle - \langle\phi\rangle^2) \cdot \frac{d R_k}{dt} \right]
+% \end{equation}
+% Where $\operatorname{Tr}$ denotes ... and the $\langle\cdots\rangle$ - ...
+% The expression $(\langle\phi\phi\rangle - \langle\phi\rangle^2)$ can be shown to be equal to $\frac{\delta^2 W_k}{\delta j \delta j}$ [cite]
+% From there, if we would express $\frac{\delta^2 W_k}{\delta j \delta j}$ in terms of $\Gamma_k$, we could
+% write an exact, first order differential equation for the effective average action.
+% In fact, the relationship between (them) is very simple. Recall, that $\Gamma_k + \Delta S_k$ is a Legendre transform of $W_k$. For any
+% two functions $f$ and $g$, one being the Legendre transform of the other, we have $f'' = (g'')^{-1}$. This remains true for the functional derivation.
+% Using this information and immediatly performing field derivative over $\Delta S_k$, we can write the equation for $\Gamma_k$:
+% \begin{equation}
+%     \frac{d \Gamma_k}{dt} = \frac{1}{2} \operatorname{Tr} \left[ \left(\frac{\delta^2 \Gamma_k}{\delta \phi \delta \phi} + R_k\right)^{-1} \cdot \frac{d R_k}{dt} \right]
+%     \label{FRGE}
+% \end{equation}
+% This is the functional renormalization group equation (FRGE) or the Wetterich equation. (...)
 In its original form, FRGE is not well suited for performing specific calculations. One very intuitive method, which
-we will use is the $\mathcal{PF}$-expansion, that allows us to use the Feynman diagrams for calculating the RHS of equation (\ref{FRGE})
-up to the desired order in couplings. The term inside the trace including Second derivative of EAA
+we will use, is called the $\mathcal{PF}$-expansion. 
+% that allows us to use the Feynman diagrams for calculating the RHS of equation (\ref{FRGE}) up to the desired order in couplings. 
+The term inside the trace including Second derivative of EAA
 will in general be, for spinor or tensor fields, a functional hessian matrix. We can decompose this term into a
 regulated inverse propagator matrix $\mathcal{P}$ and a rest, which will include the derivatives of terms non quadratic in fields.
 \begin{equation}
@@ -225,7 +227,29 @@ Now, we can recall the series expansion of $\log{(1+x)}$ around $x=0$ and after 
 the number of $\mathcal{F}$-terms
 \begin{gather}
     \frac{d \Gamma_k}{dt} = \frac{1}{2} \operatorname{Tr} \left[ \widetilde{\partial_t} \log{\left(\mathcal{P}+\mathcal{F}\right)} \right] = \frac{1}{2} \operatorname{Tr} \left[ \widetilde{\partial_t} \left(\log{\mathcal{P}} + \log{(1+\mathcal{P}^{-1}\mathcal{F})}\right) \right] \\ =  \frac{1}{2} \operatorname{Tr} \left[ \widetilde{\partial_t} \log{\mathcal{P}} \right] + \frac{1}{2} \sum_{n=1}^{\infty} \frac{(-1)^{n-1}}{n} \operatorname{Tr}\left[\widetilde{\partial_t}\left(\mathcal{P}^{-1}\mathcal{F}\right)^n\right]
+    \label{pf}
 \end{gather}
+Using this expression, we can reduce the problem of finding $\partial_t \Gamma_k$ to computing a set of feynman diagrams.
+% For the computation of 
+% Even though this method appears to again rely on a small expansion parameter, 
+
+% As the Landau Pole of abelian coupling is situated well above the Planck scale, one can conjecture that
+% its existence is due to the abence of quantum gravitational effects in the theory.
+% Even without postulating a UV-complete gravitational theory, it is beneficial to investigate
+% the impact of graviton on the running of abelian coupling [Wilczek ... czy coś]
+
+
+% QED is a perturbatively renormalizable theory, i.e. it allows to calculate probability amplitudes for physical processes
+% up to an arbitrary order in couplings.
+%% One loop beta function of qed
+%% Discussion of landau pole
+%% General form in the presence of quantum gravity
+% Wilczek paper
+%% Qualitative difference
+
+\textcolor{red}{(discussion of results in asymptotic safety, results obtained in this work and the general conclusion)} 
+
+\section{Obtained results ...}
 
 \subsection{Calculations}
 
@@ -246,17 +270,34 @@ The gravitational sector consists of the Einstein - Hilbert action with a cosmol
     \mathcal{L}_{EH} = \sqrt{\mathbf{g}} \ \frac{k^2}{\kappa} \left( k^2 \Lambda - R(\partial)\right) \\
     \mathcal{L}_{GGF} = \sqrt{\mathbf{g}} \ Z_h \frac{1}{32 \pi \alpha_h} \left(\partial_\mu h^{\mu\nu} - \frac{1+\beta_h}{4} \partial^\nu h^\rho_{\; \rho} \right)^2\\
 \end{gather}
-Whereas the gauge sector contains a kinetic term of the photon, effective four-photon interaction and a gravitational gauge fixing term
+Whereas the gauge sector contains a kinetic term of the photon
+% , effective four-photon interaction 
+and a gravitational gauge fixing term
 \begin{gather}
-    \mathcal{L}_A =  \sqrt{\mathbf{g}} \left( Z_A \frac{1}{4} F^{\mu\nu} F_{\mu\nu} + w_2 (F^{\mu\nu} F_{\mu\nu})^2 \right)\\
+    \mathcal{L}_A =  \sqrt{\mathbf{g}} \left( Z_A \frac{1}{4} F^{\mu\nu} F_{\mu\nu} \right)\\% + w_2 (F^{\mu\nu} F_{\mu\nu})^2 \right)\\
     \mathcal{L}_{AGF} = \sqrt{\mathbf{g}} \ Z_A \frac{1}{2 \alpha_A} \left( \partial_\mu A^\mu \ \partial_\nu A^\nu \right) \\
 \end{gather}
 
 To extract scale dependence of the couplings, we employ the functional renormalization group equation.
-The scheme used for the calculation of beta functions amounts to three steps: finding expressions for effective vertices and
+The scheme used for the calculation of beta functions amounts to the following steps: finding expressions for effective vertices and
 regulated propagators, calculating relevant feynman diagrams and projecting the result onto the given coupling, thus obtaining the beta function.
-\subsubsection{Projectors and the beta functions}
-\dots
+Thanks to the decomposition of beta functional in equation (\ref{gamma_decomp}), any of the beta functions can be extracted
+from the FRGE, using a set of projection operators satisfying the following property:
+\begin{equation}
+    \varPi_i \ \mathcal{O}_j = \delta_{ij}
+    \label{proj}
+\end{equation}
+Operator from such set, applied to the right hand side of FRGE, will yield the desired beta function $\beta_i$.
+As a projection operator onto the gauge field kinetic term, we will use
+\begin{equation}
+    \varPi_A = \left. \lim_{p^2 \rightarrow 0} \ \frac{1}{p^2 (d-1)} \left( g_{\mu\nu} - \frac{p_\mu p_\nu}{p^2} \right) \frac{\delta}{\delta A_\mu} \frac{\delta}{\delta A_\nu} \right|_{A=0, \ h=0}
+    \label{projA}
+\end{equation}
+Where $d$ is the dimensionality of spacetime. 
+Any operator containing both the graviton and photon fields or purely graviton field, will be annihilated
+by the propagator by preforming the functional derivative at point $h=0$. For the remaining operators that enter $\Gamma_k$,
+the property (\ref{proj}) can be checked by a direct computation.
+
 \subsubsection{Effective vertices and propagators}
 The matrices $\mathcal{P}$ and $\mathcal{F}$ from the expansion in equation () will take form:
 \begin{gather}
@@ -326,19 +367,21 @@ Expression for the regulated graviton propagator is given in (Apx).
 
 Interaction part of effective action $\Gamma$, due to nonlinear functions of metric perturbation field, will
 be the infinite series of interactions with two photon fields and any number of graviton fields. Yet, our goal is not to compute the entire functional.
-(Let us note, that the fact which variational derivatives $\delta h$ and $\delta A$ of interaction term are taken, determines what
-elements of $\mathcal{P}^{-1}$ later multiply it). In the diagramatical representation, this is equivalent to the fact that in any effective vertex two of the external legs are opened to form a loop,
-while the rest is left uncontracted. This fact can be easily understood by representing the product $\mathcal{P}^{-1} \mathcal{F}$ diagramatically
+Let us note, that the fact which functional derivatives $\delta h$ and $\delta A$ has acted on the interaction term, determines what elements of $\mathcal{P}^{-1}$ later multiply it. In the diagramatical representation, this is equivalent to the fact that in any effective vertex two of the external legs are opened to form a loop,
+while the rest is left uncontracted. This can be easily understood by representing the product $\mathcal{P}^{-1} \mathcal{F}$ diagramatically
 \begin{figure}[H]
-    \includegraphics[width=1\textwidth]{figures/drawing.png}
+    \includegraphics[width=1\textwidth]{./figures/drawing.png}
     \caption*{}
 \end{figure}
-Where a red line at the end of vertex leg denotes the functional derivative with respect to the corresponding field.
-
-... 
-A projection operator (jak go nazwałem wyżej) will then annihilate all terms not originating from diagrams with two external photon legs.
+Where a red line at the end of a vertex leg denotes the functional derivative with respect to the corresponding field.
+To extract the gauge field anomalous dimension from the FRGE, we act on it with
+a projection operator $\varPi_A$, which then annihilate all terms not originating from diagrams with two external photon legs and leave only the contribution to photon two-point function.
 As can be seen, the only vertices that may form such diagrams come from terms of the form $\delta_{A}\delta_h \int c \cdot AAh$ and $\delta_h \delta_h \int c \cdot AAhh$
-
+\begin{figure}[H]
+    \includegraphics[width=1\textwidth]{./figures/vertices.png}
+    \caption{Necessary vertices for computing gauge field anomalous dimension. Red line at the end of a vertex leg denotes a functional derivative with respect to the corresponding field applied to the interaction term}
+\end{figure}
+Full expressions for these vertices are given in the appendix.
 
 % A second functional derivative in the FRGE implies, that it has a one-loop structure.
 
@@ -353,8 +396,16 @@ As can be seen, the only vertices that may form such diagrams come from terms of
 % Przy długich wyrażeniach odsyłać do appendixu
 
 \subsubsection{Calculation of feynman diagrams}
+... Then, continuing the argument from previous section, the contribution from second term that will not be annihilated
+by $\varPi_A$ comes from products of effective vertices and propagators that involve only the second power of gauge field.
+There are just two such products. After considering coefficients in the expansion of logarithm from (\ref{pf}) and from performing trace, the expression for gauge field renormalization beta function can be written as
+\begin{align}
+    \beta_A & = \varPi_A \cdot \partial_t \Gamma_k = \frac{1}{2} \int d^4 q \ \operatorname{VertAAhh}_{\mu\nu\rho\sigma}(p,-p,q,-q) \operatorname{PropG}^{\mu\nu\rho\sigma}(q)\\
+    & - \frac{1}{2} \int d^4 q \ \operatorname{VertAAh}^{\mu\nu\rho}(p,-q,p+q) \operatorname{VertAAh}^{\sigma\tau\kappa}(-p,q,-p-q)  \operatorname{PropG}_{\mu\nu\sigma\tau}(p+q) \operatorname{PropA}_{\rho\kappa}(q)
+\end{align}
+This reduces the problem of extracting information about RG flow in functional renormalization group to computing amputated one-loop feynman diagrams.
 \begin{figure}[H]
-    \includegraphics[width=1\textwidth]{./figures/diags.jpg}
+    \includegraphics[width=1\textwidth]{./figures/diags.png}
     \caption{Feynman diagrams contributing to the anomalous dimension of gauge field. Wavy line denotes a photon propagator
     and the double straight line denotes the graviton propagator. A crossed circle denotes an insertion of the regulator.}
     \label{diags}
@@ -369,7 +420,7 @@ As can be seen, the only vertices that may form such diagrams come from terms of
 % Method is as follows. From the effective average action we calculate effective vertices and regulated two-point functions.
 % Through the analysis of their allowed tensor structures, we calculate inverses of two-point functions, i.e. propagators.
 % Expressions for the 
-
+\textcolor{red}{(...)}\\
 Beta functions extracted from the full EA cannot depend on the choice of gauge parameters.
 Introducing truncations, however, means that gauge dependence may not cancel entirely (...).
 %% ?? Że będziemy sprawdzać zależność od gauge parameter ?? - tylko od beta w gravity gauge fixing (z jakiegoś powodu) - na alfy możemy też zrobić rg flow i one jakoś dążą do zera i jest argument że są nieważne (poczytać)
@@ -381,6 +432,12 @@ if the regulator is picked in such way that it executes a proper IR cutoff,
 it will always give the same results in the physical limit $k \rightarrow 0$. There should also be no
 qualitative differences in the behaviour of RG flow depending on the regulators.
 %% Coś o tym że to będziemy tu sprawdzać
+
+
+%%% CO JEST JESZCZE DO UWZGLĘDNIENIA %%%
+%% Systematycznie wypisać wszystkie wykorzystywane przybliżenia i przedyskutować ich wpływ, ważność i możliwą weryfikację czy działają
+%% Wick rotation
+%% Fourier transforms of lagrangian and 
 
 
 \section*{Summary}
