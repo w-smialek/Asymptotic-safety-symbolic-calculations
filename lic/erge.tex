@@ -87,13 +87,34 @@ a running of unified coupling that does not exhibit a triviality issue.
 The existence of grand unification, however has not been yet confirmed in any way, while the experimental bounds on the proton lifetime
 heavily constraints or even rules out many of the GUTs[ref]. This constrasts sharply with the other potential completion of the SM,
 which is quantum gravity. Although no quantum theory of gravity has been widely accepted, the existence of gravity and
-the quantum nature of physical reality most certainly are. Should quantum gravitational solution to the triviality issues of the SM exist,
+the quantum nature of physical reality most certainly are. Should quantum gravitational solution to the triviality issues of SM exist,
 it could provide an argument of consistency between the particular theory of quantum gravity and the SM, as well as eliminate one of the arguments for the need of GUT.
+The straightforward approach to quantum gravity - a metric fluctuation quantum field governed by Einstein - Hilbert action
+is non-renormalizable by the perturbative methods. However, for energy scales small
+compared to Planck energy, the infinite number of divergent terms in lagrangian affects predictions in a negligible way and can be effectively ignored.
+In this framework, called the effective field theory of gravity (EFT), there has been a number of works investigating
+the gravitational contribution to the running of gauge couplings. The predictions of EFT does not apply above
+the Planck scale, but an assesment of the quantitative nature of gravitational corrections can still give valuable information.
+% and any fundamental theory should produce results that agree with EFT in the limit of low-energy processes with bosonic gravity.
+Since gravitons carry no gauge charge, the contribution to beta function of gauge coupling from SM particles and gravitons are separate
+and in the one-loop approximation takes the general form
+\begin{equation}
+    \beta_g(k) = a \cdot G k^2 g + b \cdot g^3 = a \cdot G k^2 g + \beta_{g}^{\text{SM}}
+    \label{betawilczek}
+\end{equation}
+The solution to the quantum triviality problem therefore depends on the values of factor $a$.
+Calculations in the cutoff scheme, employing the background field method, performed by Wilczek and Robinson [ref] have indicated
+$a = - \frac{3}{\pi} $, which implied the asymptotic freedom of any Yang-Mills theory in the presence of gravity and thus a solution to the triviality problem.
+Later work by Pietrykowski [] have argued, that a result obtained in [ref] is specific to the choice of graviton gauge fixing and have obtained zero gravitational contribution
+using different type of gauge. In [] calculations in both cutoff and dimensional regularization shemes shown no gravitational contribution.
+In the dimensional regularization sheme, a number of works found the gravitational contributions to be absent.[Nieuwenhuizen; Ebert; Toms]
+(The cited works all used the one-loop approximation)
+Conflicting results leave the question of existence and value of $a$ from (\ref{betawilczek}) in the EFT open.
+% The work has layed ground for further (..)
+% Calculations using various renormalization schemes and approximations has given conflicting results on the presence and value of 
+% \textcolor{red}{(discussion of results outside asymptotic safety paradigm. Wilczek, pro and contra, etc.)} 
 
-% For a (canonical) quantum field theory of gravity, the use of perturbative methods results in the loss of predictive power, if the theory is
-% postulated to be fundamental. Due to the breakdown of perturbative methods , 
-
-\textcolor{red}{(discussion of results outside asymptotic safety paradigm. Wilczek, pro and contra, etc.)} 
+(Segway into the asymptotic safety i że teraz nie effective tylko potentially uv complete)
 
 % (I tutaj napisać jak AS to rozwiązało i przewidziało masę higgsa więc dobry trop i wogle)
 % Wspomnieć że jeżeli biegun landaua zostanie, to nasz model musi być no najwyżej teorią efektywną
@@ -297,8 +318,8 @@ The effective action can be represented as a functional dependending only on the
     \Gamma\left[ A^\mu, h^{\mu\nu}, \partial_\mu A^\mu, \partial_\mu \partial_\nu h^{\mu\nu}, \cdots\right] = \Gamma[ \tilde{A}^\mu, \tilde{h}^{\mu\nu}] \\
     \tilde{\phi}(p) = \mathfrak{F}[\phi] = \int d^4 x e^{-i p_\mu x^\mu} \phi(x)
 \end{gather}
-When we express the fields in effective lagrangian by $\phi(x) = \mathfrak{F}^{-1}[\tilde{\phi}(p)]$,
-any spacetime derivative $\partial_\mu \phi^\mu(x)$ can be replaced by $i p_\mu \tilde{\phi}^\mu(p)$.
+Due to properties of fourier transform, when we express the fields in effective lagrangian as $\phi(x) = \mathfrak{F}^{-1}[\tilde{\phi}(p)]$,
+any spacetime derivative $\partial_\mu \phi^\mu(x)$ will be replaced by $i p_\mu \tilde{\phi}^\mu(p)$.
 By further rearrangements and performing spacetime integral, we can arrive at the momentum-space lagrangian,
 depending only on $\tilde{\phi}$
 \begin{align}
@@ -469,12 +490,12 @@ Finally, the resulting beta function of abelian gauge coupling $g$ in the spacet
     \beta_{g_Y} = g_Y \frac{\eta_A}{2} = g_Y \frac{G}{4 \pi} \left( \frac{\eta_h - 6}{6(1-2 \Lambda)^2} - 
     \frac{(\eta_A-8)(1-2\Lambda) + (\eta_h -8)}{8 (1-2 \Lambda )^2}\right) + \beta_{g_Y}^{\text{SM}}
 \end{equation}
-Beta function for an arbitrary spacetime dimensionality is given in (apx).
+The result for an arbitrary spacetime dimension is given in (apx).
 
-
+\textcolor{red}{(...)}\\
 
 Beta functions extracted from the full EA cannot depend on the choice of gauge parameters.
-Introducing truncations, however, means that gauge dependence may not cancel entirely (...).
+Introducing truncations, however, means that gauge dependence may not cancel entirely.
 %% ?? Że będziemy sprawdzać zależność od gauge parameter ?? - tylko od beta w gravity gauge fixing (z jakiegoś powodu) - na alfy możemy też zrobić rg flow i one jakoś dążą do zera i jest argument że są nieważne (poczytać)
 Another in principle redundant choice is a form of the regulator. For two different regulators,
 $\Gamma_k$ will include field modes weighted in a different manner, so this choice simply

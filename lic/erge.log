@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.11.2)  29 MAY 2023 20:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.11.2)  29 MAY 2023 23:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1236,107 +1236,145 @@ LaTeX Font Info:    Font shape `T1/XCharter-TLF/b/n' will be
 (Font)              scaled to size 10.95pt on input line 77.
  [1
 
-{c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2 <c:/Users/Wojtek/Desktop/Asymptotic-safety/lic/./figures/plotr.jpg>]
-LaTeX Font Info:    Font shape `T1/XCharter-TLF/b/n' will be
-(Font)              scaled to size 12.0pt on input line 115.
+{c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (14.19588pt too wide) in paragraph at lines 80--101
+\T1/XCharter-TLF/m/n/10.95 field theory of gravity (EFT), there has been a number of works investigating the gravitational
+ []
 
-Overfull \hbox (16.04866pt too wide) in paragraph at lines 129--133
+
+Overfull \hbox (18.35945pt too wide) in paragraph at lines 80--101
+\T1/XCharter-TLF/m/n/10.95 above the Planck scale, but an assesment of the quantitative nature of gravitational corrections
+ []
+
+
+Overfull \hbox (1.0892pt too wide) in paragraph at lines 80--101
+\T1/XCharter-TLF/m/n/10.95 can still give valuable information. Since gravitons carry no gauge charge, the contribution
+ []
+
+[2 <c:/Users/Wojtek/Desktop/Asymptotic-safety/lic/./figures/plotr.jpg>]
+Overfull \hbox (5.2256pt too wide) in paragraph at lines 104--116
+\T1/XCharter-TLF/m/n/10.95 contribution using different type of gauge. In [] calculations in both cutoff and dimensional
+ []
+
+
+Overfull \hbox (16.85236pt too wide) in paragraph at lines 104--116
+\T1/XCharter-TLF/m/n/10.95 regularization shemes shown no gravitational contribution. In the dimensional regularization
+ []
+
+
+Overfull \hbox (20.61963pt too wide) in paragraph at lines 104--116
+\T1/XCharter-TLF/m/n/10.95 sheme, a number of works found the gravitational contributions to be absent.[Nieuwenhuizen;
+ []
+
+
+Overfull \hbox (3.89815pt too wide) in paragraph at lines 117--118
+[]\T1/XCharter-TLF/m/n/10.95 (Segway into the asymptotic safety i »e teraz nie effective tylko potentially uv complete) 
+ []
+
+LaTeX Font Info:    Font shape `T1/XCharter-TLF/b/n' will be
+(Font)              scaled to size 12.0pt on input line 136.
+
+Overfull \hbox (16.04866pt too wide) in paragraph at lines 150--154
 \T1/XCharter-TLF/m/n/10.95 come as a straight-forward generalization. Its euclidean partition function and the generating
  []
 
-[3]
-Overfull \hbox (0.48666pt too wide) in paragraph at lines 232--235
+[3] [4]
+Overfull \hbox (0.48666pt too wide) in paragraph at lines 253--256
 \T1/XCharter-TLF/m/n/10.95 First, let us notice that the entire expression inside trace can be expressed as a $[] []$,
  []
 
-[4] [5]
-LaTeX Font Info:    Trying to load font information for U+euf on input line 299.
+[5]
+LaTeX Font Info:    Trying to load font information for U+euf on input line 320.
  (c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/tex/latex/amsfonts/ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 )
-Overfull \hbox (6.55533pt too wide) in paragraph at lines 299--304
-\T1/XCharter-TLF/m/n/10.95 derivative $\OML/cmm/m/it/10.95 @[]^^^[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 x\OT1/cmr/m/n/10.95 )$ \T1/XCharter-TLF/m/n/10.95 can be replaced by $\OML/cmm/m/it/10.95 ip[][]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 p\OT1/cmr/m/n/10.95 )$\T1/XCharter-TLF/m/n/10.95 . By further rearrangements and performing
- []
-
-
-Overfull \hbox (4.46696pt too wide) in paragraph at lines 317--322
-[]\T1/XCharter-TLF/m/n/10.95 To extract scale dependence of the couplings, we employ the functional renormalization
+Overfull \hbox (11.59697pt too wide) in paragraph at lines 320--325
+\T1/XCharter-TLF/m/n/10.95 further rearrangements and performing spacetime integral, we can arrive at the momentum-
  []
 
 [6]
-Overfull \hbox (5.26144pt too wide) in paragraph at lines 357--360
+Overfull \hbox (4.46696pt too wide) in paragraph at lines 338--343
+[]\T1/XCharter-TLF/m/n/10.95 To extract scale dependence of the couplings, we employ the functional renormalization
+ []
+
+[7]
+Overfull \hbox (5.26144pt too wide) in paragraph at lines 378--381
 \T1/XCharter-TLF/m/n/10.95 The gravitational sector contains nonlinear functions $[]$ and $\OML/cmm/m/it/10.95 R\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 @\OT1/cmr/m/n/10.95 )$\T1/XCharter-TLF/m/n/10.95 . These can be expanded
  []
 
 
-Overfull \hbox (8.91916pt too wide) in paragraph at lines 364--370
+Overfull \hbox (8.91916pt too wide) in paragraph at lines 385--391
 \T1/XCharter-TLF/m/n/10.95 after we set any fields remaining after derivation to zero. These higher terms are responsible
  []
 
-[7]
-<./figures/drawing.png, id=128, 845.0772pt x 216.3282pt>
+[8]
+<./figures/drawing.png, id=136, 845.0772pt x 216.3282pt>
 File: ./figures/drawing.png Graphic file (type png)
 <use ./figures/drawing.png>
-Package pdftex.def Info: ./figures/drawing.png  used on input line 408.
+Package pdftex.def Info: ./figures/drawing.png  used on input line 429.
 (pdftex.def)             Requested size: 418.25368pt x 107.06793pt.
-<./figures/vertices.png, id=130, 845.0772pt x 216.3282pt>
+<./figures/vertices.png, id=138, 845.0772pt x 216.3282pt>
 File: ./figures/vertices.png Graphic file (type png)
 <use ./figures/vertices.png>
-Package pdftex.def Info: ./figures/vertices.png  used on input line 416.
+Package pdftex.def Info: ./figures/vertices.png  used on input line 437.
 (pdftex.def)             Requested size: 418.25368pt x 107.06793pt.
- [8 <c:/Users/Wojtek/Desktop/Asymptotic-safety/lic/./figures/drawing.png>]
-Overfull \hbox (59.68614pt too wide) detected at line 448
+ [9 <c:/Users/Wojtek/Desktop/Asymptotic-safety/lic/./figures/drawing.png>]
+Overfull \hbox (59.68614pt too wide) detected at line 469
 []
  []
 
-[9 <c:/Users/Wojtek/Desktop/Asymptotic-safety/lic/./figures/vertices.png>]
-<./figures/diags.png, id=154, 845.0772pt x 355.5684pt>
+<./figures/diags.png, id=150, 845.0772pt x 355.5684pt>
 File: ./figures/diags.png Graphic file (type png)
 <use ./figures/diags.png>
-Package pdftex.def Info: ./figures/diags.png  used on input line 451.
+Package pdftex.def Info: ./figures/diags.png  used on input line 472.
 (pdftex.def)             Requested size: 418.25368pt x 175.98248pt.
 
-Overfull \hbox (24.4156pt too wide) in paragraph at lines 448--455
+Overfull \hbox (24.4156pt too wide) in paragraph at lines 469--476
 \T1/XCharter-TLF/m/n/10.95 This reduces the problem of extracting information about RG flow in functional renormalization
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 465--466
+[10 <c:/Users/Wojtek/Desktop/Asymptotic-safety/lic/./figures/vertices.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 486--487
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 502--503
+Underfull \hbox (badness 10000) in paragraph at lines 495--496
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 523--524
 []\T1/XCharter-TLF/m/n/10.95 Brod, J., Polonsky, Z. Two-loop beta function for complex scalar
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 502--503
+Underfull \hbox (badness 10000) in paragraph at lines 523--524
 \T1/XCharter-TLF/m/n/10.95 electroweak multiplets. J. High Energ. Phys. 2020, 158 (2020).
  []
 
-[10 <c:/Users/Wojtek/Desktop/Asymptotic-safety/lic/./figures/diags.png>] [11]
+[11 <c:/Users/Wojtek/Desktop/Asymptotic-safety/lic/./figures/diags.png>] [12]
 
 LaTeX3 Info: Redefining command \BeforeClosingMainAux with sig. 'm' on line
-(LaTeX3)     507.
+(LaTeX3)     528.
 
  (c:/Users/Wojtek/Desktop/Asymptotic-safety/lic/erge.aux)
 Package rerunfilecheck Info: File `erge.out' has not changed.
 (rerunfilecheck)             Checksum: 3342F212BF9C042E731E80E0400CBCAC;502.
  ) 
 Here is how much of TeX's memory you used:
- 26429 strings out of 479485
- 540405 string characters out of 5861561
- 895855 words of memory out of 5000000
- 42763 multiletter control sequences out of 15000+600000
+ 26432 strings out of 479485
+ 540438 string characters out of 5861561
+ 897898 words of memory out of 5000000
+ 42764 multiletter control sequences out of 15000+600000
  609012 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 98i,16n,115p,578b,495s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 98i,16n,115p,578b,493s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/enc/dvips/xcharter/xch_uy5hgr.enc}<c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/xcharter/XCharter-Bold.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/xcharter/XCharter-Italic.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/xcharter/XCharter-Roman.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb>
-Output written on c:/Users/Wojtek/Desktop/Asymptotic-safety/lic/erge.pdf (11 pages, 1070402 bytes).
+Output written on c:/Users/Wojtek/Desktop/Asymptotic-safety/lic/erge.pdf (12 pages, 1073529 bytes).
 PDF statistics:
- 239 PDF objects out of 1000 (max. 8388607)
- 201 compressed objects within 3 object streams
- 77 named destinations out of 1000 (max. 500000)
+ 246 PDF objects out of 1000 (max. 8388607)
+ 207 compressed objects within 3 object streams
+ 79 named destinations out of 1000 (max. 500000)
  89 words of extra memory for PDF output out of 10000 (max. 10000000)
 
