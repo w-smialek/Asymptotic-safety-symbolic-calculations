@@ -54,14 +54,14 @@ Standard Model, however, certainly is not a complete theory of physical reality.
 of gravity and above the Planck scale $E_p \approx 10^{19} \ \text{GeV}$, due to quantum effects of gravity,
 predictions of both the SM and Einstein's theory of gravity are not expected to apply.
 One should then not be surprised, if at scales above $E_p$ Standard Model exhibits internal inconsistencies.
-Given the requirements of compatibility with SM and predictive power above the Planck scale, a criterion
-for any good theory of quantum gravity should be for it to resolve the problems that arise in SM due to absence of
-gravitational interaction.
+% Given the requirements of compatibility with SM and predictive power above the Planck scale, a criterion
+% for any good theory of quantum gravity should be for it to resolve the problems that arise in SM due to absence of
+% gravitational interaction.
 One of the big issues of the SM is the quantum triviality problem for the electroweak $U(1)$ gauge coupling and
 the scalar higgs boson quartic coupling.
 In the pure electroweak theory, one loop $\beta$-function of the abelian gauge \cite{betaf scalar} \cite{betaf chiral lagrangian} is:% Ref higgs paper instead
 \begin{equation}
-    \beta_{g_Y} = \beta_{g_Y}^{(3)} g_Y^3 = \frac{41}{6} \frac{g_Y^3}{16 \pi^2}
+    \beta_{g_Y}^{\text{SM}} = \beta_{g_Y}^{(3)} g_Y^3 = \frac{41}{6} \frac{g_Y^3}{16 \pi^2}
 \end{equation}
 This predicts a running of gauge coupling that would diverge at a momentum scale $\mu = \left(2 g_{Y\text{obs}}^2 \ \beta_{g_Y}^{(3)} \right)^{-1} $.
 Conversely, taking any arbitrarily high value of the bare coupling, the only possible value of $g_{Y\text{obs}}$ should be 0, making
@@ -78,9 +78,20 @@ the theory trivial, i.e. non-interacting.
     \label{boxes}
 \end{figure} 
 Taking an electron mass as a reference scale, the location of abelian coupling landau pole will be of order $\Lambda \sim 10^{48} \ \text{eV}$, well above the Planck scale.
-
 Similarly, quartic self-interaction of higgs field theoretically may exhibit a pole at a finite momentum scale.
 Existence of both poles remains an open question, but a theory containing any such singularity cannot be fundamental.
+One solution to this problem could be a grand unified theory (GUT), which proposes a larger symmetry group, spontaneously broken
+to the known $SU(3)\times SU(2) \times U(1)$ of standard model at around the scale where running values of electroweak and strong couplings
+coincide. This scale is predicted to be below planck energy [ref]. Above it, the theory could introduce
+a running of unified coupling that does not exhibit a triviality issue.
+The existence of grand unification, however has not been yet confirmed in any way, while the experimental bounds on the proton lifetime
+heavily constraints or even rules out many of the GUTs[ref]. This constrasts sharply with the other potential completion of the SM,
+which is quantum gravity. Although no quantum theory of gravity has been widely accepted, the existence of gravity and
+the quantum nature of physical reality most certainly are. Should quantum gravitational solution to the triviality issues of the SM exist,
+it could provide an argument of consistency between the particular theory of quantum gravity and the SM, as well as eliminate one of the arguments for the need of GUT.
+
+% For a (canonical) quantum field theory of gravity, the use of perturbative methods results in the loss of predictive power, if the theory is
+% postulated to be fundamental. Due to the breakdown of perturbative methods , 
 
 \textcolor{red}{(discussion of results outside asymptotic safety paradigm. Wilczek, pro and contra, etc.)} 
 
@@ -432,7 +443,7 @@ Full expressions for (..) are given in the appendix.
 by $\varPi_A$ comes from products of effective vertices and propagators that involve only the second power of gauge field.
 There are just two such products. After considering coefficients in the expansion of logarithm from (\ref{pf}) and from performing trace, the expression for gauge field renormalization beta function can be written as
 \begin{align}
-    \beta_A & = \varPi_A \cdot \partial_t \Gamma_k = \frac{1}{2} \widetilde{\partial_t} \int d^4 q \ \operatorname{VertAAhh}_{\mu\nu\rho\sigma}(p,-p,q,-q) \operatorname{PropG}^{\mu\nu\rho\sigma}(q)\\
+    \beta_{Z_A} & = \varPi_A \cdot \partial_t \Gamma_k = \frac{1}{2} \widetilde{\partial_t} \int d^4 q \ \operatorname{VertAAhh}_{\mu\nu\rho\sigma}(p,-p,q,-q) \operatorname{PropG}^{\mu\nu\rho\sigma}(q)\\
     & - \frac{1}{2} \widetilde{\partial_t} \int d^4 q \ \operatorname{VertAAh}^{\mu\nu\rho}(p,-q,p+q) \operatorname{VertAAh}^{\sigma\tau\kappa}(-p,q,-p-q)  \operatorname{PropG}_{\mu\nu\sigma\tau}(p+q) \operatorname{PropA}_{\rho\kappa}(q)
 \end{align}
 This reduces the problem of extracting information about RG flow in functional renormalization group to computing amputated one-loop feynman diagrams.
@@ -452,6 +463,16 @@ This reduces the problem of extracting information about RG flow in functional r
 % Through the analysis of their allowed tensor structures, we calculate inverses of two-point functions, i.e. propagators.
 % Expressions for the 
 \textcolor{red}{(...)}\\
+
+Finally, the resulting beta function of abelian gauge coupling $g$ in the spacetime with four dimensions is
+\begin{equation}
+    \beta_{g_Y} = g_Y \frac{\eta_A}{2} = g_Y \frac{G}{4 \pi} \left( \frac{\eta_h - 6}{6(1-2 \Lambda)^2} - 
+    \frac{(\eta_A-8)(1-2\Lambda) + (\eta_h -8)}{8 (1-2 \Lambda )^2}\right) + \beta_{g_Y}^{\text{SM}}
+\end{equation}
+Beta function for an arbitrary spacetime dimensionality is given in (apx).
+
+
+
 Beta functions extracted from the full EA cannot depend on the choice of gauge parameters.
 Introducing truncations, however, means that gauge dependence may not cancel entirely (...).
 %% ?? Że będziemy sprawdzać zależność od gauge parameter ?? - tylko od beta w gravity gauge fixing (z jakiegoś powodu) - na alfy możemy też zrobić rg flow i one jakoś dążą do zera i jest argument że są nieważne (poczytać)
@@ -470,6 +491,7 @@ qualitative differences in the behaviour of RG flow computed with different regu
 %% Wick rotation
 %% Fourier transforms of lagrangian and 
 %% O LINEAR SPLIT I ŻE WOKÓŁ FLAT BACKGROUND
+%% Why we skip ghosts
 
 
 
