@@ -1,5 +1,5 @@
 \documentclass[11pt, a4paper]{article} 
-\usepackage{babel}
+% \usepackage{babel}
 \usepackage{booktabs}
 \usepackage{comment} 
 \usepackage[utf8]{inputenc} % odpowiednie kodowanie znaków
@@ -24,7 +24,7 @@
 \usepackage{subcaption}
 \usepackage{pbox}
 \usepackage{tikz}
-\usepackage{tikz-feynman}
+% \usepackage{tikz-feynman}
 \usepackage{svg}
 
 \setlength{\parindent}{15pt} 
@@ -59,7 +59,7 @@ One should then not be surprised, if above $E_p$ Standard Model exhibits certain
 % gravitational interaction.
 One of the big issues of the SM is the quantum triviality problem for the electroweak $U(1)$ gauge coupling and
 the scalar higgs boson quartic coupling.
-In the pure electroweak theory, one loop $\beta$-function of the abelian gauge \cite{higgs mass} is:% Ref higgs paper instead
+In the pure electroweak theory, one loop $\beta$-function of the abelian gauge coupling is: \cite{higgs mass}
 \begin{equation}
     \beta_{g_Y}^{\text{SM}} = \beta_{g_Y}^{(3)} g_Y^3 = \frac{41}{6} \frac{g_Y^3}{16 \pi^2}
 \end{equation}
@@ -89,8 +89,10 @@ heavily constraints or even rules out many of the GUTs[ref]. This constrasts sha
 which is quantum gravity. Although no quantum theory of gravity has been widely accepted, the existence of gravity and
 the quantum nature of physical reality most certainly are. Should quantum gravitational solution to the triviality issues of SM exist,
 it could provide an argument of consistency between the particular theory of quantum gravity and the SM, as well as eliminate one of the arguments for the need of GUT.
+
+\pagebreak
 The straightforward approach to quantum gravity - a metric fluctuation quantum field governed by Einstein - Hilbert action
-is non-renormalizable by the perturbative methods. However, for energy scales small
+is non-renormalizable by the perturbative methods[ref]. However, for energy scales small
 compared to Planck energy, the infinite number of divergent terms in lagrangian affects predictions in a negligible way and can be effectively ignored.
 In this framework, called the effective field theory of gravity (EFT), there has been a number of works investigating
 the gravitational contribution to the running of gauge couplings. The predictions of EFT does not apply above
@@ -105,17 +107,19 @@ and in the one-loop approximation takes the general form
 The solution to the quantum triviality problem therefore depends on the values of factor $a$.
 Calculations in the cutoff scheme, employing the background field method, performed by Wilczek and Robinson \cite{wilczek} have indicated
 $a = - \frac{3}{\pi} $, which implied the asymptotic freedom of any Yang-Mills theory in the presence of gravity and thus a solution to the triviality problem.
-Later work by Pietrykowski \cite{pietrykowski} have argued, that a result obtained in \cite{wilczek} is specific to the choice of graviton gauge fixing and have obtained zero gravitational contribution
-using different type of gauge. Toms has used manifestyl gauge invariant action and has also found no gravitational contribution \cite{toms}. In \cite{absence} calculations in both cutoff and dimensional regularization shemes shown no gravitational contribution.
+Later work by Pietrykowski \cite{pietrykowski} argued, that a result obtained by Wilczek and Robinson is specific to the choice of graviton gauge fixing.
+There, the calculations of \cite{wilczek} was reproduced and no dependence on gauge parameter was confirmed, but when using a different class of gauge fixing terms, no gravitational contribution was found. 
+In \cite{toms}, a manifestly gauge invariant action was used and the calculations also indicated no gravitational contribution to $\beta_g$. 
+In \cite{absence} calculations in both cutoff and dimensional regularization shemes shown no gravitational contribution.
 In the dimensional regularization sheme, a number of works found the gravitational contributions to be absent \cite{nieuwenhuizen}\cite{absence}.
-(The cited works all used the one-loop approximation)
+(The cited works all worked in the one-loop approximation)
 Conflicting results leave open the question of existence and value of factor $a$ from (\ref{betawilczek}) in the EFT.
 The conceptual problem of EFT in this setting is the use of perturbative methods for scales approaching Planck energy.
 Also, the use of some renormalization shemes for extracting beta functions is problematic, as e.g. dimensional regularization is insensitive to quadratic
-divergences that are claimed to give contribution in (\ref{betawilczek}) \cite{absence}.
+divergences that are claimed to give contribution to $\beta_g$ \cite{absence}.
 Adressing the problem properly would require the use of non-perturbative methods and mathematical tools that are better behaved.
 A framework which we will now discuss and conduct our own calculations in, is the quantum einstein gravity treated with functional renormalization group, aka the asymptotic safety programme.
-This theory is potentially a fundamental theory, valid at all energy scale \cite{qeg} and is governed by a well-defined diferential equation governing the RG flow.
+This theory is potentially a fundamental theory, valid at all energy scales \cite{qeg} and is governed by a well-defined diferential equation governing the RG flow.
 % The work has layed ground for further (..)
 % Calculations using various renormalization schemes and approximations has given conflicting results on the presence and value of 
 % \textcolor{red}{(discussion of results outside asymptotic safety paradigm. Wilczek, pro and contra, etc.)} 
@@ -177,26 +181,25 @@ The two fields $\phi_c$ and $j_\phi$ are inverses of each other, defined as the 
 The argument of the effective action is a classical field and there is no functional integral to be performed over it.
 Rather, in $\Gamma$ all of the fluctuations are integrated out, but only one-particle irreducible diagrams
 are included. $\Gamma$ acts as a generating functional of 1PI Green's functions. Extremizing effective, rather than
-the clasical action, yields the equations of motion for vacuum expectation values of the quantum fields.
+the clasical action, yields the equations of motion for vacuum expectation values of the quantum fields[ref].
 
-In its bare form, effective action is ill-defined, as was expected. One option is to introduce a UV cutoff $\Lambda$
+In its bare form, effective action is ill-defined. One option is to introduce a UV cutoff $\Lambda$
 and study the RG flow through divergences proportional to $\Lambda$. The modification we will employ, however, involves
 an IR cutoff inserted through adding a regulator term $\Delta S_k[\phi]$ to the bare action $S[\phi]$ in the definition of partition function
-and subtracted from the final form of effective action. Explicitly, this new object, called the effective average action (EAA) is defined as
+and subtracted from the final form of effective action. Explicitly, this new object called the effective average action (EAA) is defined as
 \begin{gather}
     \Gamma_k[\phi_c] = W_k[j_\phi] - \int d^4 x j_\phi(x) \phi(x) - \Delta S_k[\phi]\\
     W_k[j] = \log{\int \mathcal{D}\phi \ e^{-S[\phi] - \Delta S_k[\phi] + \int dx j \phi}} \qquad \Delta S_k[\phi] = \frac{1}{2}\int d^4 x \phi \hat{R}_k (-\partial_{\mu}\partial^{\mu}) \phi
 \end{gather}
-Motivation for this definition of EAA will become clear when we study the functional renormalization group
-
+% Motivation for this definition of EAA will become clear when we study the functional renormalization group
 The operator $\hat{R}_k (\partial_{\mu}\partial^{\mu})$ is what introduces a momentum scale dependence to the action.
-Its purpose is to act as an IR regulator and extinguish a propagation of modes of the field $\phi$ below a certain momentum value.
+Its purpose is to act as an IR regulator and extinguish the propagation of modes of the field $\phi$ with momenta below a certain momentum value.
 We assume that the four-laplacian operator $\partial_{\mu}\partial^{\mu}$ can be eigendecomposed and its eigenvalues corresponding to functions $e^{ip_\mu x^\mu}$ are the values of $-p^2$.
 Then, $\hat{R}_k$ can be expressed as
 \begin{equation}
     \hat{R}_k (\partial_{\mu}\partial^{\mu}) = \int_0^{\infty} d(p^2) \ R_k(p^2) \ \hat{\mathcal{D}}_{p^2}
 \end{equation}
-The operator $\hat{\mathcal{D}}_{p^2}$ acts as an identity on the flat waves with laplacian eigenvalue $p^2$ and annihilates all other flat waves.
+The operator $\hat{\mathcal{D}}_{p^2}$ acts as an identity on the flat waves with laplacian eigenvalue $p^2$ and annihilates all other flat waves \textcolor{red}{(uściślić)}.
 The exact form of the cutoff function $R_k(p^2)$ is quite arbitrary, but for $\hat{R}_k$ to acts as a proper IR regulator, it has to satisfy certain requirements.
 The forms of cutoff function, which we will analyze in further calculations are:
 \begin{gather}
@@ -204,9 +207,6 @@ The forms of cutoff function, which we will analyze in further calculations are:
     R_k^{\text{exp2}}(p^2) = \frac{p^4}{k^2(e^{p^4/k^4} - 1)}\\
     R_k^{\text{litim}}(p^2) = (k^2-p^2) \ \theta \left(1-\frac{p^2}{k^2}\right)
 \end{gather}
-% All of them are identically zero in the limit $k \rightarrow 0$, which ensures that $\lim_{k\rightarrow 0 } \Gamma_{k} = \Gamma$
-% and for $p^2 > k^2$ they quickly tend to zero, which ensure that the high-momentum field modes are unaffected by the regulator
-
 All of them quickly tend to zero for $p^2 > k^2$, which ensures that the field modes above $k^2$ are unaffected by the regulator
 and they are identically zero for $k = 0$, allowing the ordinary effective action $\Gamma$ to be recovered from $\Gamma_k$ in that limit.
 
@@ -219,7 +219,7 @@ and they are identically zero for $k = 0$, allowing the ordinary effective actio
 % \subsubsection*{\centering Beta functional and the functional renormalization group}
 
 The $\Gamma_k$ is IR-regulated, but the UV divergences still cause it to be ill-defined. 
-However, in studying the scale dependence of couplings we will not use full EAA, 
+However, our central object in the functional renormalization group will not be the full EAA, 
 but its derivative with respect to $t = \log{k}$.
 We assume the theory space in which $\Gamma_k$ takes the form
 \begin{equation}
@@ -232,8 +232,8 @@ The coefficients in the derivative $\partial_t \Gamma_k$ are therefore simply th
 \begin{equation}
     \frac{d \Gamma_k}{dt} = \sum_i \frac{d g_i}{dt} \ \mathcal{O}_i [\phi] = \beta_i(g,k) \ \mathcal{O}_i [\phi]
 \end{equation}
-The beta functions may depend on all the couplings, as well as the renormalization scale $k$.
-They can be extracted from $\frac{d \Gamma_k}{dt}$ via a suitable projection operator. 
+The beta functions may depend on all the couplings, as well as the renormalization scale $k$ and
+they can later be extracted from $\frac{d \Gamma_k}{dt}$ via a suitable projection operator. 
 The $\frac{d \Gamma_k}{dt}$ is called the beta functional and it is finite and well-defined [refs].
 This is because the beta functional can be viewed as a difference between effective actions with infinitesimally
 different cutoffs, where the UV divergences in the difference cancel and what remains is the finite rest
@@ -249,9 +249,9 @@ One may guess, that the "renormalization group improvement" of this equation - t
     \frac{d \Gamma_k}{dt} = \frac{1}{2} \operatorname{Tr} \left[ \left(\frac{\delta^2 \Gamma_k}{\delta \phi \delta \phi} + R_k\right)^{-1} \cdot \frac{d R_k}{dt} \right]
     \label{FRGE}
 \end{equation}
-As it turns out, this equation is proved to be exact and does not rely on any perturbative expansion [refs].
-It is called the functional renormalization group equation (FRGE) or the Wetterich equation.
-It is a simple, first order differential equation that governs the renormalization group flow of $\Gamma_k$ functional.
+This turns out to be an exactly correct equation, that does not rely on any perturbative expansion[refs].
+It is called the functional renormalization group equation (FRGE) or the Wetterich equation and
+it's a simple, first order differential equation that governs the renormalization group flow of $\Gamma_k$ functional.
 
 % Let us calculate the derivatives of $W_k$ and $\Delta S_k$ with respect to $t$
 % \begin{gather}
@@ -372,20 +372,24 @@ To extract scale dependence of the couplings, we employ the functional renormali
 The scheme used for the calculation of beta functions amounts to the following steps: finding expressions for effective vertices and
 regulated propagators, calculating relevant feynman diagrams and projecting the result onto the given coupling, thus obtaining the beta function.
 Thanks to the decomposition of beta functional in equation (\ref{gamma_decomp}), any of the beta functions can be extracted
-from the FRGE, using a set of projection operators satisfying the following property:
+from the FRGE using a set of projection operators satisfying the following property:
 \begin{equation}
     \varPi_i \ \mathcal{O}_j = \delta_{ij}
     \label{proj}
 \end{equation}
 Operator from such set, applied to the right hand side of FRGE, will yield the desired beta function $\beta_i$.
 As a projection operator onto the gauge field kinetic term, we will use
+% \begin{equation}
+%     \varPi_A = \left. \lim_{p^2 \rightarrow 0} \ \frac{1}{p^2 (d-1)} \left( g_{\mu\nu} - \frac{p_\mu p_\nu}{p^2} \right) \frac{\delta}{\delta A_\mu(p)} \frac{\delta}{\delta A_\nu(p)} \right|_{A=0, \ h=0}
+%     \label{projA}
+% \end{equation}
+% Where $d$ is the dimensionality of spacetime. 
 \begin{equation}
-    \varPi_A = \left. \lim_{p^2 \rightarrow 0} \ \frac{1}{p^2 (d-1)} \left( g_{\mu\nu} - \frac{p_\mu p_\nu}{p^2} \right) \frac{\delta}{\delta A_\mu(p)} \frac{\delta}{\delta A_\nu(p)} \right|_{A=0, \ h=0}
+    \varPi_A = \left. \lim_{p^2 \rightarrow 0} \ \frac{1}{3 p^2} \left( g_{\mu\nu} - \frac{p_\mu p_\nu}{p^2} \right) \frac{\delta}{\delta A_\mu(p)} \frac{\delta}{\delta A_\nu(p)} \right|_{A=0, \ h=0}
     \label{projA}
 \end{equation}
-Where $d$ is the dimensionality of spacetime. 
 Any operator containing both the graviton and photon fields or purely graviton field, will be annihilated
-by the propagator by preforming the functional derivative at point $h=0$. For the remaining operators that enter $\Gamma_k$,
+by the propagator by performing the functional derivative at point $h=0$. For the remaining operators that enter $\Gamma_k$,
 the property (\ref{proj}) can be checked by a direct computation.
 
 \subsubsection{Effective vertices and propagators}
@@ -493,7 +497,7 @@ Full expressions for (..) are given in the appendix.
 % Przy długich wyrażeniach odsyłać do appendixu
 
 \subsubsection{Calculation of feynman diagrams}
-... Then, continuing the argument from previous section, the contribution from second term that will not be annihilated
+\textcolor{red}{(...)} Then, continuing the argument from previous section, the contribution from second term that will not be annihilated
 by $\varPi_A$ comes from products of effective vertices and propagators that involve only the second power of gauge field.
 There are just two such products. After considering coefficients in the expansion of logarithm from (\ref{pf}) and from performing trace, the expression for gauge field renormalization beta function can be written as
 \begin{align}
@@ -547,14 +551,13 @@ it will always give the same results in the physical limit $k \rightarrow 0$. Th
 qualitative differences in the behaviour of RG flow computed with different regulators.
 %% Coś o tym że to będziemy tu sprawdzać
 
-
-%%% CO JEST JESZCZE DO UWZGLĘDNIENIA %%%
-%% Systematycznie wypisać wszystkie wykorzystywane przybliżenia i przedyskutować ich wpływ, ważność i możliwą weryfikację czy działają
-%% Wick rotation
-%% Fourier transforms of lagrangian and 
-%% O LINEAR SPLIT I ŻE WOKÓŁ FLAT BACKGROUND
-%% Why we skip ghosts
-
+\textcolor{red}{
+CO JEST JESZCZE DO UWZGLĘDNIENIA\\
+LINEAR SPLIT I ŻE WOKÓŁ FLAT BACKGROUND\\
+Systematycznie wypisać wszystkie wykorzystywane przybliżenia i przedyskutować ich wpływ, ważność i możliwą weryfikację czy działają\\
+Fourier transforms of lagrangian i skąd się bierze całka w diagramie (czy vertex już zawiera całkę)\\
+Dlaczego pomijamy duchy\\
+}
 
 
 \section*{Summary}
