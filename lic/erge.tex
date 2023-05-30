@@ -47,19 +47,19 @@
 The Standard Model of particle physics is a unified description of all quantum fields observed in physics. 
 It strives to predict all the phenomena observed at microscopic scales while maintaining theoretical
 self-consistency and certain mathematical aesthetics. The predictive power of Standard Model, with its most
-famous examples like precision tests of electron anomalous magnetic moment or the existence of Higgs' boson,
+famous examples like precision tests of electron anomalous magnetic moment or the discovery of Higgs boson,
 makes it ungrounded to postulate a fundamental physical theory that would not reduce to SM in the suitable limit, at least
 as an effective field theory.
 Standard Model, however, certainly is not a complete theory of physical reality. It does not include a description
 of gravity and above the Planck scale $E_p \approx 10^{19} \ \text{GeV}$, due to quantum effects of gravity,
 predictions of both the SM and Einstein's theory of gravity are not expected to apply.
-One should then not be surprised, if at scales above $E_p$ Standard Model exhibits internal inconsistencies.
+One should then not be surprised, if above $E_p$ Standard Model exhibits certain inconsistencies.
 % Given the requirements of compatibility with SM and predictive power above the Planck scale, a criterion
 % for any good theory of quantum gravity should be for it to resolve the problems that arise in SM due to absence of
 % gravitational interaction.
 One of the big issues of the SM is the quantum triviality problem for the electroweak $U(1)$ gauge coupling and
 the scalar higgs boson quartic coupling.
-In the pure electroweak theory, one loop $\beta$-function of the abelian gauge \cite{betaf scalar} \cite{betaf chiral lagrangian} is:% Ref higgs paper instead
+In the pure electroweak theory, one loop $\beta$-function of the abelian gauge \cite{higgs mass} is:% Ref higgs paper instead
 \begin{equation}
     \beta_{g_Y}^{\text{SM}} = \beta_{g_Y}^{(3)} g_Y^3 = \frac{41}{6} \frac{g_Y^3}{16 \pi^2}
 \end{equation}
@@ -103,18 +103,24 @@ and in the one-loop approximation takes the general form
     \label{betawilczek}
 \end{equation}
 The solution to the quantum triviality problem therefore depends on the values of factor $a$.
-Calculations in the cutoff scheme, employing the background field method, performed by Wilczek and Robinson [ref] have indicated
+Calculations in the cutoff scheme, employing the background field method, performed by Wilczek and Robinson \cite{wilczek} have indicated
 $a = - \frac{3}{\pi} $, which implied the asymptotic freedom of any Yang-Mills theory in the presence of gravity and thus a solution to the triviality problem.
-Later work by Pietrykowski [] have argued, that a result obtained in [ref] is specific to the choice of graviton gauge fixing and have obtained zero gravitational contribution
-using different type of gauge. In [] calculations in both cutoff and dimensional regularization shemes shown no gravitational contribution.
-In the dimensional regularization sheme, a number of works found the gravitational contributions to be absent.[Nieuwenhuizen; Ebert; Toms]
+Later work by Pietrykowski \cite{pietrykowski} have argued, that a result obtained in \cite{wilczek} is specific to the choice of graviton gauge fixing and have obtained zero gravitational contribution
+using different type of gauge. Toms has used manifestyl gauge invariant action and has also found no gravitational contribution \cite{toms}. In \cite{absence} calculations in both cutoff and dimensional regularization shemes shown no gravitational contribution.
+In the dimensional regularization sheme, a number of works found the gravitational contributions to be absent \cite{nieuwenhuizen}\cite{absence}.
 (The cited works all used the one-loop approximation)
-Conflicting results leave the question of existence and value of $a$ from (\ref{betawilczek}) in the EFT open.
+Conflicting results leave open the question of existence and value of factor $a$ from (\ref{betawilczek}) in the EFT.
+The conceptual problem of EFT in this setting is the use of perturbative methods for scales approaching Planck energy.
+Also, the use of some renormalization shemes for extracting beta functions is problematic, as e.g. dimensional regularization is insensitive to quadratic
+divergences that are claimed to give contribution in (\ref{betawilczek}) \cite{absence}.
+Adressing the problem properly would require the use of non-perturbative methods and mathematical tools that are better behaved.
+A framework which we will now discuss and conduct our own calculations in, is the quantum einstein gravity treated with functional renormalization group, aka the asymptotic safety programme.
+This theory is potentially a fundamental theory, valid at all energy scale \cite{qeg} and is governed by a well-defined diferential equation governing the RG flow.
 % The work has layed ground for further (..)
 % Calculations using various renormalization schemes and approximations has given conflicting results on the presence and value of 
 % \textcolor{red}{(discussion of results outside asymptotic safety paradigm. Wilczek, pro and contra, etc.)} 
 
-(Segway into the asymptotic safety i że teraz nie effective tylko potentially uv complete)
+% (Segway into the asymptotic safety i że teraz nie effective tylko potentially uv complete)
 
 % (I tutaj napisać jak AS to rozwiązało i przewidziało masę higgsa więc dobry trop i wogle)
 % Wspomnieć że jeżeli biegun landaua zostanie, to nasz model musi być no najwyżej teorią efektywną
@@ -150,7 +156,9 @@ Conflicting results leave the question of existence and value of $a$ from (\ref{
 The central object of the functional renormalization group is the effective average action.
 % The object, that we will call an effective action $\Gamma$ is different and should not be confused with $S_{\text{eff}}$.
 To introduce it, let us start from the scalar field theory. The definition for other theories come as a straight-forward generalization.
-Its euclidean partition function and the generating functional of connected Green's functions reads
+From now on, we will assume a Wick rotation
+and all scalar products should be understood as euclidean.
+The partition function and the generating functional of connected Green's functions reads
 \begin{gather}
     Z[j] = \int \mathcal{D}\phi \ e^{-S[\phi] + \int dx j \phi} \\
 % \end{equation}
@@ -172,17 +180,42 @@ are included. $\Gamma$ acts as a generating functional of 1PI Green's functions.
 the clasical action, yields the equations of motion for vacuum expectation values of the quantum fields.
 
 In its bare form, effective action is ill-defined, as was expected. One option is to introduce a UV cutoff $\Lambda$
-and study the rg flow through divergences proportional to $\Lambda$. The modification we will employ, however, involves
+and study the RG flow through divergences proportional to $\Lambda$. The modification we will employ, however, involves
 an IR cutoff inserted through adding a regulator term $\Delta S_k[\phi]$ to the bare action $S[\phi]$ in the definition of partition function
 and subtracted from the final form of effective action. Explicitly, this new object, called the effective average action (EAA) is defined as
 \begin{gather}
-    W_k[j] = \log{\int \mathcal{D}\phi \ e^{-S[\phi] - \Delta S_k[\phi] + \int dx j \phi}}\\
-    \Gamma_k[\phi_c] = W_k[j_\phi] - \int d^4 x j_\phi(x) \phi(x) - \Delta S_k[\phi]
+    \Gamma_k[\phi_c] = W_k[j_\phi] - \int d^4 x j_\phi(x) \phi(x) - \Delta S_k[\phi]\\
+    W_k[j] = \log{\int \mathcal{D}\phi \ e^{-S[\phi] - \Delta S_k[\phi] + \int dx j \phi}} \qquad \Delta S_k[\phi] = \frac{1}{2}\int d^4 x \phi \hat{R}_k (-\partial_{\mu}\partial^{\mu}) \phi
 \end{gather}
 Motivation for this definition of EAA will become clear when we study the functional renormalization group
 
+The operator $\hat{R}_k (\partial_{\mu}\partial^{\mu})$ is what introduces a momentum scale dependence to the action.
+Its purpose is to act as an IR regulator and extinguish a propagation of modes of the field $\phi$ below a certain momentum value.
+We assume that the four-laplacian operator $\partial_{\mu}\partial^{\mu}$ can be eigendecomposed and its eigenvalues corresponding to functions $e^{ip_\mu x^\mu}$ are the values of $-p^2$.
+Then, $\hat{R}_k$ can be expressed as
+\begin{equation}
+    \hat{R}_k (\partial_{\mu}\partial^{\mu}) = \int_0^{\infty} d(p^2) \ R_k(p^2) \ \hat{\mathcal{D}}_{p^2}
+\end{equation}
+The operator $\hat{\mathcal{D}}_{p^2}$ acts as an identity on the flat waves with laplacian eigenvalue $p^2$ and annihilates all other flat waves.
+The exact form of the cutoff function $R_k(p^2)$ is quite arbitrary, but for $\hat{R}_k$ to acts as a proper IR regulator, it has to satisfy certain requirements.
+The forms of cutoff function, which we will analyze in further calculations are:
+\begin{gather}
+    R_k^{\text{exp1}}(p^2) = \frac{p^2}{e^{p^2/k^2} - 1}\\
+    R_k^{\text{exp2}}(p^2) = \frac{p^4}{k^2(e^{p^4/k^4} - 1)}\\
+    R_k^{\text{litim}}(p^2) = (k^2-p^2) \ \theta \left(1-\frac{p^2}{k^2}\right)
+\end{gather}
+% All of them are identically zero in the limit $k \rightarrow 0$, which ensures that $\lim_{k\rightarrow 0 } \Gamma_{k} = \Gamma$
+% and for $p^2 > k^2$ they quickly tend to zero, which ensure that the high-momentum field modes are unaffected by the regulator
+
+All of them quickly tend to zero for $p^2 > k^2$, which ensures that the field modes above $k^2$ are unaffected by the regulator
+and they are identically zero for $k = 0$, allowing the ordinary effective action $\Gamma$ to be recovered from $\Gamma_k$ in that limit.
+
+% As we work in the flat minkowskian background,
+
+% With the addition of $\Delta S_k$, a kinetic term of the field $\phi$
+
 % \subsubsection*{\centering Infrared regulator and the scheme dependence}
-\textcolor{red}{(Infrared regulator and the scheme dependence)}
+% \textcolor{red}{(Infrared regulator and the scheme dependence)}
 % \subsubsection*{\centering Beta functional and the functional renormalization group}
 
 The $\Gamma_k$ is IR-regulated, but the UV divergences still cause it to be ill-defined. 
@@ -465,7 +498,8 @@ by $\varPi_A$ comes from products of effective vertices and propagators that inv
 There are just two such products. After considering coefficients in the expansion of logarithm from (\ref{pf}) and from performing trace, the expression for gauge field renormalization beta function can be written as
 \begin{align}
     \beta_{Z_A} & = \varPi_A \cdot \partial_t \Gamma_k = \frac{1}{2} \widetilde{\partial_t} \int d^4 q \ \operatorname{VertAAhh}_{\mu\nu\rho\sigma}(p,-p,q,-q) \operatorname{PropG}^{\mu\nu\rho\sigma}(q)\\
-    & - \frac{1}{2} \widetilde{\partial_t} \int d^4 q \ \operatorname{VertAAh}^{\mu\nu\rho}(p,-q,p+q) \operatorname{VertAAh}^{\sigma\tau\kappa}(-p,q,-p-q)  \operatorname{PropG}_{\mu\nu\sigma\tau}(p+q) \operatorname{PropA}_{\rho\kappa}(q)
+    & - \frac{1}{2} \widetilde{\partial_t} \int d^4 q \ \operatorname{VertAAh}^{\mu\nu\rho}(p,-q,p+q) \operatorname{VertAAh}^{\sigma\tau\kappa}(-p,q,-p-q) \cdot \\
+    & \cdot \operatorname{PropG}_{\mu\nu\sigma\tau}(p+q) \operatorname{PropA}_{\rho\kappa}(q)
 \end{align}
 This reduces the problem of extracting information about RG flow in functional renormalization group to computing amputated one-loop feynman diagrams.
 \begin{figure}[H]
@@ -487,10 +521,17 @@ This reduces the problem of extracting information about RG flow in functional r
 
 Finally, the resulting beta function of abelian gauge coupling $g$ in the spacetime with four dimensions is
 \begin{equation}
-    \beta_{g_Y} = g_Y \frac{\eta_A}{2} = g_Y \frac{G}{4 \pi} \left( \frac{\eta_h - 6}{6(1-2 \Lambda)^2} - 
+    \beta_{g_Y} = g_Y \frac{\eta_A}{2} = g_Y \frac{G}{4 \pi} \left( \frac{6 - \eta_h}{6(1-2 \Lambda)^2} + 
     \frac{(\eta_A-8)(1-2\Lambda) + (\eta_h -8)}{8 (1-2 \Lambda )^2}\right) + \beta_{g_Y}^{\text{SM}}
 \end{equation}
 The result for an arbitrary spacetime dimension is given in (apx).
+To study the qualitative aspects of gravitational corrections, we can neglect the cosmological constant and
+the corrections to gauge and graviton propagators entering via $\eta_A$ and $\eta_h$. This approximations
+yields a very simple form of beta function, that indicates a negative gravitational contribution to the running
+of gauge coupling.
+\begin{equation}
+    \beta_{g_Y} = - \frac{G}{4 \pi} + \beta_{g_Y}^{\text{SM}}
+\end{equation}
 
 \textcolor{red}{(...)}\\
 
@@ -519,10 +560,20 @@ qualitative differences in the behaviour of RG flow computed with different regu
 \section*{Summary}
 
 \begin{thebibliography}{9}
-    \bibitem{betaf scalar}
-    Brod, J., Polonsky, Z. Two-loop beta function for complex scalar electroweak multiplets. J. High Energ. Phys. 2020, 158 (2020). https://doi.org/10.1007/JHEP09(2020)158
-    \bibitem{betaf chiral lagrangian}
-    Buchalla, G., Catà, O., Celis, A., Knecht, M., Krause, C., Complete one-loop renormalization of the Higgs-electroweak chiral Lagrangian. Nuclear Phys. B 2018, 928 (93). https://doi.org/10.1016/j.nuclphysb.2018.01.009
+    \bibitem{higgs mass}
+    Shaposhnikov, M., Wetterich, C. (2010). Asymptotic safety of gravity and the Higgs boson mass. Physics Letters B, 683(2-3). https://doi.org/10.1016/j.physletb.2009.12.02    
+    \bibitem{wilczek}
+    Robinson, S., Wilczek, F. (2006). Gravitational Correction to Running of Gauge Couplings. Phys. Rev. Lett., 96 (23). https://doi.org/10.1103/PhysRevLett.96.231601
+    \bibitem{pietrykowski}
+    Pietrykowski, A. (2006). Gauge Dependence of Gravitational Correction to Running of Gauge Couplings. Phys. Rev. Lett., 98 (6). https://doi.org/10.1103/physrevlett.98.061801
+    \bibitem{toms}
+    Toms, D. J. (2007). Quantum gravity and charge renormalization. Physical Review D, 76 (4). https://doi.org/10.1103/physrevd.76.045015
+    \bibitem{absence}
+    Ebert, D., Plefka, J., Rodigast, A. (2008). Absence of gravitational contributions to the running Yang–Mills coupling. Physics Letters B, 660 (5). https://doi.org/10.1016/j.physletb.2008.01.037 
+    \bibitem{nieuwenhuizen}
+    Deser, S., van Nieuwenhuizen, P. (1974). Nonrenormalizability of the Quantized Einstein-Maxwell System. Physical Review Letters, 32 (5). https://doi.org/10.1103/physrevlett.32.245
+    \bibitem{qeg}
+    Reuter, M., Saueressig, F. (2012). Quantum Einstein gravity. New Journal of Physics, 14 (5). https://doi.org/10.1088/1367-2630/14/5/055022
 \end{thebibliography}
 
 \end{document}
