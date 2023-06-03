@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.11.2)  30 MAY 2023 23:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.11.2)  3 JUN 2023 14:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1036,12 +1036,12 @@ Package shellesc Info: Restricted shell escape enabled on input line 77.
 ) (c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/tex/latex/transparent/transparent.sty
 Package: transparent 2019/11/29 v1.4 Transparency via pdfTeX's color stack (HO)
 )
-LaTeX Font Info:    Trying to load font information for T1+XCharter-TLF on input line 41.
+LaTeX Font Info:    Trying to load font information for T1+XCharter-TLF on input line 37.
  (c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/tex/latex/xcharter/T1XCharter-TLF.fd
 File: T1XCharter-TLF.fd 2017/06/25 (autoinst) Font definitions for T1/XCharter-TLF.
 )
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 41.
+(Font)              scaled to size 10.95pt on input line 37.
  (c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
 \l__kernel_color_stack_int=\count333
@@ -1049,30 +1049,30 @@ File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
 ) (c:/Users/Wojtek/Desktop/Asymptotic-safety/lic/erge.aux)
 \openout1 = `erge.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 41.
-LaTeX Font Info:    Trying to load font information for LY1+ptm on input line 41.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 37.
+LaTeX Font Info:    Trying to load font information for LY1+ptm on input line 37.
  (c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/tex/latex/ly1/ly1ptm.fd
 File: ly1ptm.fd 2001/02/01 font definitions for LY1/ptm using Berry names.
 )
-LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    ... okay on input line 37.
  (c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count334
@@ -1126,7 +1126,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 41.
+Package hyperref Info: Link coloring OFF on input line 37.
 (c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
  (c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/tex/latex/refcount/refcount.sty
@@ -1136,9 +1136,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count340
 )
-LaTeX Info: Redefining \ref on input line 41.
-LaTeX Info: Redefining \pageref on input line 41.
-LaTeX Info: Redefining \nameref on input line 41.
+LaTeX Info: Redefining \ref on input line 37.
+LaTeX Info: Redefining \pageref on input line 37.
+LaTeX Info: Redefining \nameref on input line 37.
  (c:/Users/Wojtek/Desktop/Asymptotic-safety/lic/erge.out) (c:/Users/Wojtek/Desktop/Asymptotic-safety/lic/erge.out)
 \@outlinefile=\write5
 \openout5 = `erge.out'.
@@ -1148,143 +1148,152 @@ LaTeX Info: Redefining \nameref on input line 41.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 17.28pt on input line 43.
+(Font)              scaled to size 17.28pt on input line 39.
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 43.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 43.
+(Font)              scaled to size 12.0pt on input line 39.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 39.
  (c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 43.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 39.
  (c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/it' will be
-(Font)              scaled to size 12.0pt on input line 43.
+(Font)              scaled to size 12.0pt on input line 39.
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 14.4pt on input line 44.
+(Font)              scaled to size 14.4pt on input line 40.
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/b/n' will be
-(Font)              scaled to size 14.4pt on input line 44.
+(Font)              scaled to size 14.4pt on input line 40.
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 54.
+(Font)              scaled to size 8.0pt on input line 50.
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 6.0pt on input line 54.
-<./figures/plotr.jpg, id=36, 650.43pt x 433.62pt>
+(Font)              scaled to size 6.0pt on input line 50.
+<./figures/plotr.jpg, id=40, 650.43pt x 433.62pt>
 File: ./figures/plotr.jpg Graphic file (type jpg)
 <use ./figures/plotr.jpg>
-Package pdftex.def Info: ./figures/plotr.jpg  used on input line 75.
+Package pdftex.def Info: ./figures/plotr.jpg  used on input line 68.
 (pdftex.def)             Requested size: 418.25368pt x 278.83916pt.
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/b/n' will be
-(Font)              scaled to size 10.95pt on input line 77.
+(Font)              scaled to size 10.95pt on input line 70.
  [1
 
 {c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2 <c:/Users/Wojtek/Desktop/Asymptotic-safety/lic/./figures/plotr.jpg>]
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/b/n' will be
-(Font)              scaled to size 12.0pt on input line 146.
+(Font)              scaled to size 12.0pt on input line 138.
  [3] [4] [5]
-Overfull \hbox (0.48666pt too wide) in paragraph at lines 286--289
+Overfull \hbox (0.48666pt too wide) in paragraph at lines 277--280
 \T1/XCharter-TLF/m/n/10.95 First, let us no-tice that the en-tire ex-pres-sion in-side trace can be ex-pressed as a $[] []$,
  []
 
-[6]
-LaTeX Font Info:    Trying to load font information for U+euf on input line 353.
+[6] [7]
+LaTeX Font Info:    Trying to load font information for U+euf on input line 376.
  (c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/tex/latex/amsfonts/ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 )
-Overfull \hbox (11.59697pt too wide) in paragraph at lines 353--358
+Overfull \hbox (11.59697pt too wide) in paragraph at lines 376--381
 \T1/XCharter-TLF/m/n/10.95 fur-ther re-ar-range-ments and per-form-ing space-time in-te-gral, we can ar-rive at the momentum-
  []
 
-[7] [8]
-<./figures/drawing.png, id=149, 845.0772pt x 216.3282pt>
+[8] [9]
+<./figures/drawing.png, id=163, 845.0772pt x 216.3282pt>
 File: ./figures/drawing.png Graphic file (type png)
 <use ./figures/drawing.png>
-Package pdftex.def Info: ./figures/drawing.png  used on input line 466.
+Package pdftex.def Info: ./figures/drawing.png  used on input line 489.
 (pdftex.def)             Requested size: 418.25368pt x 107.06793pt.
- [9]
-<./figures/vertices.png, id=163, 845.0772pt x 216.3282pt>
+<./figures/vertices.png, id=165, 845.0772pt x 216.3282pt>
 File: ./figures/vertices.png Graphic file (type png)
 <use ./figures/vertices.png>
-Package pdftex.def Info: ./figures/vertices.png  used on input line 474.
+Package pdftex.def Info: ./figures/vertices.png  used on input line 497.
 (pdftex.def)             Requested size: 418.25368pt x 107.06793pt.
- [10 <c:/Users/Wojtek/Desktop/Asymptotic-safety/lic/./figures/drawing.png> <c:/Users/Wojtek/Desktop/Asymptotic-safety/lic/./figures/vertices.png>]
-<./figures/diags.png, id=177, 845.0772pt x 355.5684pt>
+ [10 <c:/Users/Wojtek/Desktop/Asymptotic-safety/lic/./figures/drawing.png>]
+<./figures/diags.png, id=178, 845.0772pt x 355.5684pt>
 File: ./figures/diags.png Graphic file (type png)
 <use ./figures/diags.png>
-Package pdftex.def Info: ./figures/diags.png  used on input line 510.
+Package pdftex.def Info: ./figures/diags.png  used on input line 533.
 (pdftex.def)             Requested size: 418.25368pt x 175.98248pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 524--525
-
- []
-
-[11 <c:/Users/Wojtek/Desktop/Asymptotic-safety/lic/./figures/diags.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 540--541
+ [11 <c:/Users/Wojtek/Desktop/Asymptotic-safety/lic/./figures/vertices.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 547--548
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 567--568
+Underfull \hbox (badness 10000) in paragraph at lines 563--564
+
+ []
+
+[12 <c:/Users/Wojtek/Desktop/Asymptotic-safety/lic/./figures/diags.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 590--591
 []\T1/XCharter-TLF/m/n/10.95 Shaposhnikov, M., Wet-terich, C. (2010). Asymp-totic safety of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 567--568
+Underfull \hbox (badness 10000) in paragraph at lines 590--591
 \T1/XCharter-TLF/m/n/10.95 grav-ity and the Higgs bo-son mass. Physics Let-ters B, 683(2-3).
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 571--572
+Underfull \hbox (badness 10000) in paragraph at lines 594--595
 []\T1/XCharter-TLF/m/n/10.95 Pietrykowski, A. (2006). Gauge De-pen-dence of Grav-i-ta-tional Cor-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 571--572
+Underfull \hbox (badness 10000) in paragraph at lines 594--595
 \T1/XCharter-TLF/m/n/10.95 rec-tion to Run-ning of Gauge Cou-plings. Phys. Rev. Lett., 98 (6).
  []
 
 
-Underfull \hbox (badness 4940) in paragraph at lines 575--576
+Underfull \hbox (badness 4940) in paragraph at lines 598--599
 []\T1/XCharter-TLF/m/n/10.95 Ebert, D., Ple-fka, J., Rodi-gast, A. (2008). Ab-sence of grav-i-ta-tional con-
  []
 
 
-Underfull \hbox (badness 3579) in paragraph at lines 575--576
+Underfull \hbox (badness 3579) in paragraph at lines 598--599
 \T1/XCharter-TLF/m/n/10.95 tri-bu-tions to the run-ning Yang^^UMills cou-pling. Physics Let-ters B, 660 (5).
  []
 
-[12]
-Underfull \hbox (badness 10000) in paragraph at lines 577--578
+
+Underfull \hbox (badness 10000) in paragraph at lines 600--601
+[]\T1/XCharter-TLF/m/n/10.95 Tang, Y., Wu, Y.-L. (2010). Grav-i-ta-tional Con-tri-bu-tions to Run-ning
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 600--601
+\T1/XCharter-TLF/m/n/10.95 of Gauge Cou-plings. Com-mu-ni-ca-tions in The-o-ret-i-cal Physics, 54(6).
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 602--603
 []\T1/XCharter-TLF/m/n/10.95 Deser, S., van Nieuwen-huizen, P. (1974). Non-renor-mal-iz-abil-ity of the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 577--578
+Underfull \hbox (badness 10000) in paragraph at lines 602--603
 \T1/XCharter-TLF/m/n/10.95 Quan-tized Einstein-Maxwell Sys-tem. Phys-i-cal Re-view Let-ters, 32 (5).
  []
 
 [13]
 
 LaTeX3 Info: Redefining command \BeforeClosingMainAux with sig. 'm' on line
-(LaTeX3)     582.
+(LaTeX3)     607.
 
  (c:/Users/Wojtek/Desktop/Asymptotic-safety/lic/erge.aux)
 Package rerunfilecheck Info: File `erge.out' has not changed.
-(rerunfilecheck)             Checksum: 3342F212BF9C042E731E80E0400CBCAC;502.
+(rerunfilecheck)             Checksum: 6ED1923BC0A96CD335F2CD67491592F7;595.
  ) 
 Here is how much of TeX's memory you used:
- 23233 strings out of 479485
- 451917 string characters out of 5861561
- 765014 words of memory out of 5000000
- 39633 multiletter control sequences out of 15000+600000
+ 23240 strings out of 479485
+ 452001 string characters out of 5861561
+ 766069 words of memory out of 5000000
+ 39635 multiletter control sequences out of 15000+600000
  609012 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 98i,16n,115p,578b,477s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 98i,16n,115p,578b,396s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/enc/dvips/xcharter/xch_uy5hgr.enc}<c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/xcharter/XCharter-Bold.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/xcharter/XCharter-Italic.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/xcharter/XCharter-Roman.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb>
-Output written on c:/Users/Wojtek/Desktop/Asymptotic-safety/lic/erge.pdf (13 pages, 1079945 bytes).
+Output written on c:/Users/Wojtek/Desktop/Asymptotic-safety/lic/erge.pdf (13 pages, 1082892 bytes).
 PDF statistics:
- 272 PDF objects out of 1000 (max. 8388607)
- 232 compressed objects within 3 object streams
- 91 named destinations out of 1000 (max. 500000)
- 89 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 280 PDF objects out of 1000 (max. 8388607)
+ 240 compressed objects within 3 object streams
+ 96 named destinations out of 1000 (max. 500000)
+ 97 words of extra memory for PDF output out of 10000 (max. 10000000)
 
