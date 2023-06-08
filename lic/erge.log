@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.11.2)  5 JUN 2023 18:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.11.2)  7 JUN 2023 15:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1172,163 +1172,171 @@ LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
 <./figures/plotr.jpg, id=40, 650.43pt x 433.62pt>
 File: ./figures/plotr.jpg Graphic file (type jpg)
 <use ./figures/plotr.jpg>
-Package pdftex.def Info: ./figures/plotr.jpg  used on input line 68.
+Package pdftex.def Info: ./figures/plotr.jpg  used on input line 63.
 (pdftex.def)             Requested size: 418.25368pt x 278.83916pt.
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/b/n' will be
-(Font)              scaled to size 10.95pt on input line 70.
+(Font)              scaled to size 10.95pt on input line 65.
  [1
 
 {c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2 <c:/Users/Wojtek/Desktop/Asymptotic-safety/lic/./figures/plotr.jpg>]
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/b/n' will be
-(Font)              scaled to size 12.0pt on input line 138.
- [3] [4] [5]
-Overfull \hbox (0.48666pt too wide) in paragraph at lines 279--282
+(Font)              scaled to size 12.0pt on input line 127.
+ [3] [4]
+Overfull \hbox (0.48666pt too wide) in paragraph at lines 227--230
 \T1/XCharter-TLF/m/n/10.95 First, let us no-tice that the en-tire ex-pres-sion in-side trace can be ex-pressed as a $[] []$,
  []
 
-[6]
-Overfull \hbox (1.37132pt too wide) detected at line 360
+[5] [6]
+
+LaTeX Warning: Reference `litim' on page 7 undefined on input line 296.
+
+
+Overfull \hbox (1.37132pt too wide) detected at line 303
 [][]\OT1/cmr/m/n/10.95 ^^@[] = [] [] \OML/cmm/m/it/10.95 d[]x[]F[]F[] \OT1/cmr/m/n/10.95 + [] [] \OML/cmm/m/it/10.95 d[]x[] [][] \OT1/cmr/m/n/10.95 + [] [] \OML/cmm/m/it/10.95 d[]x[] [][]
  []
 
-[7] [8]
-LaTeX Font Info:    Trying to load font information for U+euf on input line 415.
+[7]
+LaTeX Font Info:    Trying to load font information for U+euf on input line 356.
  (c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/tex/latex/amsfonts/ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
-)
-Overfull \hbox (11.59697pt too wide) in paragraph at lines 415--420
+) [8]
+Overfull \hbox (11.59697pt too wide) in paragraph at lines 356--361
 \T1/XCharter-TLF/m/n/10.95 fur-ther re-ar-range-ments and per-form-ing space-time in-te-gral, we can ar-rive at the momentum-
  []
 
 [9] [10]
-<./figures/drawing.png, id=189, 845.0772pt x 216.3282pt>
+<./figures/drawing.png, id=186, 845.0772pt x 216.3282pt>
 File: ./figures/drawing.png Graphic file (type png)
 <use ./figures/drawing.png>
-Package pdftex.def Info: ./figures/drawing.png  used on input line 528.
+Package pdftex.def Info: ./figures/drawing.png  used on input line 464.
 (pdftex.def)             Requested size: 418.25368pt x 107.06793pt.
-<./figures/vertices.png, id=191, 845.0772pt x 216.3282pt>
+<./figures/vertices.png, id=188, 845.0772pt x 216.3282pt>
 File: ./figures/vertices.png Graphic file (type png)
 <use ./figures/vertices.png>
-Package pdftex.def Info: ./figures/vertices.png  used on input line 536.
+Package pdftex.def Info: ./figures/vertices.png  used on input line 472.
 (pdftex.def)             Requested size: 418.25368pt x 107.06793pt.
  [11 <c:/Users/Wojtek/Desktop/Asymptotic-safety/lic/./figures/drawing.png>]
-<./figures/diags.png, id=204, 845.0772pt x 355.5684pt>
+<./figures/diags.png, id=199, 845.0772pt x 355.5684pt>
 File: ./figures/diags.png Graphic file (type png)
 <use ./figures/diags.png>
-Package pdftex.def Info: ./figures/diags.png  used on input line 572.
+Package pdftex.def Info: ./figures/diags.png  used on input line 496.
 (pdftex.def)             Requested size: 418.25368pt x 175.98248pt.
  [12 <c:/Users/Wojtek/Desktop/Asymptotic-safety/lic/./figures/vertices.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 586--587
+Underfull \hbox (badness 10000) in paragraph at lines 502--503
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 602--603
+Underfull \hbox (badness 10000) in paragraph at lines 518--519
 
  []
 
 [13 <c:/Users/Wojtek/Desktop/Asymptotic-safety/lic/./figures/diags.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 640--641
+Underfull \hbox (badness 10000) in paragraph at lines 556--557
 []\T1/XCharter-TLF/m/n/10.95 Shaposhnikov, M., Wet-terich, C. (2010). Asymp-totic safety of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 640--641
+Underfull \hbox (badness 10000) in paragraph at lines 556--557
 \T1/XCharter-TLF/m/n/10.95 grav-ity and the Higgs bo-son mass. Physics Let-ters B, 683(2-3).
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 644--645
+Underfull \hbox (badness 10000) in paragraph at lines 560--561
 []\T1/XCharter-TLF/m/n/10.95 Pietrykowski, A. (2006). Gauge De-pen-dence of Grav-i-ta-tional Cor-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 644--645
+Underfull \hbox (badness 10000) in paragraph at lines 560--561
 \T1/XCharter-TLF/m/n/10.95 rec-tion to Run-ning of Gauge Cou-plings. Phys. Rev. Lett., 98(6).
  []
 
 
-Underfull \hbox (badness 4940) in paragraph at lines 648--649
+Underfull \hbox (badness 4940) in paragraph at lines 564--565
 []\T1/XCharter-TLF/m/n/10.95 Ebert, D., Ple-fka, J., Rodi-gast, A. (2008). Ab-sence of grav-i-ta-tional con-
  []
 
 
-Underfull \hbox (badness 5862) in paragraph at lines 648--649
+Underfull \hbox (badness 5862) in paragraph at lines 564--565
 \T1/XCharter-TLF/m/n/10.95 tri-bu-tions to the run-ning Yang^^UMills cou-pling. Physics Let-ters B, 660(5).
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 650--651
+Underfull \hbox (badness 10000) in paragraph at lines 566--567
 []\T1/XCharter-TLF/m/n/10.95 Tang, Y., Wu, Y.-L. (2010). Grav-i-ta-tional Con-tri-bu-tions to Run-ning
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 650--651
+Underfull \hbox (badness 10000) in paragraph at lines 566--567
 \T1/XCharter-TLF/m/n/10.95 of Gauge Cou-plings. Com-mu-ni-ca-tions in The-o-ret-i-cal Physics, 54(6).
  []
 
 [14]
-Underfull \hbox (badness 10000) in paragraph at lines 652--653
+Underfull \hbox (badness 10000) in paragraph at lines 568--569
 []\T1/XCharter-TLF/m/n/10.95 Deser, S., van Nieuwen-huizen, P. (1974). Non-renor-mal-iz-abil-ity of the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 652--653
+Underfull \hbox (badness 10000) in paragraph at lines 568--569
 \T1/XCharter-TLF/m/n/10.95 Quan-tized Einstein-Maxwell Sys-tem. Phys-i-cal Re-view Let-ters, 32(5).
  []
 
 
-Underfull \hbox (badness 5622) in paragraph at lines 656--657
+Underfull \hbox (badness 5622) in paragraph at lines 572--573
 []\T1/XCharter-TLF/m/n/10.95 Daum, J.-E., Harst, U., Reuter, M. (2010) Run-ning gauge cou-pling in
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 656--657
+Underfull \hbox (badness 10000) in paragraph at lines 572--573
 \T1/XCharter-TLF/m/n/10.95 asymp-tot-i-cally safe quan-tum grav-ity. J. High En-erg. Phys., 84(2010).
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 658--659
+Underfull \hbox (badness 10000) in paragraph at lines 574--575
 []\T1/XCharter-TLF/m/n/10.95 Christiansen, N., Eich-horn, A. (2017). An asymp-tot-i-cally safe so-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 658--659
+Underfull \hbox (badness 10000) in paragraph at lines 574--575
 \T1/XCharter-TLF/m/n/10.95 lu-tion to the U(1) triv-i-al-ity prob-lem. Physics Let-ters B, 770.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 660--661
+Underfull \hbox (badness 10000) in paragraph at lines 576--577
 []\T1/XCharter-TLF/m/n/10.95 Eichhorn, A., Kwapisz, J.H., Schif-fer, M. (2022). Weak-gravity bound
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 660--661
+Underfull \hbox (badness 10000) in paragraph at lines 576--577
 \T1/XCharter-TLF/m/n/10.95 in asymp-tot-i-cally safe gravity-gauge sys-tems. Phys. Rev. D, 105(10).
  []
 
 [15]
 
 LaTeX3 Info: Redefining command \BeforeClosingMainAux with sig. 'm' on line
-(LaTeX3)     663.
+(LaTeX3)     579.
 
  (c:/Users/Wojtek/Desktop/Asymptotic-safety/lic/erge.aux)
 Package rerunfilecheck Info: File `erge.out' has not changed.
-(rerunfilecheck)             Checksum: 6ED1923BC0A96CD335F2CD67491592F7;595.
+(rerunfilecheck)             Checksum: 430B25D38DD63C8739A921921E461719;618.
+
+
+LaTeX Warning: There were undefined references.
+
  ) 
 Here is how much of TeX's memory you used:
- 23258 strings out of 479485
- 452231 string characters out of 5861561
- 766344 words of memory out of 5000000
+ 23254 strings out of 479485
+ 452179 string characters out of 5861561
+ 765296 words of memory out of 5000000
  39642 multiletter control sequences out of 15000+600000
  609012 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 98i,16n,115p,578b,477s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 98i,16n,115p,582b,477s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/enc/dvips/xcharter/xch_uy5hgr.enc}<c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/xcharter/XCharter-Bold.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/xcharter/XCharter-Italic.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/xcharter/XCharter-Roman.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/Users/Wojtek/Documents/LaTeX/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb>
-Output written on c:/Users/Wojtek/Desktop/Asymptotic-safety/lic/erge.pdf (15 pages, 1090860 bytes).
+Output written on c:/Users/Wojtek/Desktop/Asymptotic-safety/lic/erge.pdf (15 pages, 1090015 bytes).
 PDF statistics:
- 312 PDF objects out of 1000 (max. 8388607)
- 269 compressed objects within 3 object streams
- 107 named destinations out of 1000 (max. 500000)
+ 307 PDF objects out of 1000 (max. 8388607)
+ 264 compressed objects within 3 object streams
+ 103 named destinations out of 1000 (max. 500000)
  97 words of extra memory for PDF output out of 10000 (max. 10000000)
 
