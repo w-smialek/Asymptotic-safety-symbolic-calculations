@@ -28,11 +28,18 @@
 \setlength{\parindent}{15pt} 
 
 \title{\vspace{-2cm}Landau pole in the Standard Model and the asymptotic safety}
+\title{\vspace{-2cm}Landau pole in the Standard Model and the asymptotic safety}
 \author{{Wojciech Śmiałek}\\
 \\
 {\textit{Supervisor}} \\
 {Jan Kwapisz Ph.D.}}
+{Jan Kwapisz Ph.D.}}
 \date{}
+\newcommand{\jhk}[1]{{\color{red}#1}}
+\newcommand{\jhkbf}[1]{\textbf{\color{red} [#1]}}
+\newcommand{\ws}[1]{{\color{cyan}#1}}
+\newcommand{\wsbf}[1]{\textbf{\color{cyan} [#1]}}
+
 \newcommand{\jhk}[1]{{\color{red}#1}}
 \newcommand{\jhkbf}[1]{\textbf{\color{red} [#1]}}
 \newcommand{\ws}[1]{{\color{cyan}#1}}
@@ -48,11 +55,20 @@
 \jhkbf{Użyj szablonu, link poniżej: }
 %https://mimuw.edu.pl/wzor-pracy-magisterskiej-i-licencjackiej
 
+\section{Introduction}
+\jhkbf{Tak zaznaczam komentarze}
+\jhk{A tak poprawki}
+\jhkbf{Użyj szablonu, link poniżej: }
+%https://mimuw.edu.pl/wzor-pracy-magisterskiej-i-licencjackiej
+
 
 \section{Standard model ...}
 \subsection{Renormalization in the Standard Model}
 The Standard Model of particle physics is a unified description of all quantum fields observed in subatomic physics.  \jhkbf{What about gravity?}
+\subsection{Renormalization in the Standard Model}
+The Standard Model of particle physics is a unified description of all quantum fields observed in subatomic physics.  \jhkbf{What about gravity?}
 It strives to predict all the phenomena observed at microscopic scales while maintaining theoretical
+self-consistency and certain mathematical aesthetics. The predictive power of the Standard Model, with its most
 self-consistency and certain mathematical aesthetics. The predictive power of the Standard Model, with its most
 famous examples like precision tests of electron anomalous magnetic moment or the discovery of Higgs boson,
 makes it ungrounded to postulate a fundamental physical theory that would not reduce to SM in the suitable limit, at least
@@ -72,9 +88,61 @@ Effective behaviour of the gauge interactions in Standard Model at different ene
 Where $\beta_{x_j} = \mu \partial_\mu x_j$ are the Callan - Symanzik beta functions and $\mu$ is the renormalization scale, defined as the ratio between the characteristic energy $\Lambda$ of a given process and a reference scale $k_0$ at which the value of coupling is fixed by the observation.
 The higgs mass $m_h$, scalar self-interaction coupling $\lambda$ and three matrices of Yukawa interaction between the fermions and higgs field constitute all the remaining scale dependent couplings of the SM \textcolor{red}{(?)}.
 The differential equation of the general form $\mu \partial_\mu g = b g^3$ can be integrated and if the value of coupling at scale $k_0$ is fixed to be the measured value $g_{\text{obs}}$, then the predicted $g(\mu)$ at different energy scales is given by
+One should then not be surprised if above $E_p$ Standard Model exhibits certain inconsistencies.
+Effective behaviour of the gauge interactions in Standard Model at different energy scales is governed by the renormalization group equations (RGEs) of three parameters: $U(1)$ gauge coupling $g_1$, $U(2)$ gauge coupling $g_2$ and $U(3)$ gauge coupling $g_3$.
+\begin{gather}
+   \beta_{g_1} = \frac{41}{96\pi^2} g_1^3 + \mathcal{O}(g_1^5) \\% = b^{\text{SM}} g_1^3
+    \beta_{g_2} = - \frac{19}{96\pi^2} g_2^3  + \mathcal{O}(g_2^5)\\
+    \beta_{g_3} = - \frac{7}{16\pi^2} g_3^3 + \mathcal{O}(g_3^5) \\
+    % \beta_{h} = \frac{1}{16 \pi^2} \left[ \frac{9}{2} h^3 -8g_3^2 h- \frac{9}{4} g_2^2 - \frac{17}{12} g_1^2 h \right]\\
+    % \beta_{\lambda} =  \frac{1}{16 \pi^2} \left[ 24 \lambda^2 + 12 \lambda h^2 -9\lambda (g_2^2 + \frac{1}{3} g_1^2) - 6 h^4 + \frac{9}{8} g_2^4 + \frac{3}{8} g_1^4 +\frac{3}{4} g_2^2 g_1^2 \right]
+\end{gather}
+Where $\beta_{x_j} = \mu \partial_\mu x_j$ are the Callan - Symanzik beta functions and $\mu$ is the renormalization scale, defined as the ratio between the characteristic energy $\Lambda$ of a given process and a reference scale $k_0$ at which the value of coupling is fixed by the observation.
+The higgs mass $m_h$, scalar self-interaction coupling $\lambda$ and three matrices of Yukawa interaction between the fermions and higgs field constitute all the remaining scale dependent couplings of the SM \textcolor{red}{(?)}.
+The differential equation of the general form $\mu \partial_\mu g = b g^3$ can be integrated and if the value of coupling at scale $k_0$ is fixed to be the measured value $g_{\text{obs}}$, then the predicted $g(\mu)$ at different energy scales is given by
 \begin{equation}
     g(\mu) = \frac{g_{\text{obs}}}{\sqrt{1-2g_{\text{obs}}^2 b \log{\mu}}}
+    g(\mu) = \frac{g_{\text{obs}}}{\sqrt{1-2g_{\text{obs}}^2 b \log{\mu}}}
 \end{equation}
+The negativity of $\beta_{g_2}$ and $\beta{g_3}$ ensures that for any positive observed value of these couplings, in the limit $\mu \rightarrow \infty$ they tend to zero. This behaviour is called the asymptotic freedom.
+The beta function of the abelian gauge coupling $g_1$ however is positive and
+there exist a finite $\mu= \left(2 g_{\text{obs}}^2 \ \beta_{g}^{(3)} \right)^{-1} $, at which the expression becomes singular.
+This is known as the Landau pole or the quantum triviality problem and
+it remains as one of the big issues of the SM.
+% is the quantum triviality problem for the electroweak $U(1)$ gauge coupling and
+% the scalar higgs boson quartic coupling.
+% In the pure electroweak theory, one loop $\beta$-function of the abelian gauge coupling $g$ is: \cite{higgs mass}
+% \begin{equation}
+%     \beta_{g}^{\text{SM}} = \beta_{g}^{(3)} g^3 = \frac{41}{6} \frac{g_1^3}{16 \pi^2},
+% \end{equation}
+% % \jhkbf{What is Y?}
+
+% - rge can be integrated
+% - g(mu)
+% - widać że asymptotycznie do zera dla ujemnych beta - nazywamy as. freedom i że biegun w skończonej skali gdy dodatnia beta - problem w modelu st. landau pole also called the quantum triviality problem
+
+% Wywalić z tym bare value
+
+% If one postulates that the bare value of a coupling, i.e. $g_{\infty}=\lim_{\mu\rightarrow\infty} g(\mu)$ is the 'true' physical value and it has to be finite,
+% then the value observed in the low energy limit $g_{\text{obs}}$ implied by the SM will be given by
+% \begin{equation}
+%     g_{\text{obs}} = \lim_{\mu\rightarrow\infty} \frac{g_{\infty}}{\sqrt{1+2g_{\infty}^2\beta_g^{(3)}\log{\mu}}}
+% \end{equation}
+% This implies a trivial theory with $g=0$ in the low energy limit for any finite value of bare coupling, which clearly contradicts the observations.
+% Conversely, if we take the measured value $g_{\text{obs}}$ as an input, the predicted value of gauge coupling at different energy scales is
+% \begin{equation}
+%     g(\mu) = \frac{g_{\text{obs}}}{\sqrt{1-2g_{\text{obs}}^2 \beta_g^{(3)}\log{\mu}}}
+% \end{equation}
+% and the $g(\mu)$ diverges at a scale $\mu = \left(2 g_{\text{obs}}^2 \ \beta_{g}^{(3)} \right)^{-1} $.
+% This is known as the Landau pole.
+% Conversely, one could postulate that the bare value of a coupling, i.e. $g_{\infty}=\lim_{\mu\rightarrow\infty} g(\mu)$ is the 'true' physical value and it has to be finite. 
+% Then, the value observed in the low energy limit $g_{\text{obs}}$ should be given by
+% \begin{equation}
+%     g_{\text{obs}} = \lim_{\mu\rightarrow\infty} \frac{g_{\infty}}{\sqrt{1+2g_{\infty}^2\beta_g^{(3)}\log{\mu}}}
+% \end{equation}
+% This implies a trivial theory with $g=0$ in the low energy limit for any finite value of $g_{\infty}$, which clearly contradicts the observations.
+% taking any arbitrarily high value of the bare coupling, the only possible value of $g_{\text{obs}}$ should be 0, making
+% the theory trivial, i.e. non-interacting. \jhkbf{Dlaczego? Bo co inaczej? Co to jest bare coupling?}
 The negativity of $\beta_{g_2}$ and $\beta{g_3}$ ensures that for any positive observed value of these couplings, in the limit $\mu \rightarrow \infty$ they tend to zero. This behaviour is called the asymptotic freedom.
 The beta function of the abelian gauge coupling $g_1$ however is positive and
 there exist a finite $\mu= \left(2 g_{\text{obs}}^2 \ \beta_{g}^{(3)} \right)^{-1} $, at which the expression becomes singular.
@@ -118,7 +186,15 @@ it remains as one of the big issues of the SM.
     \includegraphics[width=1\textwidth]{./figures/plotr.jpg}
     \caption{Running of the abelian gauge parameter $\alpha_{Y} = \frac{g_1^2}{4\pi}$ in the Standard Model. Observed value $\alpha_{Y\text{obs}}$ is taken from \cite{pdg}. 
     Landau Pole marked at $\mu \approx 10^{42.5}$. \jhkbf{Większe podpisy.}}
+    \caption{Running of the abelian gauge parameter $\alpha_{Y} = \frac{g_1^2}{4\pi}$ in the Standard Model. Observed value $\alpha_{Y\text{obs}}$ is taken from \cite{pdg}. 
+    Landau Pole marked at $\mu \approx 10^{42.5}$. \jhkbf{Większe podpisy.}}
     \label{boxes}
+\end{figure}
+% For theories involving massive particles, dimensionless renormalization scale $\mu$ can be defined as the ratio between the characteristic energy $\Lambda$ of a given process and a mass of involved particles. 
+Taking an electron mass as a reference scale of electroweak theory, the location of abelian coupling Landau pole 
+% \jhkbf{Musisz dać definicję.} 
+will be of order $\Lambda \sim 10^{48} \ \text{eV}$, which is well above the Planck scale.
+Similarly, quartic self-interaction $\lambda$ of higgs field theoretically may exhibit a Landau pole at a finite momentum scale.
 \end{figure}
 % For theories involving massive particles, dimensionless renormalization scale $\mu$ can be defined as the ratio between the characteristic energy $\Lambda$ of a given process and a mass of involved particles. 
 Taking an electron mass as a reference scale of electroweak theory, the location of abelian coupling Landau pole 
@@ -129,6 +205,7 @@ Existence of both poles remains an open question, but a theory containing any su
 One solution to this problem could be a grand unified theory (GUT), which proposes a larger symmetry group, spontaneously broken
 to the known $SU(3)\times SU(2) \times U(1)$ of standard model at around the scale where running values of electroweak and strong couplings
 coincide. This scale is predicted to be below Planck energy [ref]. Above the GUT scale, the theory could introduce
+coincide. This scale is predicted to be below Planck energy [ref]. Above the GUT scale, the theory could introduce
 a running of unified coupling that does not exhibit a triviality issue.
 The existence of grand unification, however has not been yet confirmed in any way, while the experimental bounds on the proton lifetime
 heavily constraints or even rules out many of the GUTs[ref]. This constrasts sharply with the other potential completion of the SM,
@@ -136,15 +213,21 @@ which is quantum gravity. Although no quantum theory of gravity has been widely 
 the quantum nature of physical reality most certainly are. Should quantum gravitational solution to the triviality issues of SM exist,
 it would provide an argument for consistency between the particular theory of quantum gravity and the SM, as well as eliminate one of the arguments for the need of GUT.
 \subsection{Running of gauge coupling in the effective field theory of quantum gravity}
+it would provide an argument for consistency between the particular theory of quantum gravity and the SM, as well as eliminate one of the arguments for the need of GUT.
+\subsection{Running of gauge coupling in the effective field theory of quantum gravity}
 The straightforward approach to quantum gravity - a metric fluctuation quantum field governed by Einstein - Hilbert action
+is known to be non-renormalizable by the perturbative methods.\cite{book}. However, for energy scales small
+compared to Planck energy, the infinite number of divergent terms in the lagrangian affects predictions in a negligible way and can be effectively ignored.
 is known to be non-renormalizable by the perturbative methods.\cite{book}. However, for energy scales small
 compared to Planck energy, the infinite number of divergent terms in the lagrangian affects predictions in a negligible way and can be effectively ignored.
 In this framework, called the effective field theory of gravity (EFT), there has been a number of works investigating
 the gravitational contribution to the running of gauge couplings. The predictions of EFT does not apply above
 the Planck scale, but an assessment of the quantitative nature of gravitational corrections can still give valuable information.
+the Planck scale, but an assessment of the quantitative nature of gravitational corrections can still give valuable information.
 Since gravitons carry no gauge charge, the contribution to beta function of gauge coupling from SM particles and gravitons are separate
 and in the one-loop approximation takes the general form
 \begin{equation}
+    \beta_g(k) = \alpha \cdot G k^2 g + \gamma \cdot g^3 = \alpha \cdot G k^2 g + \beta_{g}^{\text{SM}}
     \beta_g(k) = \alpha \cdot G k^2 g + \gamma \cdot g^3 = \alpha \cdot G k^2 g + \beta_{g}^{\text{SM}}
     \label{betawilczek}
 \end{equation}
@@ -174,9 +257,38 @@ In \cite{absence}, calculations performed in both cutoff and dimensional regular
 Then, some later works again argued that the Wilczek's result was generally correct, for example the application of Loop Regularization method, which can appropriately treat the quadratic divergences and preserve non-abelian gauge symmetry,
 indicated a non-vanishing contribution $\alpha = -\frac{1}{\pi} $ \cite{tang}.
 The consensus has not yet been found and the question of the existence and value of $\alpha$ in the EFT is left open.
+The solution to the quantum triviality problem therefore depends on the value of $\alpha$.
+For any positive value of $\alpha$, value of gauge coupling will contain a pole for some finite momentum scale.
+Assuming $\alpha < 0$ and integrating the equation (\ref{betawilczek}), we find the equation determining the critical value $\alpha_{\text{crit}}$, below which the gauge coupling will be asymptotically free and above which it will contain the Landau pole
+\begin{equation}
+\operatorname{Ei}\left[\alpha_{\text{crit}} \left( \frac{k_0}{M_p} \right)^2 \right]
+    = - \frac{e^{\alpha_{\text{crit}} \left( \frac{k_0}{M_p} \right)^2}}{b \ g^2(k_0)}% \approx  - \frac{1}{b \ g^2(k_0)}
+\end{equation}
+Where $\operatorname{Ei}(x)$ is the exponential integral function and $g(k_0)$ is the value of coupling observed at the momentum scale $k_0$. With the assumptions $b g^2(k_0) \ll 1$ and $k_0 \ll M_p$ the solution to this equation is approximately
+% Inserting the observed value of abelian coupling of standard model for $g(k_0)$ and the electron mass for $k_0$, we obtain
+\begin{equation}
+    \alpha_{\text{crit}} \approx \left( \frac{M_p}{k_0} \right)^2 \operatorname{exp}{\left( - \frac{1}{b g^2(k_0)} \right)}
+\end{equation}
+Which for any realistic value of $g(k_0)$ results in an extremely tiny $\alpha_{\text{crit}}$, despite the large factor $M_p^2/k_0^2$.
+This means that in practice determining the sign of gravitational contribution $\alpha$ is enough to conclude about the asymptotic freedom or the existence of a Landau pole.
+
+
+The study of gravitational corrections to the running of abelian gauge coupling in the effective field theory of quantum gravity has generally produced contradicting results about the existence and sign of $\alpha$.
+Initially, calculations in the cutoff scheme were performed by Wilczek and Robinson \cite{wilczek} and indicated
+$\alpha = - \frac{3}{\pi} $, suggesting a solution to the triviality problem.
+However, later work by Pietrykowski \cite{pietrykowski} argued, that a result obtained by Wilczek and Robinson is specific to the choice of graviton gauge fixing.
+Using the same type of gauge fixing, Pietrykowski has reproduced the result of Wilczek and Robinson and confirmed that it does not depend on the value of gauge fixing parameter, but when using a different class of gauge fixing terms, he found the gravitational contribution to be absent.
+In \cite{toms}, a Vilkovsky-DeWitt method was used and the calculations also indicated no gravitational contribution to $\beta_g$.
+In \cite{absence}, calculations performed in both cutoff and dimensional regularization shemes indicated the absence of gravitational contribution.
+Then, some later works again argued that the Wilczek's result was generally correct, for example the application of Loop Regularization method, which can appropriately treat the quadratic divergences and preserve non-abelian gauge symmetry,
+indicated a non-vanishing contribution $\alpha = -\frac{1}{\pi} $ \cite{tang}.
+The consensus has not yet been found and the question of the existence and value of $\alpha$ in the EFT is left open.
 The conceptual problem of EFT in this setting is the use of perturbative methods for scales approaching Planck energy.
 Also, the use of some renormalization shemes for extracting beta functions is problematic, as e.g. dimensional regularization is insensitive to quadratic
 divergences that are claimed to give contribution to $\beta_g$ \cite{absence}.
+Adressing the problem properly would require the use of non-perturbative methods and mathematical tools that are more well-behaved.
+A framework which we will discuss and conduct our own calculations in, is the quantum einstein gravity treated with functional renormalization group, also known as the asymptotic safety programme, which operates with the mathematical tools that are not ambiguous and
+is conjectured to be valid also above the Planck scale \cite{qeg}.
 Adressing the problem properly would require the use of non-perturbative methods and mathematical tools that are more well-behaved.
 A framework which we will discuss and conduct our own calculations in, is the quantum einstein gravity treated with functional renormalization group, also known as the asymptotic safety programme, which operates with the mathematical tools that are not ambiguous and
 is conjectured to be valid also above the Planck scale \cite{qeg}.
@@ -255,6 +367,7 @@ A generating functional of the exact vertices or the 1PI correlation functions w
 It can be shown that this functional, called the effective action and denoted as $\Gamma$ is the Legendre transform of $W[J]$:
 \begin{equation}
     \Gamma[\Phi_c] = W[J_\Phi] - \int d^4 x {j_\phi}_a(x) \phi^a(x)
+    \Gamma[\Phi_c] = W[J_\Phi] - \int d^4 x {j_\phi}_a(x) \phi^a(x)
 \end{equation}
 Where the two fields $\Phi_c$ and $J_\Phi$ are inverses of each other, defined as the solution to
 \begin{equation}
@@ -323,7 +436,10 @@ and subtracted from the final form of effective action. Explicitly, this new obj
 \begin{gather}
     \Gamma_k[\Phi_c] = W[J_\Phi] - \int d^4 x {j_\phi}_a(x) \phi^a(x) - \Delta S_k[\Phi]\\
     W_k[j] = \log{\int \mathcal{D}\Phi \ e^{-S[\Phi] - \Delta S_k[\Phi] + \int dx j_a \phi^a}} \qquad \Delta S_k[\Phi] = \frac{1}{2}\int d^4 x \phi_a (\hat{R}_k)^a_a (\partial_{\mu}\partial^{\mu}) \phi^a
+    \Gamma_k[\Phi_c] = W[J_\Phi] - \int d^4 x {j_\phi}_a(x) \phi^a(x) - \Delta S_k[\Phi]\\
+    W_k[j] = \log{\int \mathcal{D}\Phi \ e^{-S[\Phi] - \Delta S_k[\Phi] + \int dx j_a \phi^a}} \qquad \Delta S_k[\Phi] = \frac{1}{2}\int d^4 x \phi_a (\hat{R}_k)^a_a (\partial_{\mu}\partial^{\mu}) \phi^a
 \end{gather}
+The operator $(\hat{R}_k)^a_b (\partial_{\mu}\partial^{\mu})$ is what introduces a momentum scale dependence to the action.
 The operator $(\hat{R}_k)^a_b (\partial_{\mu}\partial^{\mu})$ is what introduces a momentum scale dependence to the action.
 Its purpose is to act as an IR regulator and extinguish the propagation of modes of the field $\phi$ with laplacian operator eigenvalues below a certain scale $k$.
 
@@ -354,8 +470,17 @@ Może warto, żebyś przedyskutował jak działa renormalizacja funkcjonalna na 
 }
 \subsection{The operator expansion scheme for the Wetterich equation}
 \jhkbf{Co to jest theory space, nie napisałeś dlaczego tak zakładamy (ponieważ tylko tak możemy rozwiązać to równanie), czy są jakieś inne metody?}
+but its derivative with respect to $t = \log{k}$. 
+\jhkbf{Możesz powiedzieć: Even exact the Wetterich equation cannot be usually solved exactly, yet see:
+%https://arxiv.org/abs/0909.3477
+%https://inspirehep.net/literature/1596947
+Może warto, żebyś przedyskutował jak działa renormalizacja funkcjonalna na przykładzie 0909.3477.
+}
+\subsection{The operator expansion scheme for the Wetterich equation}
+\jhkbf{Co to jest theory space, nie napisałeś dlaczego tak zakładamy (ponieważ tylko tak możemy rozwiązać to równanie), czy są jakieś inne metody?}
 We assume the theory space in which $\Gamma_k$ takes the form
 \begin{equation}
+    \Gamma_k = \sum_i g_i(k) \ \mathcal{O}_i [\Phi]
     \Gamma_k = \sum_i g_i(k) \ \mathcal{O}_i [\Phi]
     \label{gamma_decomp}
 \end{equation}
@@ -364,16 +489,21 @@ and $g_i(k)$ are scale-dependent couplings.
 The coefficients in the derivative $\partial_t \Gamma_k$ are therefore simply the beta functions of corresponding operators
 \begin{equation}
     \frac{d \Gamma_k}{dt} = \sum_i \frac{d g_i}{dt} \ \mathcal{O}_i [\Phi] = \beta_i(g,k) \ \mathcal{O}_i [\Phi]
+    \frac{d \Gamma_k}{dt} = \sum_i \frac{d g_i}{dt} \ \mathcal{O}_i [\Phi] = \beta_i(g,k) \ \mathcal{O}_i [\Phi]
 \end{equation}
 The beta functions may depend on all the couplings, as well as the renormalization scale $k$ and
 they can later be extracted from $\frac{d \Gamma_k}{dt}$ via a suitable projection operator. 
+\jhkbf{TO powinno pójśc wyzej bo najpierw jest równanie Wettericha a potem jego rozwiązania i na przykład 9 zakładamy tylko dlatego, że nie umiemy jego rozwiązać}
 \jhkbf{TO powinno pójśc wyzej bo najpierw jest równanie Wettericha a potem jego rozwiązania i na przykład 9 zakładamy tylko dlatego, że nie umiemy jego rozwiązać}
 The $\frac{d \Gamma_k}{dt}$ is therefore called the beta functional and it is finite and well-defined.
 This is because it can be viewed as a difference between effective actions with infinitesimally
 different cutoffs, where the UV divergences in the difference cancel and what remains is the finite rest
 dependent on the degrees of freedom with momenta close to the scale $k$.
 At the one loop level \jhkbf{Jaki one-loop level?}, the derivative of effective average action can be expressed as
+At the one loop level \jhkbf{Jaki one-loop level?}, the derivative of effective average action can be expressed as
 \begin{equation}
+    \frac{d \Gamma_k^{(1)}}{dt} = \frac{1}{2} \operatorname{STr} \left[ \left(S^{(2)} + R_k\right)^{-1} \cdot \frac{d R_k}{dt} \right]
+    \label{1LEAA}
     \frac{d \Gamma_k^{(1)}}{dt} = \frac{1}{2} \operatorname{STr} \left[ \left(S^{(2)} + R_k\right)^{-1} \cdot \frac{d R_k}{dt} \right]
     \label{1LEAA}
 \end{equation}
@@ -388,12 +518,14 @@ One may guess, that the "renormalization group improvement" of this equation - t
  EAA, will lead to a more accurate description of physics:
 \begin{equation}
     \frac{d \Gamma_k}{dt} = \frac{1}{2} \operatorname{STr} \left[ \left(\Gamma_k^{(2)} + R_k\right)^{-1} \cdot \frac{d R_k}{dt} \right]
+    \frac{d \Gamma_k}{dt} = \frac{1}{2} \operatorname{STr} \left[ \left(\Gamma_k^{(2)} + R_k\right)^{-1} \cdot \frac{d R_k}{dt} \right]
     \label{FRGE}
 \end{equation}
 This turns out to be an exactly correct equation, that does not rely on any perturbative expansion \cite{wetteq}.
 It is called the functional renormalization group equation (FRGE) or the Wetterich equation and
 it's a simple, first order differential equation that governs the renormalization group flow of $\Gamma_k$ functional.
 
+\jhkbf{Bo tu już mówisz o rozwiązywaniu, ale najpierw musisz powiedzieć o operatorach i o projektorach}
 \jhkbf{Bo tu już mówisz o rozwiązywaniu, ale najpierw musisz powiedzieć o operatorach i o projektorach}
 In its original form, FRGE is not well suited for performing specific calculations. One very intuitive method, which
 we will use, is called the $\mathcal{PF}$-expansion. 
@@ -402,10 +534,15 @@ will in general be, for spinor or tensor fields, a functional hessian matrix. We
 regulated inverse propagator matrix $\mathcal{P}$ and a rest, which will include the derivatives of terms non quadratic in fields.
 \begin{equation}
     \Gamma_k^{(2)} + R_k = \mathcal{P} + \mathcal{F}
+    \Gamma_k^{(2)} + R_k = \mathcal{P} + \mathcal{F}
     \label{pf1}
 \end{equation}
 First, let us notice that the entire expression inside trace can be expressed as a $\log{(\mathcal{P}+\mathcal{F})}$, upon which acts
 a $t$-derivative sensitive only on the $t$ dependence in $R_k$. Explicitly, we can write:
+\begin{gather}
+    \left(\mathcal{P} + \mathcal{F}\right)^{-1} \cdot \partial_t R_k = \left(\mathcal{P} + \mathcal{F}\right)^{-1} \cdot \widetilde{\partial_t} \left(\mathcal{P}+\mathcal{F}\right) = \widetilde{\partial_t} \log{\left(\mathcal{P}+\mathcal{F}\right)}\\
+    \widetilde{\partial_t} = \int \partial_t R_k \frac{\delta}{\delta R_k}
+\end{gather}
 \begin{gather}
     \left(\mathcal{P} + \mathcal{F}\right)^{-1} \cdot \partial_t R_k = \left(\mathcal{P} + \mathcal{F}\right)^{-1} \cdot \widetilde{\partial_t} \left(\mathcal{P}+\mathcal{F}\right) = \widetilde{\partial_t} \log{\left(\mathcal{P}+\mathcal{F}\right)}\\
     \widetilde{\partial_t} = \int \partial_t R_k \frac{\delta}{\delta R_k}
@@ -416,6 +553,7 @@ the number of $\mathcal{F}$-terms
     \frac{d \Gamma_k}{dt} = \frac{1}{2} \operatorname{STr} \left[ \widetilde{\partial_t} \log{\left(\mathcal{P}+\mathcal{F}\right)} \right] = \frac{1}{2} \operatorname{STr} \left[ \widetilde{\partial_t} \left(\log{\mathcal{P}} + \log{(1+\mathcal{P}^{-1}\mathcal{F})}\right) \right] \\ =  \frac{1}{2} \operatorname{STr} \left[ \widetilde{\partial_t} \log{\mathcal{P}} \right] + \frac{1}{2} \sum_{n=1}^{\infty} \frac{(-1)^{n-1}}{n} \operatorname{STr}\left[\widetilde{\partial_t}\left(\mathcal{P}^{-1}\mathcal{F}\right)^n\right]
     \label{pf}
 \end{gather}
+Using this expression, we can reduce the problem of finding $\partial_t \Gamma_k$ to a computation of a set of Feynman diagrams.
 Using this expression, we can reduce the problem of finding $\partial_t \Gamma_k$ to a computation of a set of Feynman diagrams.
 \subsection{Background field method and gauge invariance}
 The gauge theories require a more careful definition of functional integral.
@@ -455,8 +593,10 @@ In the euclidean space, this will simply be a unit matrix.
 % Wilczek paper
 %% Qualitative difference
 \subsection{Running of gauge coupling in the asymptotic safety}
+\subsection{Running of gauge coupling in the asymptotic safety}
 A discussion of the gravitational solution to the abelian gauge triviality problem, prompted by the work of Wilczek and Robinson,
 has also been analysed in the framework of asymptotic safety. Numerous works, employing different types of truncations, cutoff
+profiles and the treatment of symmetries, agree on the fact of existence and negativity of gravitational contribution.
 profiles and the treatment of symmetries, agree on the fact of existence and negativity of gravitational contribution.
 The ambiguities caused by the use of background field method and treatment
 of diffeomorphism symmetry in the perturbative approach, make it important to carefully construct 
@@ -490,9 +630,12 @@ In the perturbative approximation, where the anomalous dimension coming from the
 the abelian gauge beta function found in \cite{kwapisz_eichhorn} was
 \begin{equation}
     \beta_{g_1} = - Gk^2 \frac{1}{4\pi} g_1 - w_2 \frac{1}{6\pi^2} - v_2 \frac{1}{24\pi^2}
+    \beta_{g_1} = - Gk^2 \frac{1}{4\pi} g_1 - w_2 \frac{1}{6\pi^2} - v_2 \frac{1}{24\pi^2}
 \end{equation}
 The corresponding result in \cite{christiansen_eichhorn} is equivalent, when $v_2 \rightarrow 0$.
 Cutoff profile $r^{\text{litim}}(y)$ was used in both of these calculations.
+
+\jhkbf{Brakuje czegoś o asymptotic safety o co chodzi dlaczego to jest warte jakie są wyniki i hot trendy.}
 
 \jhkbf{Brakuje czegoś o asymptotic safety o co chodzi dlaczego to jest warte jakie są wyniki i hot trendy.}
 
@@ -635,8 +778,14 @@ This lets us write the ansatz
 \end{gather}
 Which reduces (\ref*{inverseA}) and (\ref*{inverseG}) to a set of linear equations for $\{b_i\}$ and $\{c_i\}$.
 After solving it we obtain a final form of the regulated photon and graviton propagators. \textcolor{red}{expr. or ref. to apx}
+After solving it we obtain a final form of the regulated photon and graviton propagators. \textcolor{red}{expr. or ref. to apx}
 
 Interaction part of effective action $\Gamma$, due to nonlinear functions of metric perturbation field, will
+consist of an infinite series of interactions with two photon fields and any number of graviton fields. Yet, our goal is not to compute the entire functional.
+% Let us note, that the matrix multiplication of $\mathcal{P}$ and $\mathcal{F}$ enforces a structure of the products that remain after performing a trace, equivalent to a structure of Feynman diagrams.
+% which functional derivatives $\delta h$ and $\delta A$ has acted on the interaction term, determines what elements of $\mathcal{P}^{-1}$ later multiply it. 
+Let us note, that the matrix multiplication of $\mathcal{P}^{-1}$ and $\mathcal{F}$ enforces a certain structure of the products that remain after performing a trace.
+In the diagramatical representation, this is equivalent to the fact that in any effective vertex two of the external legs are opened to be contracted with a propagator and form a loop, while the rest is left uncontracted. This can be easily understood by representing the product $\mathcal{P}^{-1} \mathcal{F}$ graphically:
 consist of an infinite series of interactions with two photon fields and any number of graviton fields. Yet, our goal is not to compute the entire functional.
 % Let us note, that the matrix multiplication of $\mathcal{P}$ and $\mathcal{F}$ enforces a structure of the products that remain after performing a trace, equivalent to a structure of Feynman diagrams.
 % which functional derivatives $\delta h$ and $\delta A$ has acted on the interaction term, determines what elements of $\mathcal{P}^{-1}$ later multiply it. 
@@ -650,6 +799,8 @@ Where a red line at the end of a vertex leg denotes the functional derivative wi
 To extract the gauge field anomalous dimension from the FRGE, we act on it with
 a projection operator $\varPi_A$, which then annihilate all terms which does not originate from the diagrams with two external photon legs.
 The only vertices that may form such diagrams come from terms of the form $\delta_{A}\delta_h \int c \cdot AAh$ and $\delta_h \delta_h \int c \cdot AAhh$
+a projection operator $\varPi_A$, which then annihilate all terms which does not originate from the diagrams with two external photon legs.
+The only vertices that may form such diagrams come from terms of the form $\delta_{A}\delta_h \int c \cdot AAh$ and $\delta_h \delta_h \int c \cdot AAhh$
 \begin{figure}[H]
     \includegraphics[width=1\textwidth]{./figures/vertices.png}
     \caption{Necessary vertices for computing gauge field anomalous dimension. Red line at the end of a vertex leg denotes a functional derivative with respect to the corresponding field applied to the interaction term}
@@ -657,10 +808,16 @@ The only vertices that may form such diagrams come from terms of the form $\delt
 We denote the expressions for these vertices, respectively
 \begin{gather}
     \left. \frac{\delta^2 \Gamma}{\delta h^{\mu\nu}(p_1) \delta A^{\rho}(p_2)}\right|_{h=0} = \frac{\delta^2}{\delta h^{\mu\nu}(p_1) \delta A^{\rho}(p_2)} \int \prod_{i=1}^3 d^4 p_i \mathcal{L}_{\text{AAh}}\left(\tilde{h}(p_1), \tilde{A}(p_2), \tilde{A}(p_3)\right)\\
+    \left. \frac{\delta^2 \Gamma}{\delta h^{\mu\nu}(p_1) \delta A^{\rho}(p_2)}\right|_{h=0} = \frac{\delta^2}{\delta h^{\mu\nu}(p_1) \delta A^{\rho}(p_2)} \int \prod_{i=1}^3 d^4 p_i \mathcal{L}_{\text{AAh}}\left(\tilde{h}(p_1), \tilde{A}(p_2), \tilde{A}(p_3)\right)\\
     = \operatorname{VertAAh}_{\mu\nu\rho}(p_1,p_2,p_3)\\
+    \left. \frac{\delta^2 \Gamma}{\delta h^{\mu\nu}(p_1) \delta h^{\rho\sigma}(p_2)}\right|_{h=0} = \frac{\delta^2}{\delta h^{\mu\nu}(p_1) \delta h^{\rho\sigma}(p_2)} \int \prod_{i=1}^4 d^4 p_i \mathcal{L}_{\text{AAhh}}\left(\tilde{h}(p_1), \tilde{h}(p_2), \tilde{A}(p_3), \tilde{A}(p_4) \right)\\
     \left. \frac{\delta^2 \Gamma}{\delta h^{\mu\nu}(p_1) \delta h^{\rho\sigma}(p_2)}\right|_{h=0} = \frac{\delta^2}{\delta h^{\mu\nu}(p_1) \delta h^{\rho\sigma}(p_2)} \int \prod_{i=1}^4 d^4 p_i \mathcal{L}_{\text{AAhh}}\left(\tilde{h}(p_1), \tilde{h}(p_2), \tilde{A}(p_3), \tilde{A}(p_4) \right)\\
      = \operatorname{VertAAhh}_{\mu\nu\rho\sigma}(p_1,p_2,p_3,p_4)
 \end{gather}
+Where $\mathcal{L}_{\text{AAh}}$, $\mathcal{L}_{\text{AAhh}}$ is the sum of terms from lagrangian proportional to the suitable power of fields.
+\textcolor{red}{(expr. for vertices or ref. to apx)}
+ 
+\subsubsection{Calculation of feynman \jhkbf{These are not feynman ...} diagrams}
 Where $\mathcal{L}_{\text{AAh}}$, $\mathcal{L}_{\text{AAhh}}$ is the sum of terms from lagrangian proportional to the suitable power of fields.
 \textcolor{red}{(expr. for vertices or ref. to apx)}
  
@@ -687,6 +844,8 @@ Finally, the resulting beta function of abelian gauge coupling $g$ in the spacet
 \begin{equation}
     \beta_{g_1} = g_1 \frac{\eta_A}{2} = g_1 \frac{G}{4 \pi} \left( \frac{6 - \eta_h}{6(1-2 \Lambda)^2} + 
     \frac{(\eta_A-8)(1-2\Lambda) + (\eta_h -8)}{8 (1-2 \Lambda )^2}\right) + \beta_{g_1}^{\text{SM}}
+    \beta_{g_1} = g_1 \frac{\eta_A}{2} = g_1 \frac{G}{4 \pi} \left( \frac{6 - \eta_h}{6(1-2 \Lambda)^2} + 
+    \frac{(\eta_A-8)(1-2\Lambda) + (\eta_h -8)}{8 (1-2 \Lambda )^2}\right) + \beta_{g_1}^{\text{SM}}
 \end{equation}
 The result for an arbitrary spacetime dimension is given in (apx).
 To study the qualitative aspects of gravitational corrections, we can neglect the cosmological constant and
@@ -694,6 +853,7 @@ the corrections to gauge and graviton propagators entering via $\eta_A$ and $\et
 yields a very simple form of beta function, that indicates a negative gravitational contribution to the running
 of gauge coupling.
 \begin{equation}
+    \beta_{g_1} = - \frac{G}{4 \pi} + \beta_{g_1}^{\text{SM}}
     \beta_{g_1} = - \frac{G}{4 \pi} + \beta_{g_1}^{\text{SM}}
 \end{equation}
 
@@ -710,6 +870,9 @@ if the regulator is picked in such way that it executes a proper IR cutoff,
 it will always give the same results in the physical limit $k \rightarrow 0$. There should be no
 qualitative differences in the behaviour of RG flow computed with different regulators.
 %% Coś o tym że to będziemy tu sprawdzać
+\jhkbf{Zrobić obliczenia dla różnych $\beta_h$ (to już de facto masz) i różnych regulatorów i przedyskutować wyniki.\\ 
+W summary albo future directions możesz omówić wyniki które ja otrzymałem z astrid
+}
 \jhkbf{Zrobić obliczenia dla różnych $\beta_h$ (to już de facto masz) i różnych regulatorów i przedyskutować wyniki.\\ 
 W summary albo future directions możesz omówić wyniki które ja otrzymałem z astrid
 }
