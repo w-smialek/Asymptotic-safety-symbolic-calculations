@@ -5,7 +5,7 @@ running of abelian gauge coupling in the Standard Model and the fate of the Land
 
 All the theoretical introduction and explanation is available in the work, available as pdf.
 
-The Mathematica code uses the xAct library for the tensor algebra and field theoretic symbolic computation.
+**The Mathematica code uses the xAct library for the tensor algebra and field theoretic symbolic computation.**
 
 ### Acrit.nb
 
@@ -19,3 +19,8 @@ Validation of the Functional Renormalization Group implementation on the scalar 
 
 ### Calculations.nb
 
+The baseline calculations with fixed gauge and standard regulator
+
+### Calculations_kappa_param.nb
+
+Calculations with arbitrary abelian gauge fixing parameter and the comparison of the results with several types of regulators.
